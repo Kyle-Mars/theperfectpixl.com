@@ -23,6 +23,32 @@
 			font-weight: normal;
 			font-size: 15pt;
 }
+.dropdown {
+			position: relative;
+			display: inline-block;
+			float: right;
+}
+.dropdown-content {
+			position: absolute;
+			margin-left: -10px;
+			margin-top: 45px;
+			background-color: #f6f6f6;
+			min-width: 115px;
+			box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			display: none;
+}
+.dropdown-content a {
+			display: block;
+			width: 115px;
+}
+.dropdown-content a:hover {
+			background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+			display: block;
+			text-align: left;
+}
 .indexintro {
 			background-color: #f6f6f6;
 			height: 360px;
@@ -33,7 +59,6 @@
 			background-color: #f6f6f6;
 			height: 230px;
 			padding-left: 10%;
-			
 }
 .body {
 			padding: 10%;
@@ -41,6 +66,7 @@
 			background-color: white;
 			height: 250px;
 			padding-top: 35px;
+			
 }
 .histright {
 			max-width: 450px;
@@ -117,13 +143,16 @@ a {
 			font-family: "Lato", sans-serif;
 			color: #515151;
 			font-size: 11pt;
-  			list-style-type: none;
 			font-weight: normal;
 			margin: 0;
 			padding: 0;
 			display: inline;
 			float: right;
-			padding: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			padding-top: 10px;
+			list-style-type: none;
 }
 a:link {
 			text-decoration: none;
@@ -132,10 +161,21 @@ a:visited {
 			text-decoration: none;
 }
 a:hover {
-  			text-decoration: none;
+			background-color: #f6f6f6;
+			text-decoration: none;
 }
 a:active {
-  			text-decoration: none;
+			text-decoration: none;
+}
+#indexa{
+			color: black;
+			font-weight: bold;
+			margin-left: -15px;
+			font-size: 100%;
+			float: none;
+}
+#indexa:hover{
+			background-color: white;
 }
 #title {	
 			font-family: "Droid Sans", sans-serif;
