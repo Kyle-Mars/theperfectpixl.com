@@ -70,12 +70,12 @@
 }
 .histright {
 			max-width: 450px;
-			height: 375px;
+			height: 360px;
 			padding-left: 50%;
 }
 .histleft {
 			max-width: 450px;
-			height: 375px;
+			height: 360px;
 			padding-left: 5%;
 			
 }
@@ -84,6 +84,14 @@
 			color: #515151;
 			line-height: 175%;
 			font-size: 13pt;
+			text-align: left;
+			padding-top: 7%;
+}
+.histtext {
+			font-family: "Droid Sans", sans-serif;
+			color: #515151;
+			line-height: 175%;
+			font-size: 11pt;
 			text-align: left;
 			padding-top: 7%;
 }
@@ -122,15 +130,15 @@
 			float:left;
 			margin-left: -450px;
 			margin-top: 20px;
-			width: 300px;
-			height: 400px
+			width: 240px;
+			height: 320px
 }
 .histimageright {
 			float: right;
 			margin-right: -450px;
 			margin-top: 20px;
-			width: 300px;
-			height: 400px
+			width: 240px;
+			height: 320px
 }
 img {			
 			border-style: solid;
@@ -187,7 +195,7 @@ a:active {
 			font-family: "Droid Sans", sans-serif;
 			font-size: 20pt;
 			text-align: left;
-			padding-top: 100px;
+			padding-top: 50px;
 }
 #index {
 			background-image: url('images/Skids2Guns.jpg');
