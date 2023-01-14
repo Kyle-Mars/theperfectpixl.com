@@ -109,22 +109,25 @@
 	margin-right: auto;
 	margin-top: 2.734vw;
 	max-width: 23.45vw;
+	height: auto;
 }
 .showcaseimage {
-	
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 20.55vw;
+	height: auto;
 }
 .ridimage {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 15.625vw;
+	height: auto;
 }
 .galimage {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 8.285vw;
+	height: auto;
 }
 .histimageleft {
 	float:left;
@@ -139,6 +142,7 @@
 	max-width: 19.3vw;
 }
 img {	
+	aspect-ratio: attr(width) / attr(height);
 	border-style: solid;
 	border-color: white;
 	border-radius: 15px;
@@ -247,7 +251,7 @@ a:active {
 	padding-left: 75%;
 }
 #introanim {
-	height: 35.156vw;
+	height: 23.156vw;
 }
 #introwfc {
 	height: 31.250vw;
@@ -263,6 +267,15 @@ a:active {
 	margin-top: -0.391vw;
 	margin-left: -35.156vw;
 }
-@media all and (max-width: 768px){
-	
+@media only screen and (max-width: 1063px) {
+	.ridimage {max-width: 14.285vw;}
+	.galimage {max-width: 7.574vw;}
+}
+@media only screen and (max-width: 768px) {
+	.ridimage {max-width: 14.285vw;}
+	.galimage {max-width: 7.574vw;}
+} 
+@media only screen and (max-width: 486px) {
+	.ridimage {max-width: 14vw;}
+	.galimage {max-width: 7vw;}
 }
