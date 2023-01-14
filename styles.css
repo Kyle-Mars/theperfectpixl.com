@@ -1,0 +1,219 @@
+.header {	
+			font-family: "Lato", sans-serif ;
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			background-color: white;
+			background-size: cover;
+			height: 50px;
+			font-weight: bold;
+			font-size: 170%;
+			padding: 3%;
+			box-shadow: 0px 2px 2px #e8e8e8;
+}
+.banner { 	
+			background-size: cover;
+			color: white; 
+			font-family: "Bebas", sans-serif;
+			font-weight: bold;
+			font-size: 550%;
+}
+.navigation { 	
+			padding-left: 60%;
+			font-weight: normal;
+			font-size: 15pt;
+}
+.indexintro {
+			background-color: #f6f6f6;
+			height: 360px;
+			padding-left: 47%;
+			padding-top: 5%;
+}
+.intro {
+			background-color: #f6f6f6;
+			height: 230px;
+			padding-left: 10%;
+			
+}
+.body {
+			padding: 10%;
+			margin-bottom: 10%;
+			background-color: white;
+			height: 250px;
+			padding-top: 35px;
+}
+.histright {
+			max-width: 450px;
+			height: 375px;
+			padding-left: 50%;
+}
+.histleft {
+			max-width: 450px;
+			height: 375px;
+			padding-left: 5%;
+			
+}
+.indextext {
+			font-family: "Droid Sans", sans-serif;
+			color: #515151;
+			line-height: 175%;
+			font-size: 13pt;
+			text-align: left;
+			padding-top: 7%;
+}
+.text {
+			font-family: "Droid Sans", sans-serif;
+			color: #515151;
+			max-width: 1000px;
+			line-height: 175%;
+			font-size: 13pt;
+			text-align: left;
+			padding-top: 5%;
+			text-indent: 1em;
+}
+.indeximage {
+			margin-top: 35px;
+			height: 300px;
+			width: 300px;
+}
+.showcaseimage {
+	
+			width: 300px;
+}
+.ridimage {
+			
+			margin-left: auto;
+			margin-right: auto;
+			width: 200px;
+}
+.galimage {
+			
+			margin-left: auto;
+			margin-right: auto;
+			width: 100px;
+}
+.histimageleft {
+			float:left;
+			margin-left: -450px;
+			margin-top: 20px;
+			width: 300px;
+			height: 400px
+}
+.histimageright {
+			float: right;
+			margin-right: -450px;
+			margin-top: 20px;
+			width: 300px;
+			height: 400px
+}
+img {			
+			border-style: solid;
+			border-color: white;
+			border-radius: 15px;
+			padding: 5px;
+			object-fit: cover;	
+}
+a {
+			font-family: "Lato", sans-serif;
+			color: #515151;
+			font-size: 11pt;
+  			list-style-type: none;
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+			display: inline;
+			float: right;
+			padding: 15px;
+}
+a:link {
+			text-decoration: none;
+}
+a:visited {
+			text-decoration: none;
+}
+a:hover {
+  			text-decoration: none;
+}
+a:active {
+  			text-decoration: none;
+}
+#title {	
+			font-family: "Droid Sans", sans-serif;
+			font-size: 20pt;
+			text-align: left;
+			padding-top: 50px;
+}
+#histtitle {	
+			font-family: "Droid Sans", sans-serif;
+			font-size: 20pt;
+			text-align: left;
+			padding-top: 100px;
+}
+#index {
+			background-image: url('images/Skids2Guns.jpg');
+			background-position: 100% 35%;
+			line-height: 300px; 
+			height: 450px; 
+			padding-left: 3%;
+}
+#showcase {
+			background-image: url('images/VectorSword.jpg');
+			background-position: 100% 21%;
+			line-height: 650px; 
+			height: 450px; 
+			padding-left: 3%;
+}
+#gallery {
+			background-image: url('images/SkywarpLib.jpg');
+			background-position: 100% 60%;
+			line-height: 650px; 
+			height: 450px; 
+			padding-left: 70%;
+}
+#animated {
+			background-color: white;
+			display: block;
+			width: 50%;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+}
+#wfc {
+			background-color: white;
+			display: block;
+			width: 90%;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+}
+#rid {
+			background-color: white;
+			display: block;
+			width: 70%;
+			
+			margin-left: auto;
+			margin-right: auto;
+}
+#history {
+			background-image: url('images/ThundersShoot.jpg');
+			background-position: 100% 25%;
+			line-height: 200px; 
+			height: 450px; 
+			padding-left: 75%;
+}
+#introanim {
+			height: 300px;
+}
+#introwfc {
+			height: 400px;
+}
+#introrid {
+			height: 270px;
+}
+#profile {
+			border-color: #f6f6f6;
+			border-radius: 500px;
+			float: left;
+			margin-top: -5px;
+			margin-left: -450px;
+}
