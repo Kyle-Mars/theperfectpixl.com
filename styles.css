@@ -349,3 +349,9 @@ a:active {
 	#introhist {height: 39.094vw;}
 	#profile {display: none;}
 }
+@media only screen and (max-width: 414px) {
+	.ridimage {max-width: 13.8vw;}
+	.galimage {max-width: 10.4vw;}
+	.indeximage {max-width: 22.45vw;}
+	.showcaseimage {max-width: 19.55vw;}
+}
