@@ -1,5 +1,5 @@
 .header {	
-	font-family: "Lato", "Proxima Nova", sans-serif ;
+	font-family: "Lato", "Sans Open", sans-serif ;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -14,7 +14,7 @@
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", "Proxima Nova", sans-serif;
+	font-family: "Bebas", "Sans Open", sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 }
@@ -69,16 +69,18 @@
 }
 .histright {
 	max-width: 35.156vw;
+	margin-bottom: 3.563vw;
 	height: 28.125vw;
 	padding-left: 50%;
 }
 .histleft {
 	max-width: 35.156vw;
+	margin-bottom: 3.563vw;
 	height: 28.125vw;
 	padding-left: 5%;
 }
 .indextext {
-	font-family: "Droid Sans", "Proxima Nova", sans-serif;
+	font-family: "Droid Sans", "Sans Open", sans-serif;
 	color: #515151;
 	line-height: 175%;
 	font-size: 1.354vw;
@@ -87,7 +89,7 @@
 	padding-top: 7%;
 }
 .histtext {
-	font-family: "Droid Sans", "Proxima Nova", sans-serif;
+	font-family: "Droid Sans", "Sans Open", sans-serif;
 	color: #515151;
 	line-height: 175%;
 	font-size: 1.146vw;
@@ -95,7 +97,7 @@
 	padding-top: 7%;
 }
 .text {
-	font-family: "Droid Sans", "Proxima Nova", sans-serif;
+	font-family: "Droid Sans", "Sans Open", sans-serif;
 	color: #515151;
 	max-width: 78.125vw;
 	line-height: 175%;
@@ -210,21 +212,21 @@ a:active {
 	padding-top: 3.906vw;
 }
 #index {
-	background-image: url('images/Skids2Guns.webp');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp');
 	background-position: 100% 35%;
 	line-height: 23.438vw; 
 	height: 35.156vw; 
 	padding-left: 3%;
 }
 #showcase {
-	background-image: url('images/VectorSword.webp');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/VectorSword.webp');
 	background-position: 100% 21%;
 	line-height: 50.781vw; 
 	height: 35.156vw; 
 	padding-left: 3%;
 }
 #gallery {
-	background-image: url('images/SkywarpLib.webp');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/SkywarpLib.webp');
 	background-position: 100% 60%;
 	line-height: 50.781vw; 
 	height: 35.156vw; 
@@ -254,7 +256,7 @@ a:active {
 	margin-right: auto;
 }
 #history {
-	background-image: url('images/ThundersShoot.webp');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/ThundersShoot.webp');
 	background-position: 100% 25%;
 	line-height: 15.625vw; 
 	height: 35.156vw; 
