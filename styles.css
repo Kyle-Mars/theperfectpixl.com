@@ -52,12 +52,13 @@
 .indexintro {
 	background-color: #f6f6f6;
 	height: 28.125vw;
+	
 	padding-left: 47%;
 	padding-top: 5%;
 }
 .intro {
 	background-color: #f6f6f6;
-	height: 17.969vw;
+	height: 15.969vw;
 	padding-left: 10%;
 }
 .body {
@@ -83,6 +84,7 @@
 	color: #515151;
 	line-height: 175%;
 	font-size: 1.354vw;
+	max-width: 36.0625vw;
 	text-align: left;
 	padding-top: 7%;
 }
@@ -134,12 +136,14 @@
 	margin-left: -35.156vw;
 	margin-top: 1.563vw;
 	max-width: 19.3vw;
+	height: auto;
 }
 .histimageright {
 	float: right;
 	margin-right: -35.156vw;
 	margin-top: 1.563vw;
 	max-width: 19.3vw;
+	height: auto;
 }
 img {	
 	aspect-ratio: attr(width) / attr(height);
@@ -187,13 +191,14 @@ a:active {
 #indexa:hover{
 	background-color: white;
 }
-#title {	
+#maintitle {	
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
-	padding-top: 3.906vw;
+	padding-top: 0vw;
+	max-width: 36.0625vw;
 }
-#histtitle {	
+#title {	
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
@@ -254,28 +259,93 @@ a:active {
 	height: 23.156vw;
 }
 #introwfc {
-	height: 31.250vw;
+	height: 30.250vw;
 }
 #introrid {
-	height: 21.094vw;
+	height: 20.094vw;
 }
 #profile {
 	border-color: #f6f6f6;
 	border-radius: 1000px;
 	float: left;
-	max-width: 45%;
+	max-width: 65%;
 	margin-top: -0.391vw;
 	margin-left: -35.156vw;
 }
 @media only screen and (max-width: 1063px) {
+	.text {font-size: 1.354vw;}
+	.indextext {font-size: 1.3vw;}
+	.histtext {font-size: 1.3vw;}
+	.histleft {height: auto;}
+	.histright {height: auto;}
+	.intro {height: 14.969vw;}
 	.ridimage {max-width: 14.285vw;}
-	.galimage {max-width: 7.574vw;}
+	.galimage {max-width: 8.174vw;}
+	.header {font-size: 2.425vw;}
+	.dropdown-content {margin-left: -.141vw;}
+	.dropdown-content a {width: 8.984vw;}
+	a {font-size: 1.346vw;}
 }
 @media only screen and (max-width: 768px) {
+	.text {font-size: 1.854vw;}
+	.indextext {font-size: 1.7vw;}
+	.intro {height: 21.969vw;}
+	.histtext {font-size: 1.7vw;}
+	.histleft { 
+		height: auto;
+		padding-bottom: 1vw;}
+	.histright {
+		height: auto;
+		padding-bottom: 1vw;}
+	.intro {height: 20.969vw;}
+	.indexintro {height: 39.156vw;}
 	.ridimage {max-width: 14.285vw;}
 	.galimage {max-width: 7.574vw;}
+	.header {font-size: 2.825vw;}
+	.dropdown-content {margin-top: 3.916vw;}
+	.dropdown-content a {width: 11.984vw;}
+	a {font-size: 1.746vw;}
+	#maintitle {font-size: 3.083vw;
+			max-width: 40.125vw;}
+	#title {font-size: 3.083vw;}
+	#introanim {height: 38.156vw;}
+	#introwfc {height: 47.250vw;}
+	#introrid {height: 32.094vw;}
+	#introhist {height: 22.094vw;}
+	#profile {max-width: 30vw;}
 } 
 @media only screen and (max-width: 486px) {
+	.text {font-size: 2.854vw;}
+	.indextext {font-size: 2.554vw;
+		max-width: 75.125vw;}
+	.histtext {font-size: 2.554vw;}
+	.histleft {margin-right: -36vw; 
+		max-width: 75.125vw; 
+		height: auto;
+		padding-bottom: 3vw;}
+	.histright {margin-left: -36vw; 
+		max-width: 75.125vw; 
+		height: auto;
+		padding-bottom: 3vw;}
+	.intro {height: 38.969vw;}
+	.indexintro {height: 40.156vw;
+		margin-left: -35vw;}
 	.ridimage {max-width: 14vw;}
-	.galimage {max-width: 7vw;}
+	.galimage {max-width: 8.5vw;}
+	.indeximage {max-width: 22.45vw;}
+	.header {font-size: 3.225vw;}
+	.showcaseimage {max-width: 19.55vw;}
+	.histimageleft {display: none;}
+	.histimageright {display: none;}
+	.dropdown-content {margin-top: 5.216vw;}
+	.dropdown-content a {width: 16.984vw;}
+	a {font-size: 2.546vw;}
+	#maintitle {font-size: 3.083vw;
+			max-width: 75.125vw;}
+	#title {font-size: 3.083vw;}
+	#introanim {height: 74.156vw;}
+	#introwfc {height: 100.250vw;}
+	#introrid {height: 63.094vw;}
+	#introhist {height: 39.094vw;}
+	#profile {display: none;}
 }
