@@ -123,6 +123,13 @@
 	max-width: 15.625vw;
 	height: auto;
 }
+.rid {
+	background-color: white;
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .galimage {
 	margin-left: auto;
 	margin-right: auto;
