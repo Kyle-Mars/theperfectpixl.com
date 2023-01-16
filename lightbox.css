@@ -46,10 +46,9 @@
     }
 .image-slide {
 		margin-left: 25%;
-		margin-top: 1.434vw;
+		margin-top: 1vw;
 		max-width: 29.45vw;
 		border-style: none;
-		
 		height: auto;
     	width: 100%;
     }
@@ -87,4 +86,24 @@ img.hover-shadow {
       color: #999;
       text-decoration: none;
       cursor: pointer;
-    }   
+    } 
+@media only screen and (max-width: 768px) {
+	.image-slide {
+		margin-left: 10%;
+		max-width: 47.45vw;
+		margin-top: 2.5vw;
+    }
+}
+@media only screen and (max-width: 486px) {
+	.image-slide {
+		margin-left: -13%;
+		max-width: 70.45vw;
+		margin-top: 10vw;
+    }
+}
+@media only screen and (max-width: 414px) {
+	.image-slide {
+		max-width: 70.45vw;
+		margin-top: 15vw;
+    }
+}	
