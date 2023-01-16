@@ -103,7 +103,8 @@ img.hover-shadow {
 }
 @media only screen and (max-width: 414px) {
 	.image-slide {
-		max-width: 72.45vw;
-		margin-top: 20vw;
+		margin-left: -19.5%;
+		max-width: 80.45vw;
+		margin-top: 40vw;
     }
 }	
