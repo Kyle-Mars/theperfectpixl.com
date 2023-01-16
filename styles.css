@@ -365,8 +365,13 @@ a:active {
 	.showcaseimage {max-width: 19.55vw;}
 	.dropdown-content{min-width: 20.5vw;
 			margin-left: -1.1vw;}
-	.dropdown-content a {width: 20.5vw;}
+	.dropdown-content a {width: 23.5vw;}
 	.indexintro {height: 49.156vw;}
+	a {float: left; font-size: 3.5vw;}
+	.dropdown{float:left;}
+	.header {
+		height: 12.906vw;}
+	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
 	#introanim {height: 76.156vw;}
