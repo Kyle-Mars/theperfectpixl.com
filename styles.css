@@ -14,7 +14,7 @@
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", "Sans Open", sans-serif;
+	font-family: "Bebas", "Open Sans", sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 }
@@ -80,7 +80,7 @@
 	padding-left: 5%;
 }
 .indextext {
-	font-family: "Droid Sans", "Sans Open", sans-serif;
+	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
 	line-height: 175%;
 	font-size: 1.354vw;
@@ -89,7 +89,7 @@
 	padding-top: 7%;
 }
 .histtext {
-	font-family: "Droid Sans", "Sans Open", sans-serif;
+	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
 	line-height: 175%;
 	font-size: 1.146vw;
@@ -97,7 +97,7 @@
 	padding-top: 7%;
 }
 .text {
-	font-family: "Droid Sans", "Sans Open", sans-serif;
+	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
 	max-width: 78.125vw;
 	line-height: 175%;
