@@ -322,7 +322,7 @@ a:active {
 } 
 @media only screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
-	.indextext {font-size: 2.554vw;
+	.indextext {font-size: 2.854vw;
 		max-width: 75.125vw;}
 	.histtext {font-size: 2.554vw;}
 	.histleft {margin-right: -36vw; 
@@ -345,10 +345,10 @@ a:active {
 	.histimageright {display: none;}
 	.dropdown-content {margin-top: 5.216vw;}
 	.dropdown-content a {width: 16.984vw;}
-	a {font-size: 2.546vw;}
+	a {font-size: 2.946vw;}
 	#maintitle {font-size: 3.083vw;
 			max-width: 75.125vw;}
-	#title {font-size: 3.083vw;}
+	#title {font-size: 3.283vw;}
 	#introanim {height: 74.156vw;}
 	#introwfc {height: 100.250vw;}
 	#introrid {height: 63.094vw;}
@@ -356,6 +356,9 @@ a:active {
 	#profile {display: none;}
 }
 @media only screen and (max-width: 414px) {
+	.text {font-size: 2.899vw;}
+	.indextext {font-size: 2.899vw;}
+	.histtext {font-size: 2.899vw;}
 	.ridimage {max-width: 13.8vw;}
 	.galimage {max-width: 13.8vw;}
 	.indeximage {max-width: 22.45vw;}
@@ -363,11 +366,41 @@ a:active {
 	.dropdown-content{min-width: 20.8vw;
 			margin-left: -1.1vw;}
 	.dropdown-content a {width: 20.8vw;}
+	.indexintro {height: 49.156vw;}
+	#maintitle {font-size: 3.583vw;}
+	#title {font-size: 3.583vw;}
+	#introanim {height: 76.156vw;}
+	#introwfc {height: 105.250vw;}
+	#introrid {height: 64.094vw;}
+	#introhist {height: 39.094vw;}
 }
 @media only screen and (max-width: 390px) {
+	.text {font-size: 3.333vw;}
+	.indextext {font-size: 3.333vw;}
+	.histtext {font-size: 3.333vw;}
+	.header {font-size: 3.9vw;
+		height: 12.906vw;}
 	.ridimage {max-width: 13.4vw;}
 	.galimage {max-width: 13.4vw;}
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.1vw;}
+	#indexa {display: block;}
+	#maintitle {font-size: 3.983vw;}
+	#title {font-size: 3.983vw;}
+	a {font-size: 3.333vw; float: left;}
+	.dropdown{float:left;}
+	.indexintro {height: 55.156vw;}
+	.intro {height: 49.969vw;}
+	#introanim {height: 103.156vw;}
+	#introwfc {height: 132.250vw;}
+	#introrid {height: 64.094vw;}
+	#introhist {height: 50.094vw;}
+}
+@media only screen and (max-width: 360px) {
+	.ridimage {max-width: 13.4vw;}
+	.galimage {max-width: 13.4vw;}
+	.indeximage {max-width: 22.3vw;}
+	.showcaseimage {max-width: 19.1vw;}
+	
 }
 

@@ -78,8 +78,13 @@ img.hover-shadow {transition: 0.3s;}
 }
 @media only screen and (max-width: 390px) {
 	.image-slide {
-		margin-left: -22.25%;
+		margin-left: -21.425%;
 		max-width: 80.45vw;
 		margin-top: 37.5vw;
+    }
+}	
+@media only screen and (max-width: 360px) {
+	.image-slide {
+		margin-left: -22.5%;
     }
 }	
