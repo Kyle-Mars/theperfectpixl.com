@@ -14,7 +14,7 @@
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", "Open Sans", sans-serif;
+	font-family: "Bebas", Bebas Neue, sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 }
@@ -278,6 +278,10 @@ a:active {
 	float: left;
 	margin-top: -0.391vw;
 	margin-left: -35.156vw;
+}
+@font-face{
+	font-family: Bebas Neue;
+	src: url(Bebas-Regular.ttf);
 }
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
