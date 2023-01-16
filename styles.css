@@ -375,9 +375,9 @@ a:active {
 	#introhist {height: 39.094vw;}
 }
 @media only screen and (max-width: 390px) {
-	.text {font-size: 3.333vw;}
-	.indextext {font-size: 3.333vw;}
-	.histtext {font-size: 3.333vw;}
+	.text {font-size: 3.343vw;}
+	.indextext {font-size: 3.343vw;}
+	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 12.906vw;}
 	.ridimage {max-width: 13.4vw;}
