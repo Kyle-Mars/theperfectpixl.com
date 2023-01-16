@@ -344,6 +344,7 @@ a:active {
 	.showcaseimage {max-width: 19.55vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
+	
 	.dropdown-content {margin-top: 5.216vw;}
 	.dropdown-content a {width: 16.984vw;}
 	a {font-size: 2.946vw;}
@@ -365,9 +366,9 @@ a:active {
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.55vw;}
 	.dropdown-content{min-width: 19.5vw;
-			margin-left: -1.1vw;
+			margin-left: -1.05vw;
 			margin-top: 6.5vw;}
-	.dropdown-content a {width: 25vw;}
+	.dropdown-content a {width: 27vw;}
 	.indexintro {height: 49.156vw;}
 	a {float: left; font-size: 3.5vw;}
 	.dropdown{float:left;}
