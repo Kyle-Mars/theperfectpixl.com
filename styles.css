@@ -337,7 +337,7 @@ a:active {
 	.indexintro {height: 40.156vw;
 		margin-left: -35vw;}
 	.ridimage {max-width: 14vw;}
-	.galimage {max-width: 8.5vw;}
+	.galimage {max-width: 14vw;}
 	.indeximage {max-width: 22.45vw;}
 	.header {font-size: 3.225vw;}
 	.showcaseimage {max-width: 19.55vw;}
@@ -357,11 +357,17 @@ a:active {
 }
 @media only screen and (max-width: 414px) {
 	.ridimage {max-width: 13.8vw;}
-	.galimage {max-width: 10.4vw;}
+	.galimage {max-width: 13.8vw;}
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.55vw;}
 	.dropdown-content{min-width: 20.8vw;
 			margin-left: -1.31vw;}
 	.dropdown-content a {width: 20.8vw;}
+}
+@media only screen and (max-width: 390px) {
+	.ridimage {max-width: 13.4vw;}
+	.galimage {max-width: 13.4vw;}
+	.indeximage {max-width: 22.45vw;}
+	.showcaseimage {max-width: 19.1vw;}
 }
 
