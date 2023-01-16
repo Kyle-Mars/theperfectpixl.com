@@ -360,6 +360,7 @@ a:active {
 	.galimage {max-width: 10.4vw;}
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.55vw;}
-	.dropdown-content a {width: 14.984vw;}
+	.dropdown-content{min-width: 8.984vw;}
+	.dropdown-content a {width: 8.984vw;}
 }
 
