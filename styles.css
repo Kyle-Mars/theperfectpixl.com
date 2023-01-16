@@ -41,6 +41,7 @@
 .dropdown-content a {
 	display: block;
 	width: 8.984vw;
+	text-align: center;
 }
 .dropdown-content a:hover {
 	background-color: #ddd;
@@ -363,9 +364,10 @@ a:active {
 	.galimage {max-width: 13.8vw;}
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.55vw;}
-	.dropdown-content{min-width: 20.5vw;
-			margin-left: -1.1vw;}
-	.dropdown-content a {width: 23.5vw;}
+	.dropdown-content{min-width: 19.5vw;
+			margin-left: -1.1vw;
+			margin-top: 6.5vw;}
+	.dropdown-content a {width: 25vw;}
 	.indexintro {height: 49.156vw;}
 	a {float: left; font-size: 3.5vw;}
 	.dropdown{float:left;}
@@ -389,6 +391,7 @@ a:active {
 	.galimage {max-width: 13.4vw;}
 	.indeximage {max-width: 22.45vw;}
 	.showcaseimage {max-width: 19.1vw;}
+	.dropdown-content{margin-left: -1.4vw;}
 	#indexa {display: block;}
 	#maintitle {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
