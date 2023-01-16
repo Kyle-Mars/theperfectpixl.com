@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="lightbox.css">
 <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp" type="image/webp">
 </head>
 <body>
@@ -45,23 +46,38 @@ can view a curated list of the photos I've taken, or make a journey into my coll
 <img class="indeximage" sizes="(max-width: 3000px) 23.55vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/TronHead.webp 256w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size700/TronHead.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/TronHead.webp 1000w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size1220/TronHead.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/TronHead.webp 1410w" 
-src="https://ik.imagekit.io/theperfectpixl/TronHead.webp" height="400" width="300" alt="Closeup of Animated Megatron.">
+src="https://ik.imagekit.io/theperfectpixl/TronHead.webp" height="400" onclick="openLightbox();toSlide(1)" width="300" alt="Closeup of Animated Megatron.">
 </picture>
 
 <picture>
 <img class="indeximage" sizes="(max-width: 3000px) 23.55vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/ArmStar.webp 256w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size700/ArmStar.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/ArmStar.webp 1000w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size1220/ArmStar.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/ArmStar.webp 1410w" 
-src="https://ik.imagekit.io/theperfectpixl/ArmStar.webp" height="400" width="300" alt="Armada Starscream seen from between Armada Megatron's Shoulders.">
+src="https://ik.imagekit.io/theperfectpixl/ArmStar.webp" height="400" onclick="openLightbox();toSlide(2)" width="300" alt="Armada Starscream seen from between Armada Megatron's Shoulders.">
 </picture>
 
 <picture>
 <img class="indeximage" sizes="(max-width: 3000px) 23.55vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/RodCommand.webp 256w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size700/RodCommand.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/RodCommand.webp 1000w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size1220/RodCommand.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/RodCommand.webp 1410w" 
-src="https://ik.imagekit.io/theperfectpixl/RodCommand.webp" height="400" width="300" alt="Rodimus Prime shooting skyward.">
+src="https://ik.imagekit.io/theperfectpixl/RodCommand.webp" height="400" onclick="openLightbox();toSlide(3)" width="300" alt="Rodimus Prime shooting skyward.">
 </picture>
+
+<div id="Lightbox" class="modal" onclick="closeLightbox()">
+  <div class="modal-content">
+    <div class="slide">
+        <img src="https://ik.imagekit.io/theperfectpixl/TronHead.webp" class="image-slide" alt="Closeup of Animated Megatron."/>
+    </div>
+    <div class="slide">
+        <img src="https://ik.imagekit.io/theperfectpixl/ArmStar.webp" class="image-slide" alt="Armada Starscream seen from between Armada Megatron's Shoulders."/>
+    </div>    
+    <div class="slide">
+        <img src="https://ik.imagekit.io/theperfectpixl/RodCommand.webp" class="image-slide" alt="Rodimus Prime shooting skyward."/>
+    </div>
+  </div>
+</div>
 </div>
 
+<script src="lightbox.js"></script>
 </body>
 </html>
