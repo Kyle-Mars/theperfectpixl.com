@@ -281,7 +281,7 @@ a:active {
 }
 @font-face{
 	font-family: Bebas Neue;
-	src: url(Bebas-Regular.ttf);
+	src: url(BebasKai.ttf);
 }
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
