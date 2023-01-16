@@ -42,11 +42,26 @@ how well they adapt such stylized design to plastic, and still manage to functio
 <img class="ridimage" sizes="(min-width: 2040px) 301px, (min-width: 1080px) calc(14.01vw + 17px), 14.48vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/ActiRide.webp 256w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size470/ActiRide.webp 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/ActiRide.webp 740w,
 https://ik.imagekit.io/theperfectpixl/tr:n-size940/ActiRide.webp 940w" 
-src="https://ik.imagekit.io/theperfectpixl/ActiRide.webp" height="400" width="300" alt="Activator Optimus rides Activator Grimlock.">
+src="https://ik.imagekit.io/theperfectpixl/ActiRide.webp" height="400" width="300" onclick="openLightbox();toSlide(1)" alt="Activator Optimus rides Activator Grimlock.">
 </picture>
-<img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/ActiOpTruck.webp" width="3024" height="4032">
-<img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/AniOpAction.webp" width="3024" height="4032">
-<img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/AniOpLove.webp" width="3024" height="4032">
+<picture>
+<img class="ridimage" sizes="(min-width: 2040px) 301px, (min-width: 1080px) calc(14.01vw + 17px), 14.48vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/ActiOpTruck.webp 256w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size470/ActiOpTruck.webp 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/ActiOpTruck.webp 740w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size940/ActiOpTruck.webp 940w" 
+src="https://ik.imagekit.io/theperfectpixl/ActiOpTruck.webp" height="400" width="300" onclick="openLightbox();toSlide(2)" alt="Activator Optimus in vehicle mode.">
+</picture>
+<picture>
+<img class="ridimage" sizes="(min-width: 2040px) 301px, (min-width: 1080px) calc(14.01vw + 17px), 14.48vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/AniOpAction.webp 256w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size470/AniOpAction.webp 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/AniOpAction.webp 740w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size940/AniOpAction.webp 940w" 
+src="https://ik.imagekit.io/theperfectpixl/AniOpAction.webp" height="400" width="300" onclick="openLightbox();toSlide(3)" alt="Animated Optimus in an action pose.">
+</picture>
+<picture>
+<img class="ridimage" sizes="(min-width: 2040px) 301px, (min-width: 1080px) calc(14.01vw + 17px), 14.48vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/AniOpLove.webp 256w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size470/AniOpLove.webp 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/AniOpLove.webp 740w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size940/AniOpLove.webp 940w" 
+src="https://ik.imagekit.io/theperfectpixl/AniOpLove.webp" height="400" width="300" onclick="openLightbox();toSlide(4)" alt="Animated Optimus holding Animated Blackarachnia.">
+</picture>
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/AniOpTruckFront.webp" width="3024" height="4032">
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/AniOpFire.webp" width="3024" height="4032">
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/BumbLook.webp" width="3024" height="4032">
@@ -104,6 +119,71 @@ src="https://ik.imagekit.io/theperfectpixl/ActiRide.webp" height="400" width="30
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/WaveMinion.webp" width="3024" height="4032">
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/WaveAmbush.webp" width="3024" height="4032">
 <br><br><br></div>
+
+<div id="Lightbox" class="modal" onclick="closeLightbox()">
+  <div class="modal-content">
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiRide.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiOpTruck.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/AniOpAction.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/AniOpLove.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/AniOpTruckFront.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/AniOpFire.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BumbLook.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BumbWave.webp" width="300" height="400" class="image-slide" alt=""/></div>   
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BumbCarFront.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/IronWave.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/IronWreck.webp" width="300" height="400" class="image-slide" alt=""/></div>  
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/IronClutz.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/IronAttack.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/IronVan.webp" width="300" height="400" class="image-slide" alt=""/></div>   
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ProwlGuard.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ProwlCrouch.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ProwlThrow.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ProwlSit.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ProwlBikeRight.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/DocBack.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/DocFix.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/DocLose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/DocWin.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BigironWave.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BigironSaw.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BigironVanRight.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BlurrBot.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BlurrCar.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiGrimBot.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiGrimDino.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GrimRelax.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GrimPose.webp" width="300" height="400" class="image-slide" alt=""/></div>   
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GrimDinoLeft.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/TronShoot.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/TronSwords.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/TronWalk.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BlitzCold.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BlitzCrazy.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/BlitzTank.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LugSmash.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LugBow.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LugPraise.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LugPlaneFront.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiStarBot.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiStarJet.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/StarStand.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/StarSneer.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/StarJetFront.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/Bounty.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LockEye.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LockWalk.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/LockCarClose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/SpiderWeep.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/SpiderQueen.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/SpiderSpiderFront.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiWaveBot.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/ActiWaveVan.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/WaveGuitar.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/WaveMinion.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/WaveAmbush.webp" width="300" height="400" class="image-slide" alt=""/></div>
+  </div>
+</div>
 
 <script src="lightbox.js"></script>
 </body>
