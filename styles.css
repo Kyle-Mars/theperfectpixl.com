@@ -111,8 +111,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 2.734vw;
-	max-width: 28.55vw;
-	height: auto;
+	max-width: 24.55vw;
 }
 .showcaseimage {
 	margin-left: auto;
@@ -155,9 +154,8 @@
 }
 img {	
 	aspect-ratio: auto 300 / 400;
-	border-style: solid;
-	border-color: white;
-	border-radius: 15px;
+	border-style: none;
+	border-radius: 1vw;
 	padding: 0.391vw;
 	object-fit: cover;	
 }
@@ -302,11 +300,9 @@ a:active {
 	.indextext {font-size: 1.7vw;}
 	.intro {height: 21.969vw;}
 	.histtext {font-size: 1.7vw;}
-	.histleft { 
-		height: auto;
+	.histleft { height: auto;
 		padding-bottom: 1vw;}
-	.histright {
-		height: auto;
+	.histright {height: auto;
 		padding-bottom: 1vw;}
 	.intro {height: 20.969vw;}
 	.indexintro {height: 39.156vw;}
@@ -315,9 +311,10 @@ a:active {
 	.header {font-size: 2.825vw;}
 	.dropdown-content {margin-top: 3.916vw;}
 	.dropdown-content a {width: 11.984vw;}
+	img {border-radius: 2vw;}
 	a {font-size: 1.746vw;}
 	#maintitle {font-size: 3.083vw;
-			max-width: 40.125vw;}
+		max-width: 40.125vw;}
 	#title {font-size: 3.083vw;}
 	#introanim {height: 38.156vw;}
 	#introwfc {height: 47.250vw;}
@@ -352,7 +349,7 @@ a:active {
 	.dropdown-content a {width: 16.984vw;}
 	a {font-size: 2.946vw;}
 	#maintitle {font-size: 3.083vw;
-			max-width: 75.125vw;}
+		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
 	#introanim {height: 74.156vw;}
 	#introwfc {height: 100.250vw;}
@@ -366,7 +363,7 @@ a:active {
 	.histtext {font-size: 2.899vw;}
 	.ridimage {max-width: 13.8vw;}
 	.galimage {max-width: 13.8vw;}
-	.indeximage {max-width: 22.45vw;}
+	.indeximage {max-width: 24.2vw;}
 	.showcaseimage {max-width: 19.55vw;}
 	.dropdown-content{min-width: 19.5vw;
 		margin-left: -1.05vw;
@@ -414,16 +411,16 @@ a:active {
 		height: 12.906vw;}
 	.ridimage {max-width: 13.4vw;}
 	.galimage {max-width: 13.4vw;}
-	.indeximage {max-width: 22.45vw;}
+	.indeximage {max-width: 24vw;}
 	.showcaseimage {max-width: 19.1vw;}
 	.dropdown-content{margin-left: -1.4vw;}
-	#indexa {display: block;}
-	#maintitle {font-size: 3.983vw;}
-	#title {font-size: 3.983vw;}
-	a {font-size: 3.333vw; float: left;}
 	.dropdown{float:left;}
 	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
+	a {font-size: 3.333vw; float: left;}
+	#indexa {display: block;}
+	#maintitle {font-size: 3.983vw;}
+	#title {font-size: 3.983vw;}
 	#introanim {height: 103.156vw;}
 	#introwfc {height: 132.250vw;}
 	#introrid {height: 64.094vw;}
@@ -432,7 +429,7 @@ a:active {
 @media only screen and (max-width: 360px) {
 	.ridimage {max-width: 13.4vw;}
 	.galimage {max-width: 13.4vw;}
-	.indeximage {max-width: 22.3vw;}
+	.indeximage {max-width: 24vw;}
 	.showcaseimage {max-width: 19.1vw;}
 	
 }
