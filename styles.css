@@ -367,8 +367,8 @@ a:active {
 }
 @font-face{
 	font-family: Bebas;
-	src: url("Bebas-Regular.ttf") format("tff"), url("Bebas-Regular.eot") format("eot"), url("Bebas-Regular.otf") format("otf"), url("Bebas-Regular.woff") format("woff"),
-	url("Bebas-Regular.svg") format("svg");
+	src: url('Bebas-Regular.ttf') format('truetype'), url('Bebas-Regular.eot') format('eot'), url('Bebas-Regular.otf') format('otf'), url('Bebas-Regular.woff') format('woff'),
+	url('Bebas-Regular.svg') format('svg');
 }
 @media only screen and (max-width: 1600px) {
 	.indeximage{width: 22vw;}
