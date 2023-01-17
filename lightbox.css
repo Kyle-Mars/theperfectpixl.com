@@ -62,36 +62,34 @@ img.hover-shadow {transition: 0.3s;}
 		margin-top: 1.35vw;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1280px){
 	.image-slide {
-		margin-left: 10%;
+		margin-left: 24.05%;
+		max-width: 30.45vw;
+		margin-top: .5vw;
+    }
+}
+@media only screen and (max-width: 768px) {
+	.image-slide {margin-left: 10%;
 		max-width: 47.45vw;
 		margin-top: 2.5vw;
     }
 }
 @media only screen and (max-width: 486px) {
-	.image-slide {
-		margin-left: -13%;
+	.image-slide {margin-left: -13%;
 		max-width: 70.45vw;
-		margin-top: 10vw;
-    }
+		margin-top: 10vw;}
 }
 @media only screen and (max-width: 414px) {
-	.image-slide {
-		margin-left: -19.5%;
+	.image-slide {margin-left: -19.5%;
 		max-width: 80.45vw;
-		margin-top: 37.5vw;
-    }
+		margin-top: 37.5vw;}
 }
 @media only screen and (max-width: 390px) {
-	.image-slide {
-		margin-left: -21.425%;
+	.image-slide {margin-left: -21.425%;
 		max-width: 80.45vw;
-		margin-top: 37.5vw;
-    }
+		margin-top: 37.5vw;}
 }	
 @media only screen and (max-width: 360px) {
-	.image-slide {
-		margin-left: -22.5%;
-    }
+	.image-slide {margin-left: -22.5%;}
 }	
