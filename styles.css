@@ -310,6 +310,7 @@ a:active {
 	margin-right: auto;
 }
 #animatedbanner {
+	padding: 10%;
 	height: 16.250vw; 
 	padding-top: 3vw; 
 	background-image: url('https://ik.imagekit.io/theperfectpixl/Animated.gif'); 
@@ -324,7 +325,9 @@ a:active {
 	margin-right: auto;
 }
 #wfcbanner {
-	height: 16.250vw; 
+	padding: 10%;
+	background-color: white;
+	height: 19.531vw;
 	padding-top: 3vw; 
 	background-image: url('https://ik.imagekit.io/theperfectpixl/WFC.gif'); 
 	background-size: cover;
@@ -337,6 +340,7 @@ a:active {
 	margin-right: auto;
 }
 #ridbanner {
+	padding: 10%;
 	height: 16.250vw; 
 	padding-top: 3vw; 
 	background-image: url('https://ik.imagekit.io/theperfectpixl/RID.gif'); 
