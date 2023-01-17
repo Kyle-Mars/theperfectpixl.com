@@ -56,7 +56,8 @@ table {
 	font-weight: bold;
 	font-size: 2.125vw;
 	padding: 3%;
-	box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
+		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .banner { 	
 	background-size: cover;
@@ -64,7 +65,7 @@ table {
 	font-family: "Bebas", Bebas Neue, sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
-	text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0.391vw 0.391vw rgba(0, 0, 0, 0.5);
 }
 .navigation { 	
 	padding-left: 60%;
@@ -104,16 +105,16 @@ table {
 	padding-left: 47%;
 	padding-top: 5%;
 	margin-bottom: 1%;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19),
-		0 -2px 4px 0 rgba(0, 0, 0, 0.2), 0 -3px 10px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
+		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .intro {
 	background-color: #f6f6f6;
 	height: 15.969vw;
 	padding-left: 10%;
 	margin-bottom: 1%;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19),
-		0 -2px 4px 0 rgba(0, 0, 0, 0.2), 0 -3px 10px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
+		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .body {
 	padding: 10%;
@@ -468,7 +469,7 @@ a:active {
 		margin-top: 6.5vw;}
 	.dropdown-content a {width: 27vw;}
 	.indexintro {height: 49.156vw;}
-	a {float: left; font-size: 4vw;}
+	a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.dropdown{float:left;}
 	.header {height: 12.906vw;}
 	.banner {font-size: 12.875vw;}
@@ -515,7 +516,7 @@ a:active {
 	.dropdown{float:left;}
 	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
-	a {font-size: 3.333vw; float: left;}
+	a {font-size: 4vw; float: left;}
 	#indexa {display: block;}
 	#maintitle {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
