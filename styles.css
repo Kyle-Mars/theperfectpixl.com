@@ -242,7 +242,7 @@ a:active {
 #animatedbanner {
 	height: 16.250vw; 
 	padding-top: 3vw; 
-	background-image: url('https://ik.imagekit.io/theperfectpixl/Animated.webp'); 
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Animated.gif'); 
 	background-size: cover;
 }
 #wfc {
@@ -269,7 +269,7 @@ a:active {
 #ridbanner {
 	height: 16.250vw; 
 	padding-top: 3vw; 
-	background-image: url('https://ik.imagekit.io/theperfectpixl/RID.webp'); 
+	background-image: url('https://ik.imagekit.io/theperfectpixl/RID.gif'); 
 	background-size: cover;
 }
 #history {
