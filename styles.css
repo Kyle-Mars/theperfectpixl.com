@@ -63,7 +63,7 @@
 }
 .body {
 	padding: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 0%;
 	background-color: white;
 	height: 19.531vw;
 	padding-top: 2.514vw;	
@@ -126,7 +126,7 @@
 	height: auto;
 }
 .rid {
-	background-color: white;
+	background: rgba(0, 0, 0, 0);
 	display: block;
 	width: 70%;
 	margin-left: auto;
@@ -232,20 +232,32 @@ a:active {
 	padding-left: 70%;
 }
 #animated {
-	background-color: white;
+	background: rgba(0, 0, 0, 0);
 	display: block;
 	width: 50%;
 	margin-top: 1.563vw;
 	margin-left: auto;
 	margin-right: auto;
 }
+#animatedbanner {
+	height: 16.250vw; 
+	padding-top: 3vw; 
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Animated.gif'); 
+	background-size: cover;
+}
 #wfc {
-	background-color: white;
+	background: rgba(0, 0, 0, 0);
 	display: block;
-	width: 90%;
-	margin-top: 1.563vw;
+	width: 50%;
+	margin-top: 4.63vw;
 	margin-left: auto;
 	margin-right: auto;
+}
+#wfcbanner {
+	height: 16.250vw; 
+	padding-top: 3vw; 
+	background-image: url('https://ik.imagekit.io/theperfectpixl/WFC2.webp'); 
+	background-size: cover;
 }
 #rid {
 	background-color: white;
@@ -253,6 +265,12 @@ a:active {
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
+}
+#ridbanner {
+	height: 16.250vw; 
+	padding-top: 3vw; 
+	background-image: url('https://ik.imagekit.io/theperfectpixl/RID.gif'); 
+	background-size: cover;
 }
 #history {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/ThundersShoot.webp');
