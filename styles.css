@@ -406,8 +406,8 @@ a:active {
 		padding-bottom: 1vw;}
 	.intro {height: 20.969vw;}
 	.indexintro {height: 39.156vw;}
-	.ridimage {max-width: 14.285vw;}
-	.galimage {max-width: 7.574vw;}
+	.ridimage {max-width: 16.3vw;}
+	.galimage {max-width: 8.7vw;}
 	.header {font-size: 2.825vw;}
 	.dropdown-content {margin-top: 3.916vw;}
 	.dropdown-content a {width: 11.984vw;}
@@ -436,16 +436,16 @@ a:active {
 		height: auto;
 		padding-bottom: 3vw;}
 	.intro {height: 38.969vw;}
-	.indexintro {height: 40.156vw;
+	.indexintro {height: 42.156vw;
 		margin-left: -35vw;}
-	.ridimage {max-width: 14vw;}
-	.galimage {max-width: 14vw;}
-	.indeximage {max-width: 21vw;}
+	.ridimage {max-width: 16.1vw;}
+	.galimage {max-width: 16.1vw;}
+	.indeximage {max-width: 22.55vw;}
+	.showcaseimage {max-width: 22.55vw;}
 	.header {font-size: 3.225vw;}
-	.showcaseimage {max-width: 19.55vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
-	.dropdown-content {margin-top: 5.216vw;}
+	.dropdown-content {margin-top: 5.016vw;}
 	.dropdown-content a {width: 16.984vw;}
 	a {font-size: 2.946vw;}
 	#maintitle {font-size: 3.083vw;
@@ -461,10 +461,10 @@ a:active {
 	.text {font-size: 2.899vw;}
 	.indextext {font-size: 2.899vw;}
 	.histtext {font-size: 2.899vw;}
-	.ridimage {max-width: 15.3vw;}
-	.galimage {max-width: 15.3vw;}
-	.indeximage {max-width: 21vw;}
-	.showcaseimage {max-width: 21vw;}
+	.ridimage {max-width: 15.9vw;}
+	.galimage {max-width: 15.9vw;}
+	.indeximage {max-width: 21.9vw;}
+	.showcaseimage {max-width: 21.9vw;}
 	.dropdown-content{min-width: 19.5vw;
 		margin-left: -1.05vw;
 		margin-top: 6.5vw;}
@@ -509,10 +509,10 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 12.906vw;}
-	.ridimage {max-width: 15.2vw;}
-	.galimage {max-width: 15.2vw;}
-	.indeximage {max-width: 20.9vw;}
-	.showcaseimage {max-width: 20.9vw;}
+	.ridimage {max-width: 15.9vw;}
+	.galimage {max-width: 15.9vw;}
+	.indeximage {max-width: 21.8vw;}
+	.showcaseimage {max-width: 21.8vw;}
 	.dropdown-content{margin-left: -1.4vw;}
 	.dropdown{float:left;}
 	.indexintro {height: 55.156vw;}
@@ -527,10 +527,10 @@ a:active {
 	#introhist {height: 50.094vw;}
 }
 @media only screen and (max-width: 360px) {
-	.ridimage {max-width: 15.1vw;}
-	.galimage {max-width: 15.1vw;}
-	.indeximage {max-width: 20.7vw;}
-	.showcaseimage {max-width: 19.1vw;}
+	.ridimage {max-width: 15.8vw;}
+	.galimage {max-width: 15.8vw;}
+	.indeximage {max-width: 21.8vw;}
+	.showcaseimage {max-width: 21.8vw;}
 	
 }
 
