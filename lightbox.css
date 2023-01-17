@@ -55,6 +55,13 @@ img.preview, img.modal-preview {opacity: 0.6;}
 img.active,.preview:hover,.modal-preview:hover {opacity: 1;}
 img.hover-shadow {transition: 0.3s;}
 .hover-shadow:hover {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);} 
+@media only screen and (max-width: 1600px) {
+	.image-slide {
+		margin-left: 23%;
+		max-width: 32.45vw;
+		margin-top: 1.35vw;
+    }
+}
 @media only screen and (max-width: 768px) {
 	.image-slide {
 		margin-left: 10%;

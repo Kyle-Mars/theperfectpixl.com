@@ -224,6 +224,13 @@ a:active {
 	height: 35.156vw; 
 	padding-left: 3%;
 }
+#bigimage {
+	background-color: white;
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
 #gallery {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/SkywarpLib.webp');
 	background-position: 100% 60%;
@@ -298,6 +305,14 @@ a:active {
 @font-face{
 	font-family: Bebas Neue;
 	src: url(BebasKai.ttf);
+}
+@media only screen and (max-width: 1600px) {
+	.indeximage{width: 22vw;}
+	.showcaseimage{width: 22vw;}
+	.ridimage {max-width: 16.1vw;}
+	.galimage {max-width: 8.7vw;}
+	.dropdown-content {margin-left: -.7vw;}
+	.dropdown-content a {width: 9.984vw;}
 }
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
