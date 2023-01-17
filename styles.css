@@ -66,7 +66,7 @@
 	margin-bottom: 10%;
 	background-color: white;
 	height: 19.531vw;
-	padding-top: 1.514vw;	
+	padding-top: 2.514vw;	
 }
 .histright {
 	max-width: 35.156vw;
@@ -208,7 +208,7 @@ a:active {
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
-	padding-top: 3.906vw;
+	padding-top: 1.906vw;
 }
 #index {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp');
