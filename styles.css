@@ -246,7 +246,7 @@ a:active {
 	background-size: cover;
 }
 #wfc {
-	background: rgba(0, 0, 0, 0);
+	background: rgba(0, 0, 0, 0.05);
 	display: block;
 	width: 50%;
 	margin-top: 4.63vw;
