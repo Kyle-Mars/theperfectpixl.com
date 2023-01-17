@@ -62,7 +62,7 @@ table {
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", Bebas Neue, sans-serif;
+	font-family: "Bebas", Bebas, sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 	text-shadow: 0 0.391vw 0.391vw rgba(0, 0, 0, 0.5);
@@ -79,8 +79,8 @@ table {
 }
 .dropdown-content {
 	position: absolute;
-	margin-left: -0.781vw;
-	margin-top: 3.516vw;
+	margin-left: -1.781vw;
+	margin-top: 3.116vw;
 	background-color: #f6f6f6;
 	min-width: 8.984vw;
 	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
@@ -366,8 +366,11 @@ a:active {
 	margin-left: -35.156vw;
 }
 @font-face{
-	font-family: Bebas Neue;
-	src: url(BebasNeue-Regular.ttf);
+	font-family: Bebas;
+	src: url("Bebas-Regular.ttf");
+	src: url("Bebas-Regular.eot");
+	src: url("Bebas-Regular.woff") format("woff"),
+	url("Bebas-Regular.svg") format("svg");
 }
 @media only screen and (max-width: 1600px) {
 	.indeximage{width: 22vw;}
