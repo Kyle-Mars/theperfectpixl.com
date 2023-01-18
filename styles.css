@@ -237,7 +237,6 @@ table {
 img {	
 	aspect-ratio: auto 300 / 400;
 	border-style: none;
-	border-radius: 0.75vw;
 	padding: 0.391vw;
 	object-fit: cover;	
 }
