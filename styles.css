@@ -96,6 +96,7 @@ table {
 	height: 3vw;
 	display: none;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 9.9vw;
 	background-color: #f6f6f6;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
@@ -274,6 +275,11 @@ a:active {
 	font-size: 2.083vw;
 	text-align: left;
 	padding-top: 1.906vw;
+	background: rgba(0, 0, 0, 0);
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #index {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp');
@@ -412,7 +418,6 @@ a:active {
 	.ridimage {max-width: 16.3vw;}
 	.galimage {max-width: 8.7vw;}
 	.header {font-size: 2.825vw;}
-	img {border-radius: 2vw;}
 	.header a {font-size: 1.746vw;}
 	.nav a {font-size: 1.746vw;}
 	#maintitle {font-size: 3.083vw;
@@ -450,7 +455,8 @@ a:active {
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
 	.header a {font-size: 2.946vw;}
-	.nav a {font-size: 2.946vw;}
+	.nav a {font-size: 2.946vw; margin-right: 2vw;}
+	.nav {height: 11vw; padding-top: 2.5vw; top: 8vw; text-align: center; padding-right: 1vw;}
 	#maintitle {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
@@ -473,7 +479,7 @@ a:active {
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 12.906vw;}
 	.banner {font-size: 12.875vw;}
-	.nav {height: 7.5vw; padding-top: 2.5vw;}
+	.nav {height: 27vw; padding-top: 2.5vw; top: 18vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
 	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}

@@ -2,6 +2,13 @@ $(document).ready(function(){
 	$(".menu").click(function(){
     $(".nav").toggle("0.5");
   });
+  $(function () {
+    var parent = $("#rid, #bigimage");
+    var divs = parent.children('a');
+    while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+    }
+});
   $('.image-link').magnificPopup({
   type: 'image',
   mainClass: 'mfp-with-zoom', // this class is for CSS animation below
@@ -21,7 +28,6 @@ $(document).ready(function(){
       return openerElement.is('img') ? openerElement : openerElement.find('img');
     }
   }
-
 });
   
 });
