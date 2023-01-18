@@ -81,7 +81,7 @@ table {
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", "Open Sans", sans-serif;
+	font-family: "Bebas", Bebas, sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 	text-shadow: 0 0.391vw 0.391vw rgba(0, 0, 0, 0.5);
@@ -445,7 +445,7 @@ a:active {
 	.intro {height: 38.969vw;}
 	.indexintro {height: 42.156vw;
 		margin-left: -35vw;}
-	.banner { text-shadow: none;}
+	.banner {text-shadow: none;}
 	.ridimage {max-width: 16.1vw;}
 	.galimage {max-width: 16.1vw;}
 	.indeximage {max-width: 22.55vw;}
