@@ -81,7 +81,7 @@ table {
 .banner { 	
 	background-size: cover;
 	color: white; 
-	font-family: "Bebas", Bebas, sans-serif;
+	font-family: "Bebas", "Open Sans", sans-serif;
 	font-weight: bold;
 	font-size: 6.875vw;
 	text-shadow: 0 0.391vw 0.391vw rgba(0, 0, 0, 0.5);
