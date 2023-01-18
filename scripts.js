@@ -1,10 +1,5 @@
 $(document).ready(function(){
-  $(".menu").click(function(){
-    $(".nav").toggle("0.5");
-  });
-});
-
-$('.image-link').magnificPopup({
+  $('.image-link').magnificPopup({
   type: 'image',
   mainClass: 'mfp-with-zoom', // this class is for CSS animation below
 
@@ -25,3 +20,11 @@ $('.image-link').magnificPopup({
   }
 
 });
+  $(".menu").click(function(){
+    $(".nav").toggle("0.5");
+  });
+  
+});
+
+
+

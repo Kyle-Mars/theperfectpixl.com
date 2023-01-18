@@ -60,6 +60,24 @@ table {
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 	z-index: 1;
 }
+.header a {
+	font-family: "Lato", sans-serif;
+	color: #515151;
+	font-size: 1.246vw;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding-left: 1.172vw;
+	padding-right: 1.172vw;
+	padding-bottom: 1.172vw;
+	padding-top: 0.781vw;
+	display: inline;
+	float: right;
+}
+.header a:hover{
+	background-color: #f6f6f6;
+}
 .banner { 	
 	background-size: cover;
 	color: white; 
@@ -82,6 +100,21 @@ table {
 	background-color: #f6f6f6;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 	z-index: 0;
+}
+.nav a {
+	font-family: "Lato", sans-serif;
+	color: #515151;
+	font-size: 1.246vw;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding-left: 1.172vw;
+	padding-right: 1.172vw;
+	padding-bottom: 1.172vw;
+	padding-top: 0.781vw;
+	display: inline;
+	float: right;
 }
 .nav a:hover {
 	background-color: #ddd;
@@ -108,7 +141,7 @@ table {
 	margin-bottom: 15%;
 	background-color: white;
 	height: 19.531vw;
-	padding-top: 1.14vw;	
+	padding-top: 1.14vw;
 }
 .bigimage {
 	background: rgba(0, 0, 0, 0);
@@ -208,21 +241,6 @@ img {
 	padding: 0.391vw;
 	object-fit: cover;	
 }
-a {
-	font-family: "Lato", sans-serif;
-	color: #515151;
-	font-size: 1.246vw;
-	font-weight: normal;
-	margin: 0;
-	padding: 0;
-	display: inline;
-	float: right;
-	padding-left: 1.172vw;
-	padding-right: 1.172vw;
-	padding-bottom: 1.172vw;
-	padding-top: 0.781vw;
-	list-style-type: none;
-}
 a:link {
 	text-decoration: none;
 }
@@ -230,7 +248,6 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	background-color: #f6f6f6;
 	text-decoration: none;
 }
 a:active {
@@ -397,7 +414,8 @@ a:active {
 	.galimage {max-width: 8.7vw;}
 	.header {font-size: 2.825vw;}
 	img {border-radius: 2vw;}
-	a {font-size: 1.746vw;}
+	.header a {font-size: 1.746vw;}
+	.nav a {font-size: 1.746vw;}
 	#maintitle {font-size: 3.083vw;
 		max-width: 40.125vw;}
 	#title {font-size: 3.083vw;}
@@ -432,7 +450,8 @@ a:active {
 	.nav {height: 6vw; padding-top: 2vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
-	a {font-size: 2.946vw;}
+	.header a {font-size: 2.946vw;}
+	.nav a {font-size: 2.946vw;}
 	#maintitle {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
@@ -451,10 +470,11 @@ a:active {
 	.indeximage {max-width: 21.9vw;}
 	.showcaseimage {max-width: 21.9vw;}
 	.indexintro {height: 49.156vw;}
-	a {float: left; font-size: 4vw; padding-bottom: 2vw;}
+	.header a {float: left; font-size: 4vw; padding-bottom: 2vw;}
+	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 12.906vw;}
 	.banner {font-size: 12.875vw;}
-	.nav {height: 7vw; padding-top: 2.5vw;}
+	.nav {height: 7.5vw; padding-top: 2.5vw;}
 	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
@@ -496,7 +516,8 @@ a:active {
 	.showcaseimage {max-width: 21.8vw;}
 	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
-	a {font-size: 4vw; float: left;}
+	.header a {font-size: 4vw; float: left;}
+	.nav a {font-size: 4vw; float: left;}
 	#indexa {display: block;}
 	#maintitle {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}

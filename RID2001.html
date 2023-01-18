@@ -8,7 +8,6 @@
 <meta name="keywords" content="Robots in Disguise 2001, Robots in Disguise 2000 RID, RID2001, RID2000, toys, toy photography, photography">
 <meta charset="utf-8"> 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="magnific.css">
 <link rel="stylesheet" href="lightbox.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/theperfectpixl/LogoRID.png" type="image/png">
@@ -42,6 +41,12 @@ in a fascinating mishmash of styles. Hasbro imported <i>Car Robots</i> in 2001 t
 </div></div>
 
 <div class="body" id="rid"><br>
+<picture>
+<img class="ridimage" sizes="(min-width: 1200px) 300px, (min-width: 1080px) calc(14.01vw + 17px), 14.48vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/FireAction.webp 256w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size470/FireAction.webp 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/FireAction.webp 740w,
+https://ik.imagekit.io/theperfectpixl/tr:n-size940/FireAction.webp 940w" 
+src="https://ik.imagekit.io/theperfectpixl/FireAction.webp" height="400" width="300" onclick="openLightbox();toSlide(1)" alt="RID Optimus in an action pose.">
+</picture>
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/FireAction.webp" width="3024" height="4032">
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/FireSuper.webp" width="3024" height="4032">
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/FireSuperClose.webp" width="3024" height="4032">
@@ -64,8 +69,32 @@ in a fascinating mishmash of styles. Hasbro imported <i>Car Robots</i> in 2001 t
 <img class="ridimage" src="https://ik.imagekit.io/theperfectpixl/GigGriffin.webp" width="3024" height="4032">
 <br><br><br></div>
 
+<div id="Lightbox" class="modal" onclick="closeLightbox()">
+  <div class="modal-content">
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireAction.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireSuper.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireSuperClose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireSuperLadder.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireTruck.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/FireLadder.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XbrawnLeft.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XBrawnRight.webp" width="300" height="400" class="image-slide" alt=""/></div>   
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XbrawnClose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XbrawnCar.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XbrawnHood.webp" width="300" height="400" class="image-slide" alt=""/></div>  
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/XbrawnHead.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/MachSide.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/MachFront.webp" width="300" height="400" class="image-slide" alt=""/></div>   
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/MackBackClose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/MachCar.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GigArmSide.webp" width="300" height="400" class="image-slide" alt=""/></div> 
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GigDragon.webp" width="300" height="400" class="image-slide" alt=""/></div>
+	<div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GigDragonClose.webp" width="300" height="400" class="image-slide" alt=""/></div>
+    <div class="slide"><img src="https://ik.imagekit.io/theperfectpixl/GigGriffin.webp" width="300" height="400" class="image-slide" alt=""/></div>    
+  </div>
+</div>
+
 <script src="lightbox.js"></script>
 <script src="scripts.js"></script>
-<script src="magnific.js"></script>
 </body>
 </html>
