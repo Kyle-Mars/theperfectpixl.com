@@ -58,6 +58,7 @@ table {
 	padding: 3%;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+	z-index: 1;
 }
 .banner { 	
 	background-size: cover;
@@ -72,32 +73,19 @@ table {
 	font-weight: normal;
 	font-size: 1.563vw;
 }
-.dropdown {
-	position: relative;
-	display: inline-block;
-	float: right;
-}
-.dropdown-content {
-	position: absolute;
-	margin-left: -1.781vw;
-	margin-top: 3.116vw;
-	background-color: #f6f6f6;
-	min-width: 8.984vw;
-	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+.nav {
+	padding: 1%;
+	height: 3vw;
 	display: none;
+	position: sticky;
+	top: 9.9vw;
+	background-color: #f6f6f6;
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+	z-index: 0;
 }
-.dropdown-content a {
-	display: block;
-	width: 8.984vw;
-	text-align: center;
-}
-.dropdown-content a:hover {
+.nav a:hover {
 	background-color: #ddd;
-}
-.dropdown:hover .dropdown-content {
-	display: block;
-	text-align: left;
+	
 }
 .indexintro {
 	background-color: #f6f6f6;
@@ -224,7 +212,7 @@ img {
 a {
 	font-family: "Lato", sans-serif;
 	color: #515151;
-	font-size: 1.146vw;
+	font-size: 1.246vw;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
@@ -379,8 +367,6 @@ a:active {
 	.showcaseimage{width: 22vw;}
 	.ridimage {max-width: 16.1vw;}
 	.galimage {max-width: 8.7vw;}
-	.dropdown-content {margin-left: -.7vw;}
-	.dropdown-content a {width: 9.984vw;}
 	.bigimage {width: 71%;}
 }
 @media only screen and (max-width: 1280px) {
@@ -395,8 +381,6 @@ a:active {
 	.ridimage {max-width: 14.285vw;}
 	.galimage {max-width: 8.174vw;}
 	.header {font-size: 2.425vw;}
-	.dropdown-content {margin-left: -.141vw;}
-	.dropdown-content a {width: 8.984vw;}
 	a {font-size: 1.346vw;}
 }
 @media only screen and (max-width: 768px) {
@@ -413,8 +397,6 @@ a:active {
 	.ridimage {max-width: 16.3vw;}
 	.galimage {max-width: 8.7vw;}
 	.header {font-size: 2.825vw;}
-	.dropdown-content {margin-top: 3.916vw;}
-	.dropdown-content a {width: 11.984vw;}
 	img {border-radius: 2vw;}
 	a {font-size: 1.746vw;}
 	#maintitle {font-size: 3.083vw;
@@ -450,8 +432,6 @@ a:active {
 	.header {font-size: 3.225vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
-	.dropdown-content {margin-top: 5.016vw;}
-	.dropdown-content a {width: 16.984vw;}
 	a {font-size: 2.946vw;}
 	#maintitle {font-size: 3.083vw;
 		max-width: 75.125vw;}
@@ -470,13 +450,8 @@ a:active {
 	.galimage {max-width: 15.9vw;}
 	.indeximage {max-width: 21.9vw;}
 	.showcaseimage {max-width: 21.9vw;}
-	.dropdown-content{min-width: 19.5vw;
-		margin-left: -1.05vw;
-		margin-top: 6.5vw;}
-	.dropdown-content a {width: 24vw;}
 	.indexintro {height: 49.156vw;}
 	a {float: left; font-size: 4vw; padding-bottom: 2vw;}
-	.dropdown{float:left;}
 	.header {height: 12.906vw;}
 	.banner {font-size: 12.875vw;}
 	#indexa {display: block; font-size: 4.5vw;}
@@ -518,8 +493,6 @@ a:active {
 	.galimage {max-width: 15.9vw;}
 	.indeximage {max-width: 21.8vw;}
 	.showcaseimage {max-width: 21.8vw;}
-	.dropdown-content{margin-left: -1.4vw;}
-	.dropdown{float:left;}
 	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
 	a {font-size: 4vw; float: left;}
@@ -536,6 +509,5 @@ a:active {
 	.galimage {max-width: 15.8vw;}
 	.indeximage {max-width: 21.8vw;}
 	.showcaseimage {max-width: 21.8vw;}
-	
 }
 

@@ -9,6 +9,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="lightbox.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <link rel="preload" fetchpriority="high" as="image" href="https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp" type="image/webp">
 </head>
 <body>
@@ -16,16 +17,14 @@
 <div class="header"><a href="index.html" id="indexa">THE PERFECT PIXL</a>
 <a href="History.html">HISTORY</a>
 <a href="Showcase.html">SHOWCASE</a>
-<div class="dropdown">
-<a href="Gallery.html">GALLERIES&nbsp;&nbsp;&nbsp;&#9776;</a>
-<div class="dropdown-content">
-	<a href="Gallery.html">MAIN GALLERY</a>
-	<a href="WFC.html">WFC TRILOGY</a>
-	<a href="Animated.html" >ANIMATED</a>
-	<a href="RID2001.html">RID 2001</a>
-</div></div>
-
+<a href="javascript:void(0);" class="menu">GALLERIES&nbsp;&nbsp;&nbsp;&#9776;</a>
 </div> 
+<div class="nav">
+	<a href="WFC.html">WFC TRILOGY</a>
+	<a href="RID2001.html">RID 2001</a>
+	<a href="Animated.html">ANIMATED</a>
+	<a href="Gallery.html">MAIN</a>
+</div>
 
 <div class="banner" id="index">WELCOME!</div>
 
@@ -78,7 +77,7 @@ src="https://ik.imagekit.io/theperfectpixl/RodCommand.webp" height="400" onclick
   </div>
 </div>
 
-<script src="modernizr-custom.js"></script>
 <script src="lightbox.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
