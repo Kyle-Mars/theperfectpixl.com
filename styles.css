@@ -60,7 +60,12 @@ table {
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 	z-index: 1;
 }
-.header a {
+.logo{
+	width: 50%; 
+	margin-top: -2.5vw; 
+	margin-left: 0vw;
+}
+.link {
 	font-family: "Lato", sans-serif;
 	color: #515151;
 	font-size: 1.246vw;
@@ -75,7 +80,7 @@ table {
 	display: inline;
 	float: right;
 }
-.header a:hover{
+.link:hover{
 	background-color: #f6f6f6;
 }
 .banner { 	
@@ -281,20 +286,26 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#index {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/Skids2Guns.webp');
-	background-position: 100% 35%;
-	line-height: 23.438vw; 
-	height: 35.156vw; 
+#indexbanner {
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Bumblebee.gif');
+	background-position: 0% 40%; 
+	height: 29.2vw; 
 	padding-left: 3%;
-	
 }
-#showcase {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/VectorSword.webp');
-	background-position: 100% 21%;
-	line-height: 50.781vw; 
-	height: 35.156vw; 
-	padding-left: 3%;
+#indexicon {
+	width: 50%; 
+	margin-left: 22.5vw; 
+	margin-bottom: -13.5vw;
+}
+#showbanner {
+	background-image: url('https://ik.imagekit.io/theperfectpixl/OptimusMovie.gif');
+	background-position: 0% 23%;
+	height: 29.2vw;
+}
+#showicon {
+	width: 50%; 
+	margin-left: 25vw; 
+	margin-bottom: -13.5vw;
 }
 #bigimage {
 	background-color: white;
@@ -303,12 +314,18 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#gallery {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/SkywarpLib.webp');
-	background-position: 100% 60%;
-	line-height: 50.781vw; 
-	height: 35.156vw; 
-	padding-left: 70%;
+#galbanner {
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Cheetor.gif');
+	background-position: 0% 50%;
+	height: 29.2vw; 
+}
+#galicon {
+	width: 43%;
+	margin-bottom: -13.25vw;
+	margin-left: 27.75vw;
+}
+#introanim {
+	height: 23.156vw;
 }
 #animated {
 	background: rgba(0, 0, 0, 0);
@@ -325,6 +342,9 @@ a:active {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/Animated.gif'); 
 	background-size: cover;
 }
+#introwfc {
+	height: 30.250vw;
+}
 #wfc {
 	background: rgba(0, 0, 0, 0.05);
 	display: block;
@@ -336,10 +356,13 @@ a:active {
 #wfcbanner {
 	padding: 10%;
 	background-color: white;
-	height: 19.531vw;
+	height: 16.2vw;
 	padding-top: 3vw; 
 	background-image: url('https://ik.imagekit.io/theperfectpixl/WFC.gif'); 
 	background-size: cover;
+}
+#introrid {
+	height: 20.094vw;
 }
 #rid {
 	background-color: white;
@@ -355,21 +378,15 @@ a:active {
 	background-image: url('https://ik.imagekit.io/theperfectpixl/RID.gif'); 
 	background-size: cover;
 }
-#history {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/ThundersShoot.webp');
-	background-position: 100% 25%;
-	line-height: 15.625vw; 
-	height: 35.156vw; 
-	padding-left: 75%;
+#histbanner {
+	background-image: url('https://ik.imagekit.io/theperfectpixl/HotShot.gif');
+	background-position: 0% 23%; 
+	height: 29.2vw;
 }
-#introanim {
-	height: 23.156vw;
-}
-#introwfc {
-	height: 30.250vw;
-}
-#introrid {
-	height: 20.094vw;
+#histicon {
+	max-width: 40%; 
+	margin-left: 29.5vw; 
+	margin-bottom: -13.5vw;
 }
 #profile {
 	border-color: #f6f6f6;
