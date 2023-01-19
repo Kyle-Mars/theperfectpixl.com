@@ -3,7 +3,7 @@ $(document).ready(function(){
     $(".nav").toggle("0.5");
   });
   $(function () {
-    var parent = $("#rid, #bigimage");
+    var parent = $("#gen_image, #big_image");
     var divs = parent.children('a');
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
