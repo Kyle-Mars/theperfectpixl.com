@@ -413,8 +413,7 @@ a:active {
 		height: auto;
 		padding-bottom: 3vw;}
 	.intro {height: 38.969vw;}
-	.index_intro {height: 42.156vw;
-		margin-left: -35vw;}
+	
 	.gen_image {max-width: 16.1vw;}
 	.gal_image {max-width: 16.1vw;}
 	.index_image {max-width: 22.55vw;}
@@ -431,6 +430,8 @@ a:active {
 	#main_title {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
+	#index_intro {height: 42.156vw;
+		margin-left: -35vw;}
 	#anim_intro {height: 74.156vw;}
 	#wfc_intro {height: 100.250vw;}
 	#rid_intro {height: 63.094vw;}
@@ -446,7 +447,6 @@ a:active {
 	.gal_image {max-width: 15.9vw;}
 	.index_image {max-width: 21.9vw;}
 	.show_image {max-width: 21.9vw;}
-	.index_intro {height: 49.156vw;}
 	.link{display: block; font-size: 4vw; padding-bottom: 2vw;}
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 16.906vw;}
@@ -454,14 +454,11 @@ a:active {
 	.logo {width: 90%; margin-top: -2vw;}
 	#main_title {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
+	#index_intro {height: 49.156vw;}
 	#anim_intro {height: 76.156vw;}
 	#wfc_intro {height: 105.250vw;}
 	#rid_intro {height: 64.094vw;}
 	#hist_intro {height: 39.094vw;}
-	#index {text-align: left;
-		padding-top: 0%;
-		vertical-align: 20%;
-		height: 59.156vw;}
 	#index_icon {
 		width: 70%;
 		margin-left: 14.5vw;
