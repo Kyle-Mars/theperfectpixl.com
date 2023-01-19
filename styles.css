@@ -83,9 +83,6 @@ table {
 .link:hover{
 	background-color: #f6f6f6;
 }
-.banner { 
-	height: 29.2vw;
-}
 .navigation { 	
 	padding-left: 60%;
 	font-weight: normal;
@@ -120,14 +117,8 @@ table {
 .nav a:hover {
 	background-color: #ddd;
 }
-.indexintro {
-	background-color: #f6f6f6;
-	height: 28.125vw;
-	padding-left: 47%;
-	padding-top: 5%;
-	margin-bottom: 1%;
-	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
-		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+.banner { 
+	height: 29.2vw;
 }
 .intro {
 	background-color: #f6f6f6;
@@ -144,41 +135,12 @@ table {
 	height: 19.531vw;
 	padding-top: 1.14vw;
 }
-.bigimage {
+.big_image {
 	background: rgba(0, 0, 0, 0);
 	display: block;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-}
-.histright {
-	max-width: 35.156vw;
-	margin-bottom: 3.563vw;
-	height: 28.125vw;
-	padding-left: 50%;
-}
-.histleft {
-	max-width: 35.156vw;
-	margin-bottom: 3.563vw;
-	height: 28.125vw;
-	padding-left: 5%;
-}
-.indextext {
-	font-family: "Droid Sans", "Open Sans", sans-serif;
-	color: #515151;
-	line-height: 175%;
-	font-size: 1.354vw;
-	max-width: 36.0625vw;
-	text-align: left;
-	padding-top: 7%;
-}
-.histtext {
-	font-family: "Droid Sans", "Open Sans", sans-serif;
-	color: #515151;
-	line-height: 175%;
-	font-size: 1.146vw;
-	text-align: left;
-	padding-top: 7%;
 }
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
@@ -190,49 +152,71 @@ table {
 	padding-top: 5%;
 	text-indent: 1em;
 }
-.indeximage {
-	margin-right: auto;
-	margin-top: 2.734vw;
-	max-width: 22vw;
+.index_text {
+	font-family: "Droid Sans", "Open Sans", sans-serif;
+	color: #515151;
+	line-height: 175%;
+	font-size: 1.354vw;
+	max-width: 36.0625vw;
+	text-align: left;
+	padding-top: 7%;
+}
+.hist_text {
+	font-family: "Droid Sans", "Open Sans", sans-serif;
+	color: #515151;
+	line-height: 175%;
+	font-size: 1.146vw;
+	text-align: left;
+	padding-top: 7%;
+}
+.hist_right {
+	max-width: 35.156vw;
+	margin-bottom: 3.563vw;
+	height: 28.125vw;
+	padding-left: 50%;
+}
+.hist_image_r {
+	float: right;
+	margin-right: -35.156vw;
+	margin-top: 1.563vw;
+	max-width: 19.3vw;
 	height: auto;
 }
-.showcaseimage {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 22vw;
-	height: auto;
+.hist_left {
+	max-width: 35.156vw;
+	margin-bottom: 3.563vw;
+	height: 28.125vw;
+	padding-left: 5%;
 }
-.ridimage {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 16.2vw;
-	height: auto;
-}
-.rid {
-	background: rgba(0, 0, 0, 0);
-	display: block;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.galimage {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 8.785vw;
-	height: auto;
-}
-.histimageleft {
+.hist_image_l {
 	float:left;
 	margin-left: -35.156vw;
 	margin-top: 1.563vw;
 	max-width: 19.3vw;
 	height: auto;
 }
-.histimageright {
-	float: right;
-	margin-right: -35.156vw;
-	margin-top: 1.563vw;
-	max-width: 19.3vw;
+.index_image {
+	margin-right: auto;
+	margin-top: 2.734vw;
+	max-width: 22vw;
+	height: auto;
+}
+.show_image {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 22vw;
+	height: auto;
+}
+.gal_image {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 8.785vw;
+	height: auto;
+}
+.gen_image {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 16.2vw;
 	height: auto;
 }
 img {	
@@ -253,17 +237,14 @@ a:hover {
 a:active {
 	text-decoration: none;
 }
-#indexa{
-	color: black;
-	font-weight: bold;
-	margin-left: -1.172vw;
-	font-size: 100%;
-	float: none;
+#profile {
+	border-color: #f6f6f6;
+	border-radius: 1000px;
+	float: left;
+	margin-top: -0.391vw;
+	margin-left: -35.156vw;
 }
-#indexa:hover{
-	background-color: white;
-}
-#maintitle {	
+#main_title {	
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
@@ -281,70 +262,79 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#indexicon {
+#index_intro {
+	background-color: #f6f6f6;
+	height: 28.125vw;
+	padding-left: 47%;
+	padding-top: 5%;
+	margin-bottom: 1%;
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
+		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+}
+#index_icon {
 	width: 50%; 
 	position: absolute;
 	margin-left: 24vw; 
 	margin-top: 9vw;
 }
-#showicon {
+#show_icon {
 	width: 50%; 
 	position: absolute;
 	margin-left: 24.5vw; 
 	margin-top: 9vw;
 }
-#bigimage {
+#big_image {
 	background-color: white;
 	display: block;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
-#galicon {
+#gen_image {
+	background-color: white;
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#gali_con {
 	width: 43%;
 	position: absolute;
 	margin-top: 9.3vw;
 	margin-left: 27.75vw;
 }
-#introanim {
+#anim_intro {
 	height: 23.156vw;
 }
-#animatedicon {
+#anim_icon {
 	width: 40%;
 	margin-top: 5vw;
 	margin-left: 29vw;
 	position: absolute;
 }
-#introwfc {
+#wfc_intro {
 	height: 30.250vw;
 }
-#wfcicon {
+#wfc_icon {
 	width: 40%;
 	margin-top: 7vw;
 	margin-left: 29.5vw;
 	position: absolute;
 }
-#introrid {
+#rid_intro {
 	height: 20.094vw;
 }
-#ridicon {
+#rid_icon {
 	width: 50%;
 	margin-top: 2.5vw;
 	margin-left: 25vw;
 	position: absolute;
 }
-#histicon {
+#hist_icon {
 	width: 40%; 
 	position: absolute;
 	margin-left: 29.5vw; 
 	margin-top: 9vw;
-}
-#profile {
-	border-color: #f6f6f6;
-	border-radius: 1000px;
-	float: left;
-	margin-top: -0.391vw;
-	margin-left: -35.156vw;
 }
 #bannervideo {
   width: 100%;
@@ -364,137 +354,137 @@ a:active {
 	url('Bebas-Regular.svg') format('svg');
 }
 @media only screen and (max-width: 1600px) {
-	.indeximage{width: 22vw;}
-	.showcaseimage{width: 22vw;}
-	.ridimage {max-width: 16.1vw;}
-	.galimage {max-width: 8.7vw;}
-	.bigimage {width: 71%;}
+	.index_image{width: 22vw;}
+	.show_image{width: 22vw;}
+	.gen_image {max-width: 16.1vw;}
+	.gal_image {max-width: 8.7vw;}
+	.big_image {width: 71%;}
 }
 @media only screen and (max-width: 1280px) {
 }
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
-	.indextext {font-size: 1.3vw;}
-	.histtext {font-size: 1.3vw;}
-	.histleft {height: auto;}
-	.histright {height: auto;}
+	.index_text {font-size: 1.3vw;}
+	.hist_text {font-size: 1.3vw;}
+	.hist_left {height: auto;}
+	.hist_right {height: auto;}
 	.intro {height: 14.969vw;}
-	.ridimage {max-width: 14.285vw;}
-	.galimage {max-width: 8.174vw;}
+	.gen_image {max-width: 14.285vw;}
+	.gal_image {max-width: 8.174vw;}
 	.header {font-size: 2.425vw;}
 	a {font-size: 1.346vw;}
 }
 @media only screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
-	.indextext {font-size: 1.7vw;}
+	.index_text {font-size: 1.7vw;}
 	.intro {height: 21.969vw;}
-	.histtext {font-size: 1.7vw;}
-	.histleft { height: auto;
+	.hist_text {font-size: 1.7vw;}
+	.hist_left { height: auto;
 		padding-bottom: 1vw;}
-	.histright {height: auto;
+	.hist_right {height: auto;
 		padding-bottom: 1vw;}
 	.intro {height: 20.969vw;}
-	.indexintro {height: 39.156vw;}
-	.ridimage {max-width: 16.3vw;}
-	.galimage {max-width: 8.7vw;}
+	.index_intro {height: 39.156vw;}
+	.gen_image {max-width: 16.3vw;}
+	.gal_image {max-width: 8.7vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
 	.nav a {font-size: 1.746vw;}
-	#maintitle {font-size: 3.083vw;
+	#main_title {font-size: 3.083vw;
 		max-width: 40.125vw;}
 	#title {font-size: 3.083vw;}
-	#introanim {height: 38.156vw;}
-	#introwfc {height: 47.250vw;}
-	#introrid {height: 32.094vw;}
-	#introhist {height: 22.094vw;}
+	#anim_intro {height: 38.156vw;}
+	#wfc_intro {height: 47.250vw;}
+	#rid_intro {height: 32.094vw;}
+	#hist_intro {height: 22.094vw;}
 	#profile {max-width: 30vw;}
 } 
 @media only screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
-	.indextext {font-size: 2.854vw;
+	.index_text {font-size: 2.854vw;
 		max-width: 75.125vw;}
-	.histtext {font-size: 2.554vw;}
-	.histleft {margin-right: -36vw; 
+	.hist_text {font-size: 2.554vw;}
+	.hist_left {margin-right: -36vw; 
 		max-width: 75.125vw; 
 		height: auto;
 		padding-bottom: 3vw;}
-	.histright {margin-left: -36vw; 
+	.hist_right {margin-left: -36vw; 
 		max-width: 75.125vw; 
 		height: auto;
 		padding-bottom: 3vw;}
 	.intro {height: 38.969vw;}
-	.indexintro {height: 42.156vw;
+	.index_intro {height: 42.156vw;
 		margin-left: -35vw;}
-	.ridimage {max-width: 16.1vw;}
-	.galimage {max-width: 16.1vw;}
-	.indeximage {max-width: 22.55vw;}
-	.showcaseimage {max-width: 22.55vw;}
+	.gen_image {max-width: 16.1vw;}
+	.gal_image {max-width: 16.1vw;}
+	.index_image {max-width: 22.55vw;}
+	.show_image {max-width: 22.55vw;}
 	.header {font-size: 3.225vw;}
 	.nav {height: 6vw; padding-top: 2vw;}
-	.histimageleft {display: none;}
-	.histimageright {display: none;}
+	.hist_image_l {display: none;}
+	.hist_image_r {display: none;}
 	.link {font-size: 2.946vw; float: left;}
 	.header {height: 16.906vw;}
 	.nav a {font-size: 2.946vw; margin-right: 2vw;}
 	.nav {height: 11vw; padding-top: 2.5vw; top: 8vw; text-align: center; padding-right: 1vw;}
 	.logo {float: left; width: 90%; margin-left: -3vw; padding-bottom: 0vw; margin-top: -2vw;}
-	#maintitle {font-size: 3.083vw;
+	#main_title {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
-	#introanim {height: 74.156vw;}
-	#introwfc {height: 100.250vw;}
-	#introrid {height: 63.094vw;}
-	#introhist {height: 39.094vw;}
+	#anim_intro {height: 74.156vw;}
+	#wfc_intro {height: 100.250vw;}
+	#rid_intro {height: 63.094vw;}
+	#hist_intro {height: 39.094vw;}
 	#profile {display: none;}
 	#bannervideo {height: 42.2vw;}
 }
 @media only screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
-	.indextext {font-size: 2.899vw;}
-	.histtext {font-size: 2.899vw;}
-	.ridimage {max-width: 15.9vw;}
-	.galimage {max-width: 15.9vw;}
-	.indeximage {max-width: 21.9vw;}
-	.showcaseimage {max-width: 21.9vw;}
-	.indexintro {height: 49.156vw;}
+	.index_text {font-size: 2.899vw;}
+	.hist_text {font-size: 2.899vw;}
+	.gen_image {max-width: 15.9vw;}
+	.gal_image {max-width: 15.9vw;}
+	.index_image {max-width: 21.9vw;}
+	.show_image {max-width: 21.9vw;}
+	.index_intro {height: 49.156vw;}
 	.link{display: block; font-size: 4vw; padding-bottom: 2vw;}
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 16.906vw;}
 	.nav {height: 26vw; padding-top: 2vw; padding-bottom: 3vw; top: 23vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
 	.logo {width: 90%; margin-top: -2vw;}
-	#maintitle {font-size: 3.583vw;}
+	#main_title {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
-	#introanim {height: 76.156vw;}
-	#introwfc {height: 105.250vw;}
-	#introrid {height: 64.094vw;}
-	#introhist {height: 39.094vw;}
+	#anim_intro {height: 76.156vw;}
+	#wfc_intro {height: 105.250vw;}
+	#rid_intro {height: 64.094vw;}
+	#hist_intro {height: 39.094vw;}
 	#index {text-align: left;
 		padding-top: 0%;
 		vertical-align: 20%;
 		height: 59.156vw;}
-	#indexicon {
+	#index_icon {
 		width: 70%;
 		margin-left: 14.5vw;
 		margin-top: 6vw;}
-	#histicon {
+	#hist_icon {
 		width: 55%;
 		margin-left: 22vw;
 		margin-top: 7vw;}
-	#galicon {
+	#gal_icon {
 		width: 55%;
 		margin-left: 22vw;
 		margin-top: 7vw;}
-	#showicon {
+	#show_icon {
 		width: 70%;
 		margin-left: 14.5vw;
 		margin-top: 6vw;
 	}
-	#animatedicon {}
-	#wfcicon {
+	#animated_icon {}
+	#wfc_icon {
 		width: 45%;
 		margin-top: 7vw;
 		margin-left: 27.5vw;}
-	#ridicon {
+	#rid_icon {
 		width: 55%;
 		margin-top: 2.5vw;
 		margin-left: 22vw;}
@@ -505,7 +495,7 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 16.906vw;}
-	.ridimage {max-width: 18.9vw;}
+	.gen_image {max-width: 18.9vw;}
 	.galimage {max-width: 18.9vw;}
 	.indeximage {max-width: 21.8vw;}
 	.showcaseimage {max-width: 21.8vw;}
@@ -513,18 +503,17 @@ a:active {
 	.intro {height: 49.969vw;}
 	.link{ padding-top: 1vw;}
 	.nav a {font-size: 4vw; float: left;}
-	#indexa {display: block;}
-	#maintitle {font-size: 3.983vw;}
+	#main_title {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
-	#introanim {height: 103.156vw;}
-	#introwfc {height: 132.250vw;}
-	#introrid {height: 84.094vw;}
-	#introhist {height: 50.094vw;}
+	#anim_intro {height: 103.156vw;}
+	#wfc_intro {height: 132.250vw;}
+	#rid_intro {height: 84.094vw;}
+	#hist_intro {height: 50.094vw;}
 }
 @media only screen and (max-width: 360px) {
-	.ridimage {max-width: 25.6vw;}
-	.galimage {max-width: 25.6vw;}
-	.indeximage {max-width: 25.6vw;}
-	.showcaseimage {max-width: 25.6vw;}
+	.gen_image {max-width: 25.6vw;}
+	.gal_image {max-width: 25.6vw;}
+	.index_image {max-width: 25.6vw;}
+	.show_image {max-width: 25.6vw;}
 }
 
