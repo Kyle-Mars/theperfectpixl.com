@@ -286,9 +286,7 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#indexbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/Bumblebee.gif');
-	background-position: 0% 40%; 
+#indexbanner { 
 	height: 29.2vw; 
 	padding-left: 3%;
 }
@@ -298,8 +296,6 @@ a:active {
 	margin-bottom: -13.5vw;
 }
 #showbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/OptimusFilm.gif');
-	background-position: 0% 23%;
 	height: 29.2vw;
 }
 #showicon {
@@ -315,8 +311,6 @@ a:active {
 	margin-right: auto;
 }
 #galbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/Cheetor.gif');
-	background-position: 0% 50%;
 	height: 29.2vw; 
 }
 #galicon {
@@ -379,8 +373,6 @@ a:active {
 	background-size: cover;
 }
 #histbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/HotShot.gif');
-	background-position: 0% 23%; 
 	height: 29.2vw;
 }
 #histicon {
@@ -394,6 +386,17 @@ a:active {
 	float: left;
 	margin-top: -0.391vw;
 	margin-left: -35.156vw;
+}
+#bannervideo {
+  width: 100%;
+  height: 39.2vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10vw;
+  bottom: 0;
+  z-index: -1;
 }
 @font-face{
 	font-family: Bebas;
@@ -471,12 +474,11 @@ a:active {
 	.nav {height: 6vw; padding-top: 2vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
-	.link {font-size: 3.546vw; float: left; padding-bottom: 2vw; margin-top: -2vw;}
+	.link {font-size: 2.946vw; float: left;}
 	.header {height: 16.906vw;}
 	.nav a {font-size: 2.946vw; margin-right: 2vw;}
 	.nav {height: 11vw; padding-top: 2.5vw; top: 8vw; text-align: center; padding-right: 1vw;}
-	.logo { width: 80%; margin-left: -2vw; padding-bottom: 0vw; margin-top: .5vw;
-	}
+	.logo {float: left; width: 90%; margin-left: -3vw; padding-bottom: 0vw; margin-top: -2vw;}
 	#maintitle {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
@@ -485,6 +487,7 @@ a:active {
 	#introrid {height: 63.094vw;}
 	#introhist {height: 39.094vw;}
 	#profile {display: none;}
+	#bannervideo {height: 42.2vw;}
 }
 @media only screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
@@ -501,7 +504,6 @@ a:active {
 	.banner {font-size: 8.575vw;}
 	.nav {height: 26vw; padding-top: 2vw; padding-bottom: 3vw; top: 23vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
 	.logo {width: 90%; margin-top: -2vw;}
-	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
 	#introanim {height: 76.156vw;}
