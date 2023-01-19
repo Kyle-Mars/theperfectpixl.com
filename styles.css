@@ -500,6 +500,7 @@ a:active {
 	.header {height: 16.906vw;}
 	.banner {font-size: 8.575vw;}
 	.nav {height: 27vw; padding-top: 2.5vw; top: 18vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
+	.logo {width: 100%;}
 	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
