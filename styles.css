@@ -83,13 +83,8 @@ table {
 .link:hover{
 	background-color: #f6f6f6;
 }
-.banner { 	
-	background-size: cover;
-	color: white; 
-	font-family: "Bebas", Bebas, sans-serif;
-	font-weight: bold;
-	font-size: 6.875vw;
-	text-shadow: 0 0.391vw 0.391vw rgba(0, 0, 0, 0.5);
+.banner { 
+	height: 29.2vw;
 }
 .navigation { 	
 	padding-left: 60%;
@@ -286,22 +281,17 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#indexbanner { 
-	height: 29.2vw; 
-	padding-left: 3%;
-}
 #indexicon {
 	width: 50%; 
-	margin-left: 22.5vw; 
-	margin-bottom: -13.5vw;
-}
-#showbanner {
-	height: 29.2vw;
+	position: absolute;
+	margin-left: 24vw; 
+	margin-top: 9vw;
 }
 #showicon {
 	width: 50%; 
-	margin-left: 25vw; 
-	margin-bottom: -13.5vw;
+	position: absolute;
+	margin-left: 24.5vw; 
+	margin-top: 9vw;
 }
 #bigimage {
 	background-color: white;
@@ -310,68 +300,44 @@ a:active {
 	margin-left: auto;
 	margin-right: auto;
 }
-#galbanner {
-	height: 29.2vw; 
-}
 #galicon {
 	width: 43%;
-	margin-bottom: -13.25vw;
+	position: absolute;
+	margin-top: 9.3vw;
 	margin-left: 27.75vw;
 }
 #introanim {
 	height: 23.156vw;
 }
-#animated {
-	background: rgba(0, 0, 0, 0);
-	display: block;
-	width: 50%;
-	margin-top: 1.563vw;
-	margin-left: auto;
-	margin-right: auto;
-}
-#animatedbanner {
-	padding: 10%;
-	height: 16.250vw; 
-	padding-top: 3vw; 
+#animatedicon {
+	width: 40%;
+	margin-top: 5vw;
+	margin-left: 29vw;
+	position: absolute;
 }
 #introwfc {
 	height: 30.250vw;
 }
-#wfc {
-	background: rgba(0, 0, 0, 0.05);
-	display: block;
-	width: 50%;
-	margin-top: 4.63vw;
-	margin-left: auto;
-	margin-right: auto;
-}
-#wfcbanner {
-	padding: 10%;
-	height: 16.2vw;
-	padding-top: 3vw; 
+#wfcicon {
+	width: 40%;
+	margin-top: 7vw;
+	margin-left: 29.5vw;
+	position: absolute;
 }
 #introrid {
 	height: 20.094vw;
 }
-#rid {
-	background-color: white;
-	display: block;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-}
-#ridbanner {
-	padding: 10%;
-	height: 16.250vw; 
-	padding-top: 3vw;  
-}
-#histbanner {
-	height: 29.2vw;
+#ridicon {
+	width: 50%;
+	margin-top: 2.5vw;
+	margin-left: 25vw;
+	position: absolute;
 }
 #histicon {
 	width: 40%; 
+	position: absolute;
 	margin-left: 29.5vw; 
-	margin-bottom: -13.5vw;
+	margin-top: 9vw;
 }
 #profile {
 	border-color: #f6f6f6;
@@ -382,12 +348,13 @@ a:active {
 }
 #bannervideo {
   width: 100%;
-  height: 39.2vw;
+  height: 29.2vw;
   object-fit: cover;
-  position: absolute;
+  position: relative;
+  display: inline;
   left: 0;
   right: 0;
-  top: 10vw;
+  top: 0;
   bottom: 0;
   z-index: -1;
 }
@@ -458,7 +425,6 @@ a:active {
 	.intro {height: 38.969vw;}
 	.indexintro {height: 42.156vw;
 		margin-left: -35vw;}
-	.banner {text-shadow: none;}
 	.ridimage {max-width: 16.1vw;}
 	.galimage {max-width: 16.1vw;}
 	.indeximage {max-width: 22.55vw;}
@@ -494,7 +460,6 @@ a:active {
 	.link{display: block; font-size: 4vw; padding-bottom: 2vw;}
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 16.906vw;}
-	.banner {font-size: 8.575vw;}
 	.nav {height: 26vw; padding-top: 2vw; padding-bottom: 3vw; top: 23vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
 	.logo {width: 90%; margin-top: -2vw;}
 	#maintitle {font-size: 3.583vw;}
@@ -505,22 +470,34 @@ a:active {
 	#introhist {height: 39.094vw;}
 	#index {text-align: left;
 		padding-top: 0%;
-		background-position: 100% 25%;
 		vertical-align: 20%;
 		height: 59.156vw;}
 	#indexicon {
 		width: 70%;
-		margin-left: 12.5vw;}
+		margin-left: 14.5vw;
+		margin-top: 6vw;}
 	#histicon {
 		width: 55%;
-		margin-left: 22vw;}
+		margin-left: 22vw;
+		margin-top: 7vw;}
 	#galicon {
 		width: 55%;
-		margin-left: 22vw;}
+		margin-left: 22vw;
+		margin-top: 7vw;}
 	#showicon {
 		width: 70%;
-		margin-left: 13.75vw;
+		margin-left: 14.5vw;
+		margin-top: 6vw;
 	}
+	#animatedicon {}
+	#wfcicon {
+		width: 45%;
+		margin-top: 7vw;
+		margin-left: 27.5vw;}
+	#ridicon {
+		width: 55%;
+		margin-top: 2.5vw;
+		margin-left: 22vw;}
 }
 @media only screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
@@ -528,8 +505,8 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 16.906vw;}
-	.ridimage {max-width: 15.9vw;}
-	.galimage {max-width: 15.9vw;}
+	.ridimage {max-width: 18.9vw;}
+	.galimage {max-width: 18.9vw;}
 	.indeximage {max-width: 21.8vw;}
 	.showcaseimage {max-width: 21.8vw;}
 	.indexintro {height: 55.156vw;}
@@ -541,13 +518,13 @@ a:active {
 	#title {font-size: 3.983vw;}
 	#introanim {height: 103.156vw;}
 	#introwfc {height: 132.250vw;}
-	#introrid {height: 64.094vw;}
+	#introrid {height: 84.094vw;}
 	#introhist {height: 50.094vw;}
 }
 @media only screen and (max-width: 360px) {
-	.ridimage {max-width: 15.8vw;}
-	.galimage {max-width: 15.8vw;}
-	.indeximage {max-width: 21.8vw;}
-	.showcaseimage {max-width: 21.8vw;}
+	.ridimage {max-width: 25.6vw;}
+	.galimage {max-width: 25.6vw;}
+	.indeximage {max-width: 25.6vw;}
+	.showcaseimage {max-width: 25.6vw;}
 }
 
