@@ -298,7 +298,7 @@ a:active {
 	margin-bottom: -13.5vw;
 }
 #showbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/OptimusMovie.gif');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/OptimusFilm.gif');
 	background-position: 0% 23%;
 	height: 29.2vw;
 }
@@ -315,7 +315,7 @@ a:active {
 	margin-right: auto;
 }
 #galbanner {
-	background-image: url('https://ik.imagekit.io/theperfectpixl/Cheetor.gif');
+	background-image: url('https://ik.imagekit.io/theperfectpixl/Cheetor.gf');
 	background-position: 0% 50%;
 	height: 29.2vw; 
 }
@@ -384,7 +384,7 @@ a:active {
 	height: 29.2vw;
 }
 #histicon {
-	max-width: 40%; 
+	width: 40%; 
 	margin-left: 29.5vw; 
 	margin-bottom: -13.5vw;
 }
@@ -471,9 +471,12 @@ a:active {
 	.nav {height: 6vw; padding-top: 2vw;}
 	.histimageleft {display: none;}
 	.histimageright {display: none;}
-	.header a {font-size: 2.946vw;}
+	.header a {font-size: 3.546vw; float: left; padding-bottom: 2vw; margin-top: -2vw;}
+	.header {height: 16.906vw;}
 	.nav a {font-size: 2.946vw; margin-right: 2vw;}
 	.nav {height: 11vw; padding-top: 2.5vw; top: 8vw; text-align: center; padding-right: 1vw;}
+	.logo { width: 80%; margin-left: -2vw; padding-bottom: 0vw; margin-top: .5vw;
+	}
 	#maintitle {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
@@ -494,8 +497,8 @@ a:active {
 	.indexintro {height: 49.156vw;}
 	.header a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
-	.header {height: 12.906vw;}
-	.banner {font-size: 12.875vw;}
+	.header {height: 16.906vw;}
+	.banner {font-size: 8.575vw;}
 	.nav {height: 27vw; padding-top: 2.5vw; top: 18vw; text-align: center; padding-left: 3vw; padding-right: 15vw;}
 	#indexa {display: block; font-size: 4.5vw;}
 	#maintitle {font-size: 3.583vw;}
@@ -509,29 +512,26 @@ a:active {
 		background-position: 100% 25%;
 		vertical-align: 20%;
 		height: 59.156vw;}
-	#history {text-align: left;
-		padding-top: 2.5%;
-		padding-left: 55vw;
-		background-position: 100% 5%;
-		vertical-align: 20%;
-		height: 59.156vw;}
-	#gallery {text-align: left;
-		padding-left: 5%;
-		background-position: 100% 55%;
-		line-height: 25.781vw; 
-		height: 59.156vw;}
-	#showcase {text-align: left;
-		padding-left: 5%;
-		background-position: 100% 0%;
-		line-height: 25.781vw; 
-		height: 59.156vw;}
+	#indexicon {
+		width: 70%;
+		margin-left: 12.5vw;}
+	#histicon {
+		width: 55%;
+		margin-left: 22vw;}
+	#galicon {
+		width: 55%;
+		margin-left: 22vw;}
+	#showicon {
+		width: 70%;
+		margin-left: 13.75vw;
+	}
 }
 @media only screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
 	.indextext {font-size: 3.343vw;}
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
-		height: 12.906vw;}
+		height: 16.906vw;}
 	.ridimage {max-width: 15.9vw;}
 	.galimage {max-width: 15.9vw;}
 	.indeximage {max-width: 21.8vw;}
