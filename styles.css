@@ -119,6 +119,9 @@ table {
 }
 .banner { 
 	height: 29.2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .intro {
 	background-color: #f6f6f6;
@@ -134,13 +137,6 @@ table {
 	background-color: white;
 	height: 19.531vw;
 	padding-top: 1.14vw;
-}
-.big_image {
-	background: rgba(0, 0, 0, 0);
-	display: block;
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
 }
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
@@ -195,33 +191,14 @@ table {
 	max-width: 19.3vw;
 	height: auto;
 }
-.index_image {
-	margin-right: auto;
-	margin-top: 2.734vw;
-	max-width: 22vw;
-	height: auto;
-}
-.show_image {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 22vw;
-	height: auto;
-}
-.gal_image {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 8.785vw;
-	height: auto;
-}
-.gen_image {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 16.2vw;
-	height: auto;
-}
+.index_image {max-width: 22vw;}
+.show_image {max-width: 22vw;}
+.gal_image {max-width: 13vw;}
+.gen_image {max-width: 16vw;}
 img {	
 	aspect-ratio: auto 300 / 400;
 	border-style: none;
+	height: auto;
 	padding: 0.391vw;
 	object-fit: cover;
 }
@@ -273,72 +250,57 @@ a:active {
 }
 #index_icon {
 	width: 50%; 
-	position: absolute;
-	margin-left: 24vw; 
-	margin-top: 9vw;
-}
+	position: absolute;}
 #show_icon {
 	width: 50%; 
-	position: absolute;
-	margin-left: 24.5vw; 
-	margin-top: 9vw;
-}
+	position: absolute;}
 #big_image {
 	background-color: white;
-	display: block;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 #gen_image {
 	background-color: white;
-	display: block;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
 #gal_icon {
 	width: 43%;
-	position: absolute;
-	margin-top: 9.3vw;
-	margin-left: 27.75vw;
-}
+	position: absolute;}
 #anim_intro {
 	height: 23.156vw;
 }
 #anim_icon {
 	width: 40%;
-	margin-top: 5vw;
-	margin-left: 29vw;
-	position: absolute;
-}
+	position: absolute;}
 #wfc_intro {
 	height: 30.250vw;
 }
 #wfc_icon {
 	width: 40%;
-	margin-top: 7vw;
-	margin-left: 29.5vw;
-	position: absolute;
-}
+	position: absolute;}
 #rid_intro {
 	height: 20.094vw;
 }
 #rid_icon {
 	width: 50%;
-	margin-top: 2.5vw;
-	margin-left: 25vw;
-	position: absolute;
-}
+	position: absolute;}
 #hist_icon {
 	width: 40%; 
-	position: absolute;
-	margin-left: 29.5vw; 
-	margin-top: 9vw;
-}
+	position: absolute;}
 #bannervideo {
   width: 100%;
-  height: 29.2vw;
+  height: 29vw;
   object-fit: cover;
   position: relative;
   display: inline;
@@ -353,15 +315,7 @@ a:active {
 	src: url('Bebas-Regular.ttf') format('truetype'), url('Bebas-Regular.eot') format('eot'), url('Bebas-Regular.otf') format('otf'), url('Bebas-Regular.woff') format('woff'),
 	url('Bebas-Regular.svg') format('svg');
 }
-@media only screen and (max-width: 1600px) {
-	.index_image{width: 22vw;}
-	.show_image{width: 22vw;}
-	.gen_image {max-width: 16.1vw;}
-	.gal_image {max-width: 8.7vw;}
-	.big_image {width: 71%;}
-}
-@media only screen and (max-width: 1280px) {
-}
+@media only screen and (max-width: 1600px) {}
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
 	.index_text {font-size: 1.3vw;}
@@ -369,14 +323,12 @@ a:active {
 	.hist_left {height: auto;}
 	.hist_right {height: auto;}
 	.intro {height: 14.969vw;}
-	.gen_image {max-width: 14.285vw;}
-	.gal_image {max-width: 8.174vw;}
 	.header {font-size: 2.425vw;}
 	a {font-size: 1.346vw;}
 }
 @media only screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
-	.index_text {font-size: 1.7vw;}
+	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
 	.intro {height: 21.969vw;}
 	.hist_text {font-size: 1.7vw;}
 	.hist_left { height: auto;
@@ -384,20 +336,17 @@ a:active {
 	.hist_right {height: auto;
 		padding-bottom: 1vw;}
 	.intro {height: 20.969vw;}
-	.index_intro {height: 39.156vw;}
-	.gen_image {max-width: 16.3vw;}
-	.gal_image {max-width: 8.7vw;}
+	.index_intro {height: 79.156vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
 	.nav a {font-size: 1.746vw;}
-	#main_title {font-size: 3.083vw;
-		max-width: 40.125vw;}
+	#main_title {font-size: 2.5vw;
+		max-width: 50.125vw;}
 	#title {font-size: 3.083vw;}
 	#anim_intro {height: 38.156vw;}
 	#wfc_intro {height: 47.250vw;}
 	#rid_intro {height: 32.094vw;}
 	#hist_intro {height: 22.094vw;}
-	#profile {max-width: 30vw;}
 } 
 @media only screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
@@ -413,11 +362,6 @@ a:active {
 		height: auto;
 		padding-bottom: 3vw;}
 	.intro {height: 38.969vw;}
-	
-	.gen_image {max-width: 16.1vw;}
-	.gal_image {max-width: 16.1vw;}
-	.index_image {max-width: 22.55vw;}
-	.show_image {max-width: 22.55vw;}
 	.header {font-size: 3.225vw;}
 	.nav {height: 6vw; padding-top: 2vw;}
 	.hist_image_l {display: none;}
@@ -443,10 +387,6 @@ a:active {
 	.text {font-size: 2.899vw;}
 	.index_text {font-size: 2.899vw;}
 	.hist_text {font-size: 2.899vw;}
-	.gen_image {max-width: 15.9vw;}
-	.gal_image {max-width: 15.9vw;}
-	.index_image {max-width: 21.9vw;}
-	.show_image {max-width: 21.9vw;}
 	.link{display: block; font-size: 4vw; padding-bottom: 2vw;}
 	.nav a {float: left; font-size: 4vw; padding-bottom: 2vw;}
 	.header {height: 16.906vw;}
@@ -459,32 +399,12 @@ a:active {
 	#wfc_intro {height: 105.250vw;}
 	#rid_intro {height: 64.094vw;}
 	#hist_intro {height: 39.094vw;}
-	#index_icon {
-		width: 70%;
-		margin-left: 14.5vw;
-		margin-top: 6vw;}
-	#hist_icon {
-		width: 55%;
-		margin-left: 22vw;
-		margin-top: 7vw;}
-	#gal_icon {
-		width: 55%;
-		margin-left: 22vw;
-		margin-top: 7vw;}
-	#show_icon {
-		width: 70%;
-		margin-left: 14.5vw;
-		margin-top: 6vw;
-	}
-	#animated_icon {}
-	#wfc_icon {
-		width: 45%;
-		margin-top: 7vw;
-		margin-left: 27.5vw;}
-	#rid_icon {
-		width: 55%;
-		margin-top: 2.5vw;
-		margin-left: 22vw;}
+	#index_icon {width: 70%;}
+	#hist_icon {width: 55%;}
+	#gal_icon {width: 55%;}
+	#show_icon {width: 70%;}
+	#wfc_icon {width: 45%;}
+	#rid_icon {width: 55%;}
 }
 @media only screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
@@ -492,10 +412,6 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 16.906vw;}
-	.gen_image {max-width: 18.9vw;}
-	.galimage {max-width: 18.9vw;}
-	.index_image {max-width: 21.8vw;}
-	.show_image {max-width: 21.8vw;}
 	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
 	.link{ padding-top: 1vw;}
@@ -507,10 +423,5 @@ a:active {
 	#rid_intro {height: 84.094vw;}
 	#hist_intro {height: 50.094vw;}
 }
-@media only screen and (max-width: 360px) {
-	.gen_image {max-width: 25.6vw;}
-	.gal_image {max-width: 25.6vw;}
-	.index_image {max-width: 25.6vw;}
-	.show_image {max-width: 25.6vw;}
-}
+@media only screen and (max-width: 360px) {}
 
