@@ -1,13 +1,24 @@
 $(document).ready(function(){
 	$("#menu").click(function(){
     $(".nav").toggle("0.5");
-  });
+});
   $(function () {
     var parent = $("#gen_image, #big_image");
     var divs = parent.children('a');
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
+});
+	$('body').on('click touchstart', function () {
+            const videoElement = document.getElementById('home_video');
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            }
+            else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
 });
   $('.image-link').magnificPopup({
   type: 'image',
@@ -31,6 +42,23 @@ $(document).ready(function(){
 });
   
 });
+
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+    get: function () {
+        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+    }
+});
+
+const videoElement = document.getElementById('ID_of_video');
+        videoElement.addEventListener('suspend', () => {
+            // suspend invoked
+            // show play button
+        });
+
+        videoElement.addEventListener('play', () => {
+            // video is played
+            // remove play button UI
+        });
 
 
 
