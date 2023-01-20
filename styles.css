@@ -60,7 +60,7 @@ table {
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 	z-index: 2;
 }
-.logo{
+.logo {
 	width: 50%; 
 	margin-top: -2.5vw; 
 	margin-left: 0vw;
@@ -80,7 +80,7 @@ table {
 	display: inline;
 	float: right;
 }
-.link:hover{
+.link:hover {
 	background-color: #f6f6f6;
 }
 .navigation { 	
