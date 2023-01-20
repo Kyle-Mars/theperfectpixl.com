@@ -9,6 +9,10 @@ $(document).ready(function(){
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
 });
+	Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+get: function () {
+    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+}});
 	$('body').on('click touchstart', function () {
         const videoElement = document.getElementById('home_video');
         if (videoElement.playing) {
@@ -43,10 +47,6 @@ $(document).ready(function(){
   
 });
 
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-get: function () {
-    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-}});
 
 
 
