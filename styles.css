@@ -177,6 +177,7 @@ table {
 	margin-top: 1.563vw;
 	max-width: 19.3vw;
 	height: auto;
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .hist_left {
 	max-width: 35.156vw;
@@ -190,16 +191,17 @@ table {
 	margin-top: 1.563vw;
 	max-width: 19.3vw;
 	height: auto;
+	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
-.index_image {max-width: 22vw;}
-.show_image {max-width: 22vw;}
-.gal_image {max-width: 13vw;}
-.gen_image {max-width: 16vw;}
+.index_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
+.show_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
+.gal_image {max-width: 13vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
+.gen_image {max-width: 16vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
 img {	
 	aspect-ratio: auto 300 / 400;
 	border-style: none;
 	height: auto;
-	padding: 0.391vw;
+	margin: 0.391vw;
 	object-fit: cover;
 }
 a:link {
