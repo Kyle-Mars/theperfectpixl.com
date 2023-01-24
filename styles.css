@@ -134,11 +134,18 @@ table {
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .body {
-	padding: 10%;
-	margin-bottom: 15%;
+	padding-top: 2%;
 	background-color: white;
-	height: 19.531vw;
-	padding-top: 1.14vw;
+	height: auto;
+}
+.footer {	
+	background-color: #f6f6f6;
+	height: auto;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
@@ -304,7 +311,6 @@ a:active {
   bottom: 0;
   z-index: -1;
 }
-@media only screen and (max-width: 1600px) {}
 @media only screen and (max-width: 1063px) {
 	.text {font-size: 1.354vw;}
 	.index_text {font-size: 1.3vw;}
@@ -383,5 +389,4 @@ a:active {
 	#main_title {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
 }
-@media only screen and (max-width: 360px) {}
 
