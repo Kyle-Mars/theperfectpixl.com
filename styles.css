@@ -125,9 +125,11 @@ table {
 }
 .intro {
 	background-color: #f6f6f6;
-	height: 15.969vw;
-	padding-left: 10%;
-	margin-bottom: 1%;
+	height: auto;
+	padding: 4%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
@@ -141,11 +143,10 @@ table {
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
-	max-width: 78.125vw;
+	max-width: 80vw;
 	line-height: 175%;
 	font-size: 1.354vw;
 	text-align: left;
-	padding-top: 5%;
 	text-indent: 1em;
 }
 .index_text {
@@ -219,9 +220,7 @@ a:active {
 #profile {
 	border-color: #f6f6f6;
 	border-radius: 1000px;
-	float: left;
-	margin-top: -0.391vw;
-	margin-left: -35.156vw;
+	box-shadow: 0 0 0;
 }
 #main_title {	
 	font-family: "Droid Sans", sans-serif;
@@ -243,10 +242,11 @@ a:active {
 }
 #index_intro {
 	background-color: #f6f6f6;
-	height: 28.125vw;
-	padding-left: 47%;
-	padding-top: 5%;
-	margin-bottom: 1%;
+	height: auto;
+	padding: 4%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
@@ -280,21 +280,12 @@ a:active {
 	width: 43%;
 	position: absolute;
 }
-#anim_intro {
-	height: 23.156vw;
-}
 #anim_icon {
 	width: 40%;
 	position: absolute;}
-#wfc_intro {
-	height: 30.250vw;
-}
 #wfc_icon {
 	width: 40%;
 	position: absolute;}
-#rid_intro {
-	height: 20.094vw;
-}
 #rid_icon {
 	width: 50%;
 	position: absolute;}
@@ -327,24 +318,17 @@ a:active {
 @media only screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
 	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
-	.intro {height: 21.969vw;}
 	.hist_text {font-size: 1.7vw;}
 	.hist_left { height: auto;
 		padding-bottom: 1vw;}
 	.hist_right {height: auto;
 		padding-bottom: 1vw;}
-	.intro {height: 20.969vw;}
-	.index_intro {height: 79.156vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
 	.nav a {font-size: 1.746vw;}
 	#main_title {font-size: 2.5vw;
 		max-width: 50.125vw;}
 	#title {font-size: 3.083vw;}
-	#anim_intro {height: 38.156vw;}
-	#wfc_intro {height: 47.250vw;}
-	#rid_intro {height: 32.094vw;}
-	#hist_intro {height: 22.094vw;}
 } 
 @media only screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
@@ -359,25 +343,19 @@ a:active {
 		max-width: 75.125vw; 
 		height: auto;
 		padding-bottom: 3vw;}
-	.intro {height: 38.969vw;}
 	.header {font-size: 3.225vw;}
 	.nav {height: 6vw; padding-top: 2vw;}
 	.hist_image_l {display: none;}
 	.hist_image_r {display: none;}
 	.link {font-size: 2.946vw; float: left;}
 	.header {height: 16.906vw;}
-	.nav a {font-size: 2.946vw; margin-right: 2vw;}
+	.nav a {font-size: 2.746vw; margin-right: 2vw;}
 	.nav {height: 11vw; padding-top: 2.5vw; top: 8vw; text-align: center; padding-right: 1vw;}
 	.logo {float: left; width: 90%; margin-left: -3vw; padding-bottom: 0vw; margin-top: -2vw;}
 	#main_title {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
-	#index_intro {height: 42.156vw;
-		margin-left: -35vw;}
-	#anim_intro {height: 74.156vw;}
-	#wfc_intro {height: 100.250vw;}
-	#rid_intro {height: 63.094vw;}
-	#hist_intro {height: 39.094vw;}
+	#index_intro {justify-content: center;}
 	#profile {display: none;}
 	#bannervideo {height: 42.2vw;}
 }
@@ -392,11 +370,6 @@ a:active {
 	.logo {width: 90%; margin-top: -2vw;}
 	#main_title {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
-	#index_intro {height: 49.156vw;}
-	#anim_intro {height: 76.156vw;}
-	#wfc_intro {height: 105.250vw;}
-	#rid_intro {height: 64.094vw;}
-	#hist_intro {height: 39.094vw;}
 	#index_icon {width: 70%;}
 	#hist_icon {width: 55%;}
 	#gal_icon {width: 55%;}
@@ -410,16 +383,11 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 16.906vw;}
-	.indexintro {height: 55.156vw;}
 	.intro {height: 49.969vw;}
 	.link{ padding-top: 1vw;}
 	.nav a {font-size: 4vw; float: left;}
 	#main_title {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
-	#anim_intro {height: 103.156vw;}
-	#wfc_intro {height: 132.250vw;}
-	#rid_intro {height: 84.094vw;}
-	#hist_intro {height: 50.094vw;}
 }
 @media only screen and (max-width: 360px) {}
 
