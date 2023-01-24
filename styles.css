@@ -134,18 +134,9 @@ table {
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .body {
-	padding-top: 2vw;
+	padding: 2vw;
 	background-color: white;
 	height: auto;
-}
-.footer {	
-	background-color: #f6f6f6;
-	height: auto;
-	padding: 2vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
