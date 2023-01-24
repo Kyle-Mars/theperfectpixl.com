@@ -311,7 +311,6 @@ a:active {
 	.hist_text {font-size: 1.3vw;}
 	.hist_left {height: auto;}
 	.hist_right {height: auto;}
-	.intro {height: 14.969vw;}
 	.header {font-size: 2.425vw;}
 	a {font-size: 1.346vw;}
 }
@@ -383,7 +382,6 @@ a:active {
 	.histtext {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;
 		height: 16.906vw;}
-	.intro {height: 49.969vw;}
 	.link{ padding-top: 1vw;}
 	.nav a {font-size: 4vw; float: left;}
 	#main_title {font-size: 3.983vw;}
