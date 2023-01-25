@@ -67,13 +67,15 @@ table {
 	color: #515151;
 	font-size: 1.246vw;
 	font-weight: normal;
-	margin: 0;
-	padding: 0;
 	list-style-type: none;
 	padding-left: 1.172vw;
 	padding-right: 1.172vw;
 	padding-bottom: 1.172vw;
 	padding-top: 0.781vw;
+	background-color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
 	display: inline;
 	float: right;
 }
@@ -135,8 +137,24 @@ table {
 }
 .body {
 	padding: 2vw;
+	margin-top: 1vw;
 	background-color: white;
 	height: auto;
+}
+.hist_button {
+	font-family: "Droid Sans", sans-serif;
+	font-size: 2.083vw;
+	color: black; 
+	width: 70vw;
+	background-color: white;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
 }
 .text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
@@ -165,6 +183,7 @@ table {
 	max-width: 70vw;
 	padding: 2vw;
 	height: auto;
+	text-indent: 1em;
 }
 .index_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
 .show_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
@@ -177,18 +196,8 @@ img {
 	margin: 0.391vw;
 	object-fit: cover;
 }
-a:link {
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-a:active {
-	text-decoration: none;
-}
+a {outline:none;}
+a:link,a:visited,a:hover,a:active {text-decoration: none;}
 #profile {
 	border-color: #f6f6f6;
 	border-radius: 1000px;
@@ -205,7 +214,8 @@ a:active {
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
-	padding-top: 1.906vw;
+	padding-top: 2vw;
+	margin-top: 0vw;
 	background: rgba(0, 0, 0, 0);
 	display: block;
 	width: 70%;
@@ -286,6 +296,7 @@ a:active {
 @media only screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
 	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
+	.hist_button {font-size: 3.083vw;}
 	.hist_text {font-size: 1.7vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
@@ -298,6 +309,7 @@ a:active {
 	.text {font-size: 2.854vw;}
 	.index_text {font-size: 2.854vw;
 		max-width: 75.125vw;}
+	.hist_button {font-size: 3.283vw;}
 	.hist_text {font-size: 2.554vw;}
 	.link {font-size: 2.946vw;}
 	.header {font-size: 3.225vw; flex-wrap: wrap; 
@@ -316,6 +328,7 @@ a:active {
 @media only screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
 	.index_text {font-size: 2.899vw;}
+	.hist_button {font-size: 3.583vw;}
 	.hist_text {font-size: 2.899vw;}
 	.link{font-size: 3.5vw; padding-bottom: 2vw;}
 	.nav a {font-size: 3.5vw; padding-bottom: 2vw; padding-left: 10vw; padding-right: 10vw;}
@@ -332,7 +345,8 @@ a:active {
 @media only screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
 	.indextext {font-size: 3.343vw;}
-	.histtext {font-size: 3.343vw;}
+	.hist_button {font-size: 3.983vw;}
+	.hist_text {font-size: 3.343vw;}
 	.header {font-size: 3.9vw;}
 	.link{padding-top: 1vw; padding-bottom: 2vw;}
 	#main_title {font-size: 3.983vw;}

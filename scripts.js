@@ -1,7 +1,47 @@
 $(document).ready(function(){
 	$(".nav").hide();
-	$("#menu").click(function(){
+	$("#into_TF").hide();
+	$("#journ_coll").hide();
+	$("#photo").hide();
+	$("#favs").hide();
+	$("#more").hide();
+  $("#menu").click(function(){
     $(".nav").toggle("0.5");
+  });
+  $("#into_TF_button").click(function(){
+    $("#into_TF").toggle("0.1");
+	$("#journ_coll").hide("0.1");
+	$("#photo").hide("0.1");
+	$("#favs").hide("0.1");
+	$("#more").hide("0.1");
+  });
+  $("#journ_coll_button").click(function(){
+    $("#journ_coll").toggle("0.1");
+	$("#into_TF").hide("0.1");
+	$("#photo").hide("0.1");
+	$("#favs").hide("0.1");
+	$("#more").hide("0.1");
+  });
+  $("#photo_button").click(function(){
+    $("#photo").toggle("0.1");
+	$("#into_TF").hide("0.1");
+	$("#journ_coll").hide("0.1");
+	$("#favs").hide("0.1");
+	$("#more").hide("0.1");
+  });
+  $("#favs_button").click(function(){
+    $("#favs").toggle("0.1");
+	$("#into_TF").hide("0.1");
+	$("#journ_coll").hide("0.1");
+	$("#photo").hide("0.1");
+	$("#more").hide("0.1");
+  });
+  $("#more_button").click(function(){
+    $("#more").toggle("0.1");
+	$("#into_TF").hide("0.1");
+	$("#journ_coll").hide("0.1");
+	$("#photo").hide("0.1");
+	$("#favs").hide("0.1");
   });
   $(function () {
     var parent = $("#gen_image, #big_image");
