@@ -162,35 +162,9 @@ table {
 	line-height: 175%;
 	font-size: 1.146vw;
 	text-align: left;
-	padding-top: 7%;
-}
-.hist_right {
-	max-width: 35.156vw;
-	margin-bottom: 3.563vw;
-	height: 28.125vw;
-	padding-left: 50%;
-}
-.hist_image_r {
-	float: right;
-	margin-right: -35.156vw;
-	margin-top: 1.563vw;
-	max-width: 19.3vw;
+	max-width: 70vw;
+	padding: 2vw;
 	height: auto;
-	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
-}
-.hist_left {
-	max-width: 35.156vw;
-	margin-bottom: 3.563vw;
-	height: 28.125vw;
-	padding-left: 5%;
-}
-.hist_image_l {
-	float:left;
-	margin-left: -35.156vw;
-	margin-top: 1.563vw;
-	max-width: 19.3vw;
-	height: auto;
-	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .index_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
 .show_image {max-width: 22vw; box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);}
@@ -306,8 +280,6 @@ a:active {
 	.text {font-size: 1.354vw;}
 	.index_text {font-size: 1.3vw;}
 	.hist_text {font-size: 1.3vw;}
-	.hist_left {height: auto;}
-	.hist_right {height: auto;}
 	.header {font-size: 2.425vw;}
 	a {font-size: 1.346vw;}
 }
@@ -315,10 +287,6 @@ a:active {
 	.text {font-size: 1.854vw;}
 	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
 	.hist_text {font-size: 1.7vw;}
-	.hist_left { height: auto;
-		padding-bottom: 1vw;}
-	.hist_right {height: auto;
-		padding-bottom: 1vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
 	.nav a {font-size: 1.746vw;}
@@ -331,16 +299,6 @@ a:active {
 	.index_text {font-size: 2.854vw;
 		max-width: 75.125vw;}
 	.hist_text {font-size: 2.554vw;}
-	.hist_left {margin-right: -36vw; 
-		max-width: 75.125vw; 
-		height: auto;
-		padding-bottom: 3vw;}
-	.hist_right {margin-left: -36vw; 
-		max-width: 75.125vw; 
-		height: auto;
-		padding-bottom: 3vw;}
-	.hist_image_l {display: none;}
-	.hist_image_r {display: none;}
 	.link {font-size: 2.946vw;}
 	.header {font-size: 3.225vw; flex-wrap: wrap; 
 		padding: 2%; 
