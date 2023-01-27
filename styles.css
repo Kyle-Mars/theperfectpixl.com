@@ -175,7 +175,7 @@ table {
 .hist_text {
 	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #313131;
-	line-height: 24px;
+	line-height: 175%;
 	font-size: 1.2vw;
 	text-align: left;
 	padding: 2vw;
@@ -308,7 +308,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 @media only screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
 	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
-	.hist_button {font-size: 3.083vw;}
+	.hist_button {font-size: 3.083vw; padding-top: 2vw; padding-bottom: 2vw;}
 	.hist_text {font-size: 1.7vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
@@ -329,7 +329,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 		justify-content: center;
 	}
 	.nav a {font-size: 2.746vw;}
-	.nav {flex-wrap: wrap-reverse;; top: 23.5vw; padding: 2%;}
+	.nav {flex-wrap: wrap-reverse; top: 23.5vw; padding: 2%;}
 	#main_title {font-size: 3.083vw;
 		max-width: 75.125vw;}
 	#title {font-size: 3.283vw;}
