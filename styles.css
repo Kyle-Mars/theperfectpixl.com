@@ -381,6 +381,10 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 		top: 23.5vw; 
 		padding: 2%;
 	}
+	.gal_image {width: 22vw;}
+	.gen_image {width: 22vw;}
+	.show_image {width: 33vw;}
+	.index_image {width: 33vw;}
 	#main_title {font-size: 3.083vw;
 		max-width: 75.125vw;
 	}
