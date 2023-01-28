@@ -195,10 +195,10 @@ table {
 	height: auto;
 	text-indent: 1em;
 }
-.index_image {max-width: 22vw;}
-.show_image {max-width: 22vw;}
-.gal_image {max-width: 13vw;}
-.gen_image {max-width: 16vw;}
+.index_image {width: 22vw;}
+.show_image {width: 22vw;}
+.gal_image {width: 13vw;}
+.gen_image {width: 16vw;}
 .logo {box-shadow: 0 0 0;}
 img {	
 	aspect-ratio: auto 300 / 400;
@@ -317,17 +317,43 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
   bottom: 0;
   z-index: -1;
 }
-@media only screen and (max-width: 1000px) {
+@media screen and (min-width: 1600px) {
+	.text {font-size: 1vw;}
+	.index_text {font-size: 1vw;}
+	.hist_button {font-size: 1.7vw;}
+	.hist_text {font-size: 1vw;}
+	.link{font-size: .9vw;}
+	.nav {top: 8vw;}
+	.nav a {font-size: .9vw;}
+	.logo {width: 90%}
+	#main_title {font-size: 1.7vw;}
+	#title {font-size: 1.7vw;}
+	#index_icon {width: 40%;}
+	#anim_icon {width: 30%;}
+	#hist_icon {width: 30%;}
+	#gal_icon {width: 33%;}
+	#show_icon {width: 60%;}
+	#wfc_icon {width: 35%;}
+	#rid_icon {width: 40%;}
+	#foot_text {font-size: .8vw;}
+	#top {font-size: 1.7vw;}
+}
+@media screen and (max-width: 1000px) {
 	.text {font-size: 1.354vw;}
 	.index_text {font-size: 1.3vw;}
 	.hist_text {font-size: 1.3vw;}
 	.header {font-size: 2.425vw;}
 	.nav a {font-size: 1.346vw;}
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
-	.index_text {font-size: 1.7vw; max-width: 50.125vw;}
-	.hist_button {font-size: 3.083vw; padding-top: 2vw; padding-bottom: 2vw;}
+	.index_text {font-size: 1.7vw; 
+		max-width: 50.125vw;
+	}
+	.hist_button {font-size: 3.083vw; 
+		padding-top: 2vw; 
+		padding-bottom: 2vw;
+	}
 	.hist_text {font-size: 1.7vw;}
 	.header {font-size: 2.825vw;}
 	.link {font-size: 1.746vw;}
@@ -338,21 +364,26 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#foot_text {font-size: 1.4vw;}
 	#top {font-size: 3vw;}
 } 
-@media only screen and (max-width: 486px) {
+@media screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
 	.index_text {font-size: 2.854vw;
 		max-width: 75.125vw;}
 	.hist_button {font-size: 3.283vw;}
 	.hist_text {font-size: 2.554vw;}
 	.link {font-size: 2.946vw;}
-	.header {font-size: 3.225vw; flex-wrap: wrap; 
+	.header {font-size: 3.225vw; 
+		flex-wrap: wrap; 
 		padding: 2%; 
 		justify-content: center;
 	}
 	.nav a {font-size: 2.746vw;}
-	.nav {flex-wrap: wrap-reverse; top: 23.5vw; padding: 2%;}
+	.nav {flex-wrap: wrap-reverse; 
+		top: 23.5vw; 
+		padding: 2%;
+	}
 	#main_title {font-size: 3.083vw;
-		max-width: 75.125vw;}
+		max-width: 75.125vw;
+	}
 	#title {font-size: 3.283vw;}
 	#index_intro {justify-content: center;}
 	#profile {display: none;}
@@ -360,7 +391,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#foot_text {font-size: 2vw;}
 	#top {font-size: 4vw;}
 }
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
 	.index_text {font-size: 2.899vw;}
 	.hist_button {font-size: 3.583vw;}
@@ -386,7 +417,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#foot_text {font-size: 2.3vw;}
 	#top {font-size: 5vw;}
 }
-@media only screen and (max-width: 390px) {
+@media screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
 	.indextext {font-size: 3.343vw;}
 	.hist_button {font-size: 3.983vw;}
