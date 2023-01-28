@@ -8,6 +8,9 @@ $(document).ready(function(){
   $("#menu").click(function(){
     $(".nav").toggle("0.5");
   });
+  $("#top").click(function(){
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
+  });
   $("#into_TF_button").click(function(){
     $("#into_TF").toggle("0.1");
 	$("#journ_coll").hide("0.1");
@@ -49,21 +52,6 @@ $(document).ready(function(){
     while (divs.length) {
         parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
     }
-});
-	Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-get: function () {
-    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-}});
-	$('body').on('click touchstart', function () {
-        const videoElement = document.getElementById('home_video');
-        if (videoElement.playing) {
-            // video is already playing so do nothing
-        }
-        else {
-            // video is not playing
-            // so play video now
-            videoElement.play();
-        }
 });
   $('.image-link').magnificPopup({
   type: 'image',

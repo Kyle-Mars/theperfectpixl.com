@@ -29,6 +29,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+	display:flex; 
+	flex-direction:column;
+	min-height:100vh;
 }
 ol, ul {padding-left: 2em;}
 blockquote, q {
@@ -133,11 +136,21 @@ table {
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
 		0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
+.footer {
+	background-color: #f6f6f6;
+	height: auto;
+	padding: 1.5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+}
 .body {
 	padding: 2vw;
-	margin-top: 1vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
 	background-color: white;
-	height: auto;
+	height: auto;	
 }
 .hist_button {
 	font-family: "Droid Sans", sans-serif;
@@ -213,13 +226,17 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	font-family: "Droid Sans", sans-serif;
 	font-size: 2.083vw;
 	text-align: left;
-	padding-top: 2vw;
+	padding-top: 5vw;
 	margin-top: 0vw;
 	background: rgba(0, 0, 0, 0);
 	display: block;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
+}
+#top {
+	font-size: 2vw;
+	background-color: #f6f6f6;
 }
 #index_intro {
 	background-color: #f6f6f6;
@@ -286,6 +303,8 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	position: absolute;
 	box-shadow: 0 0 0;
 }
+#foot_text {font-size: 1.1vw;}
+#footer_text a {}
 #bannervideo {
   width: 100%;
   height: 29vw;
@@ -298,7 +317,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
   bottom: 0;
   z-index: -1;
 }
-@media only screen and (max-width: 1063px) {
+@media only screen and (max-width: 1000px) {
 	.text {font-size: 1.354vw;}
 	.index_text {font-size: 1.3vw;}
 	.hist_text {font-size: 1.3vw;}
@@ -316,6 +335,8 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#main_title {font-size: 2.5vw;
 		max-width: 50.125vw;}
 	#title {font-size: 3.083vw;}
+	#foot_text {font-size: 1.4vw;}
+	#top {font-size: 3vw;}
 } 
 @media only screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
@@ -336,6 +357,8 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#index_intro {justify-content: center;}
 	#profile {display: none;}
 	#bannervideo {height: 42.2vw;}
+	#foot_text {font-size: 2vw;}
+	#top {font-size: 4vw;}
 }
 @media only screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
@@ -353,6 +376,8 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#show_icon {width: 70%;}
 	#wfc_icon {width: 45%;}
 	#rid_icon {width: 55%;}
+	#foot_text {font-size: 2.3vw;}
+	#top {font-size: 5vw;}
 }
 @media only screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
