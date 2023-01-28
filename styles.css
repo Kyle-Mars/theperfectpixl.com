@@ -366,7 +366,14 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	.hist_button {font-size: 3.583vw;}
 	.hist_text {font-size: 2.899vw;}
 	.link{font-size: 3.5vw; padding-bottom: 2vw;}
-	.nav a {font-size: 3.5vw; padding-bottom: 2vw; padding-left: 10vw; padding-right: 10vw;}
+	.nav a {font-size: 3.5vw; 
+		text-align: center; 
+		padding-bottom: 2vw;  
+		padding-top: 2vw;
+		padding-left: 5vw; 
+		padding-right: 5vw; 
+		width: 100vw;
+	}
 	.nav {top: 25vw; justify-content: center;}
 	#main_title {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
