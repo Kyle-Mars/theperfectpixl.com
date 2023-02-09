@@ -235,7 +235,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	margin-right: auto;
 }
 #top {
-	font-size: 2vw;
+	font-size: 1.1vw;
 	background-color: #f6f6f6;
 }
 #index_intro {
@@ -336,7 +336,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#wfc_icon {width: 35%;}
 	#rid_icon {width: 40%;}
 	#foot_text {font-size: .8vw;}
-	#top {font-size: 1.7vw;}
+	#top {font-size: .8vw;}
 }
 @media screen and (max-width: 1000px) {
 	.text {font-size: 1.354vw;}
@@ -362,7 +362,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 		max-width: 50.125vw;}
 	#title {font-size: 3.083vw;}
 	#foot_text {font-size: 1.4vw;}
-	#top {font-size: 3vw;}
+	#top {font-size: 1.4vw;}
 } 
 @media screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
@@ -393,7 +393,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#profile {display: none;}
 	#bannervideo {height: 42.2vw;}
 	#foot_text {font-size: 2vw;}
-	#top {font-size: 4vw;}
+	#top {font-size: 2vw;}
 }
 @media screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
@@ -419,7 +419,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#wfc_icon {width: 45%;}
 	#rid_icon {width: 55%;}
 	#foot_text {font-size: 2.3vw;}
-	#top {font-size: 5vw;}
+	#top {font-size: 2.3vw;}
 }
 @media screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
