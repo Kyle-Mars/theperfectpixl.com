@@ -335,7 +335,6 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	font-size: 2vw;
 	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
-
 }
 @media screen and (min-width: 1600px) {
 	.text {font-size: 1vw;}

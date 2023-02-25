@@ -49,18 +49,15 @@ $(document).ready(function(){
   });
   $('#filter').keyup(function() {
 	  var filter = $(this).val().toLowerCase();
-	  var result = false;
 	  $("#noresult").show();
 	  $('.body img').each(function(){
 		  var alt = $(this).attr('alt').toLowerCase();
 		  if(filter === '' || alt.indexOf(filter) > -1){
 			  $(this).show("0.01");
 			  $("#noresult").hide();
-			  result = true;
 		  }
 		  else { $(this).hide("0.01");}
-	  });
-		
+	  });	
   });
   $(function () {
     var parent = $("#gen_image, #big_image");
