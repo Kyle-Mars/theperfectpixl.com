@@ -200,6 +200,11 @@ table {
 .gal_image {width: 13vw;}
 .gen_image {width: 16vw;}
 .logo {box-shadow: 0 0 0;}
+.filterdiv {
+	display: flex;
+	justify-content: center;
+	margin-top: 4%;
+}
 img {	
 	aspect-ratio: auto 300 / 400;
 	border-style: none;
@@ -317,6 +322,21 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
   bottom: 0;
   z-index: -1;
 }
+#filter {
+	width: 66%;
+	padding: 1%;
+}
+#noresult {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4%;
+	text-align: center;
+	font-size: 2vw;
+	font-family: "Droid Sans", "Open Sans", sans-serif;
+	color: #515151;
+
+}
 @media screen and (min-width: 1600px) {
 	.text {font-size: 1vw;}
 	.index_text {font-size: 1vw;}
@@ -328,6 +348,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	.logo {width: 90%}
 	#main_title {font-size: 1.7vw;}
 	#title {font-size: 1.7vw;}
+	#noresult {font-size: 1.7vw;}
 	#index_icon {width: 40%;}
 	#anim_icon {width: 30%;}
 	#hist_icon {width: 30%;}
@@ -361,6 +382,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	#main_title {font-size: 2.5vw;
 		max-width: 50.125vw;}
 	#title {font-size: 3.083vw;}
+	#noresult {font-size: 3vw;}
 	#foot_text {font-size: 1.4vw;}
 	#top {font-size: 1.4vw;}
 } 
@@ -389,11 +411,13 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 		max-width: 75.125vw;
 	}
 	#title {font-size: 3.283vw;}
+	#noresult {font-size: 3.283vw;}
 	#index_intro {justify-content: center;}
 	#profile {display: none;}
 	#bannervideo {height: 42.2vw;}
 	#foot_text {font-size: 2vw;}
 	#top {font-size: 2vw;}
+	#filter {padding: 2%;}
 }
 @media screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
@@ -412,6 +436,7 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	.nav {top: 25vw; justify-content: center;}
 	#main_title {font-size: 3.583vw;}
 	#title {font-size: 3.583vw;}
+	#noresult {font-size: 3.583vw;}
 	#index_icon {width: 70%;}
 	#hist_icon {width: 55%;}
 	#gal_icon {width: 55%;}
@@ -430,4 +455,5 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	.link{padding-top: 1vw; padding-bottom: 2vw;}
 	#main_title {font-size: 3.983vw;}
 	#title {font-size: 3.983vw;}
+	#noresult {font-size: 3.983vw;}
 }

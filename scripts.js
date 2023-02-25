@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$("#photo").hide();
 	$("#favs").hide();
 	$("#more").hide();
+	$("#noresult").hide();
   $("#menu").click(function(){
     $(".nav").toggle("0.5");
   });
@@ -45,6 +46,21 @@ $(document).ready(function(){
 	$("#journ_coll").hide("0.1");
 	$("#photo").hide("0.1");
 	$("#favs").hide("0.1");
+  });
+  $('#filter').keyup(function() {
+	  var filter = $(this).val().toLowerCase();
+	  var result = false;
+	  $("#noresult").show();
+	  $('.body img').each(function(){
+		  var alt = $(this).attr('alt').toLowerCase();
+		  if(filter === '' || alt.indexOf(filter) > -1){
+			  $(this).show("0.01");
+			  $("#noresult").hide();
+			  result = true;
+		  }
+		  else { $(this).hide("0.01");}
+	  });
+		
   });
   $(function () {
     var parent = $("#gen_image, #big_image");
