@@ -18,40 +18,26 @@
 		<div style="flex: 1">
 			<div id="title">Samples<hr></div>
 			<div class="body" id="big-image">
-				<a href="https://ik.imagekit.io/theperfectpixl/TronHead.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/TronHead.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/TronHead.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/TronHead.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/TronHead.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/TronHead.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/TronHead.webp" height="400" width="300" alt="Closeup of Animated Megatron."></a>
-				<a href="https://ik.imagekit.io/theperfectpixl/TarScheme.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/TarScheme.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/TarScheme.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/TarScheme.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/TarScheme.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/TarScheme.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/TarScheme.webp" height="400" width="300" alt="Tarantulus scheming."></a>
-				<a href="https://ik.imagekit.io/theperfectpixl/RodCyc.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/RodCyc.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/RodCyc.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/RodCyc.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/RodCyc.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/RodCyc.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/RodCyc.webp" height="400" width="300" alt="Rodimus Prime under attack by Cyclonus."></a>
-				<a href="https://ik.imagekit.io/theperfectpixl/BlackSwordHold.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/BlackSwordHold.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/BlackSwordHold.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/BlackSwordHold.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/BlackSwordHold.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/BlackSwordHold.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/BlackSwordHold.webp" height="400" width="300" alt="RID Scourge with his sword."></a>
-				<a href="https://ik.imagekit.io/theperfectpixl/JRXPoint.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/JRXPoint.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/JRXPoint.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/JRXPoint.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/JRXPoint.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/JRXPoint.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/JRXPoint.webp" height="400" width="300" alt="JRX pointing at the camera."></a>
-				<a href="https://ik.imagekit.io/theperfectpixl/MinorPortrait.webp" class="image-link">
-					<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" srcset="https://ik.imagekit.io/theperfectpixl/tr:n-size256/MinorPortrait.webp 256w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size700/MinorPortrait.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/MinorPortrait.webp 1000w,
-					https://ik.imagekit.io/theperfectpixl/tr:n-size1220/MinorPortrait.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/MinorPortrait.webp 1410w" 
-					src="https://ik.imagekit.io/theperfectpixl/MinorPortrait.webp" height="400" width="300" alt="Rodimus Minor."></a>
+				<div v-for="(image, index) in imageList" :key="index">
+					<a v-if="image.home" :href="'https://ik.imagekit.io/theperfectpixl/' + image.src" class="image-link">
+						<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" 
+						:src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
+					</a>
+				</div>
 			</div>
 		</div>
 	</body>
 </template>
+
+<script>
+export default {
+	name: "Home",
+	props: { 
+		imageList: Array,
+		content: Object 
+	}
+}
+</script>
 
 <style scoped>
 .home-text {
