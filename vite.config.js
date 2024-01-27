@@ -10,7 +10,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
-  base: '/theperfectpixl.com/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
