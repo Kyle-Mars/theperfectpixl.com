@@ -7,12 +7,12 @@
          </video>
       </div>
       <div class="intro">
-         <div class="text" v-html="showText"></div>
+         <div class="text" v-html="content.showText"></div>
       </div><br>
       <div style="flex: 1">
          <div class="body" id="big-image">
             <div v-for="(image, index) in imageList" :key="index">
-					<a v-if="image.show && image.alt.toLowerCase().includes(search.toLowerCase())" :href="'https://ik.imagekit.io/theperfectpixl/' + image.src" class="image-link">
+					<a v-if="image.show && image.alt.toLowerCase().includes(search.toLowerCase())"  :href="'https://ik.imagekit.io/theperfectpixl/' + image.src" class="image-link">
 						<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" 
 						:src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
 					</a>
@@ -25,7 +25,11 @@
 <script>
 export default {
 	name: "Showcase",
-	props: { imageList: Array }
+	props: { 
+      imageList: Array,
+      content: Object 
+	},
+	data () { return { search: "" } }
 }
 </script>
 

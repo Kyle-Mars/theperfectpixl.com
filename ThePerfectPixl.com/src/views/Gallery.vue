@@ -15,9 +15,9 @@
 		<div style="flex: 1">
 			<div class="body" id="gen-image">
 				<div v-for="(image, index) in imageList" :key="index">
-					<a v-if="image.alt.toLowerCase().includes(search.toLowerCase())" :href="'https://ik.imagekit.io/theperfectpixl/' + image.src" class="image-link"> 
-						<img class="gen-image" sizes="(min-width: 1260px) 350px, 15.18vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size470/' + image.src + ' 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/' + image.src + ' 740w, https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src + ' 940w'" :src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
-					</a>
+					<Transition>
+						<img v-if="image.alt.toLowerCase().includes(search.toLowerCase())" class="gen-image" sizes="(min-width: 1260px) 350px, 15.18vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size470/' + image.src + ' 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/' + image.src + ' 740w, https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src + ' 940w'" :src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
+					</Transition>
 				</div>
 			</div>
 		</div>
@@ -42,6 +42,9 @@ export default {
 	position: absolute;
 	box-shadow: 0 0 0;
 }
+.v-enter-active,.v-leave-active {transition: max-width 0.5s ease-in-out;}
+.v-enter-from,.v-leave-to {max-width: 0%;}
+.v-enter-to,.v-leave-from {max-width: 100%;}
 @media screen and (min-width: 1600px) {#gal-icon {width: 33%;}}
 @media screen and (max-width: 486px) {.gal-image {width: 22vw;}}
 @media screen and (max-width: 414px) {#gal-icon {width: 55%;}}

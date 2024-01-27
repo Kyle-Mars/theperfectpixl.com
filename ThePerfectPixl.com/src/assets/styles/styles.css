@@ -33,38 +33,6 @@ body {
 	min-height:100vh;
 }
 ol, ul {padding-left: 2em;}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-.link {
-	font-family: "Lato", sans-serif;
-	color: #515151;
-	font-size: 1.246vw;
-	font-weight: normal;
-	list-style-type: none;
-	padding-left: 1.172vw;
-	padding-right: 1.172vw;
-	padding-bottom: 1.172vw;
-	padding-top: 0.781vw;
-	background-color: white;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	display: inline;
-	float: right;
-}
-.link:hover {
-	background-color: #f6f6f6;
-}
 .banner { 
 	height: 29.2vw;
 	display: flex;
@@ -112,8 +80,6 @@ img {
 	object-fit: cover;
 	box-shadow: 0 0.156vw 0.313vw rgba(0, 0, 0, 0.2), 0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
-a {outline:none;}
-a:link,a:visited,a:hover,a:active {text-decoration: none;}
 #profile {
 	border-color: #f6f6f6;
 	border-radius: 1000px;
@@ -182,9 +148,10 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 	font-family: "Droid Sans", "Open Sans", sans-serif;
 	color: #515151;
 }
+a {outline:none;}
+a:link,a:visited,a:hover,a:active {text-decoration: none;}
 @media screen and (min-width: 1600px) {
 	.text {font-size: 1vw;}
-	.link{font-size: .9vw;}
 	.logo {width: 90%}
 	#title {font-size: 1.7vw;}
 	#noresult {font-size: 1.7vw;}
@@ -195,14 +162,12 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 }
 @media screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
-	.link {font-size: 1.746vw;}
 	#title {font-size: 3.083vw;}
 	#noresult {font-size: 3vw;}
 	#top {font-size: 1.4vw;}
 } 
 @media screen and (max-width: 486px) {
 	.text {font-size: 2.854vw;}
-	.link {font-size: 2.946vw;}
 	.gen-image {width: 22vw;}
 	#title {font-size: 3.283vw;}
 	#noresult {font-size: 3.283vw;}
@@ -213,14 +178,12 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 }
 @media screen and (max-width: 414px) {
 	.text {font-size: 2.899vw;}
-	.link{font-size: 3.5vw; padding-bottom: 2vw;}
 	#title {font-size: 3.583vw;}
 	#noresult {font-size: 3.583vw;}
 	#top {font-size: 2.3vw;}
 }
 @media screen and (max-width: 390px) {
 	.text {font-size: 3.343vw;}
-	.link{padding-top: 1vw; padding-bottom: 2vw;}
 	#title {font-size: 3.983vw;}
 	#noresult {font-size: 3.983vw;}
 }
