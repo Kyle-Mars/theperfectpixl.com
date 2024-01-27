@@ -11,6 +11,8 @@ export default defineConfig({
     vueJsx(),
   ],
   base: '/theperfectpixl.com/',
+  transpileDependencies: true,
+  publicPath: process.env.NODE_ENV === "production" ? "/vue-deploy/" : "/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
