@@ -7,7 +7,7 @@
 <script>
 import pageNav from "./components/Nav.vue"
 import pageFooter from "./components/Footer.vue"
-import data from "./assets/data.js"
+import data from "../public/data.js"
 
 export default {
   name: "App.vue",
