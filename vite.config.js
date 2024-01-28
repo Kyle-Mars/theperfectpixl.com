@@ -6,7 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/theperfectpixl.com/',
+  base: "https://theperfectpixl.com/",
   plugins: [
     vue(),
     vueJsx(),
