@@ -18,7 +18,7 @@
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'into'" v-html="content.introText"></div>
+					<div class="about-text" v-if="selected == 'into'" v-html="content.intoText"></div>
 				</Transition>
 
 				<button class="about-button" @click="selected != 'journey' ? selected = 'journey' : selected = ''">The Journey of Collecting

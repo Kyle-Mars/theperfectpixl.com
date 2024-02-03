@@ -7,9 +7,7 @@
 			</video>
 		</div>
 		<div class="intro">
-			<div class="text">
-				<a href="https://tfwiki.net/wiki/Transformers:_Robots_in_Disguise_(2001_toyline)">Robots in Disguise</a> was originally conceived in Japan in 2000 as Car Robots, with a return to realistic alt/vehicle alternate modes after Beast Wars and its Japanese sequels focused heavily on realistic animals. The Car Robots line was made up of several original toys alongside recolored toys from every previous Transformers toyline, all thrown together in a fascinating mishmash of styles. Hasbro imported Car Robots in 2001 to fill for time while the next series, Transformers: Armada, was in production. When it arrived in the West, it became known as Robots in Disguise: the first total reboot of the Transformers brand.
-			</div>
+			<div class="text" v-html="content.ridText"></div>
 		</div><br>
 		<div class="filterdiv">
 			<input id="filter" v-model="search" placeholder="Search images by character name, toyline...">

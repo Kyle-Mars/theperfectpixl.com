@@ -1,9 +1,23 @@
 <template>
     <div class="footer">
         <span class="text" id="foot_text">Contact me at <a href="mailto:kylelmars@gmail.com">kylelmars@gmail.com</a>.</span>
-        <button class="link" id="top">To Top</button>
+        <button @click="topFunction" class="link" id="top">To Top</button>
     </div>
 </template>
+
+<script>
+
+export default {
+	name: "Footer",
+	methods: {
+		topFunction() {
+  			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		} 
+	}
+}
+
+</script>
 
 <style scoped>
 .footer {
