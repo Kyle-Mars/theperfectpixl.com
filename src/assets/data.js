@@ -55,12 +55,10 @@ let data = {
         { src: "BlackSwing.webp", alt:"Car Robots Black Convoy swinging his sword", rid: true, wfc: false, anim: false, show: false, home: false }, 
         { src: "BlackPunch.webp", alt:"Car Robots Black Convoy punching the camera", rid: true, wfc: false, anim: false, show: true, home: false },
         { src: "BlackSwordHold.webp", alt:"Car Robots Black Convoy with his sword", rid: true, wfc: false, anim: false, show: false, home: true }, 
-        { src: "JRXPoint.webp", alt:"RID/Robots in Disguise Rail Racer/JRX pointing at the camera", rid: true, wfc: false, anim: false, show: false, home: true }, 
-        { src: "FireAction.webp", alt:"RID/Robots in Disguise Optimus Prime in an action pose", rid: true, wfc: false, anim: false, show: false, home: false }, 
-        { src: "FireSuper.webp", alt:"RID/Robots in Disguise Optimus Prime in Super Mode", rid: true, wfc: false, anim: false, show: false, home: false }, 
-        { src: "FireSuperClose.webp", alt:"Closeup of RID/Robots in Disguise Optimus Prime in Super Mode", rid: true, wfc: false, anim: false, show: false, home: false }, 
-        { src: "FireSuperLadder.webp", alt:"Looking down the barrel of RID/Robots in Disguise Optimus Prime' ladder cannon", rid: true, wfc: false, anim: false, show: false, home: false }, 
-        { src: "FireTruck.webp", alt:"RID/Robots in Disguise Optimus Prime in alt/vehicle mode", rid: true, wfc: false, anim: false, show: false, home: false },
+        { src: "JRXPoint.webp", alt:"RID/Robots in Disguise Rail Racer/JRX pointing at the camera", rid: true, wfc: false, anim: false, show: false, home: true },
+        { src: "fire-super", alt:"RID/Robots in Disguise Optimus Prime in Super Mode", rid: true, wfc: false, anim: false, show: false, home: false }, 
+        { src: "fire-pose", alt:"RID/Robots in Disguise Optimus Prime posing dynamically", rid: true, wfc: false, anim: false, show: false, home: false }, 
+        { src: "fire-alt", alt:"RID/Robots in Disguise Optimus Prime in his alt/vehicle mode", rid: true, wfc: false, anim: false, show: false, home: false },
         { src: "GigaClose.webp", alt:"RID/Robots in Disguise Megatron egging you on", rid: true, wfc: false, anim: false, show: false, home: false }, 
         { src: "GigaRoar.webp", alt:"RID/Robots in Disguise Megatron in dragon mode", rid: true, wfc: false, anim: false, show: false, home: false },
         { src: "GigaBat.webp", alt:"RID/Robots in Disguise Megatron in bat mode", rid: true, wfc: false, anim: false, show: false, home: false }, 
@@ -146,6 +144,14 @@ let data = {
         { src: "AttackAlt.jpg", alt:"APC Toys Attack Prime in alt/vehicle mode", rid: false, wfc: false, anim: false, show: false, home: false },
         { src: "AttackSwing.jpg", alt:"APC Toys Attack Prime swinging his sword", rid: false, wfc: false, anim: false, show: false, home: false },
         { src: "AttackDraw.jpg", alt:"APC Toys Attack Prime drawing his sword", rid: false, wfc: false, anim: false, show: false, home: false },
+
+        //G1
+        { src: "punch-punch", alt:"Generation 1/G1 Punch standing", rid: false, wfc: false, anim: false, show: false, home: false },
+        { src: "punch-counter", alt:"Generation1/G1 Counterpunch standing", rid: false, wfc: false, anim: false, show: false, home: false },
+        { src: "skull-grax", alt:"Generation 1/G1 Grax standing in front of Skullcruncher", rid: false, wfc: false, anim: false, show: true, home: true },
+        { src: "skull-alt", alt:"Generation 1/G1 Skullcruncher in alt/beast mode", rid: false, wfc: false, anim: false, show: false, home: false },
+        { src: "judd", alt:"The Transformers: The Movie Hot Rod in robot mode", rid: false, wfc: false, anim: false, show: false, home: false },
+        { src: "judd-alt", alt:"The Transformers: The Movie Hot Rod in alt/vehicle mode", rid: false, wfc: false, anim: false, show: false, home: false },
     ]
 }
 export default data
