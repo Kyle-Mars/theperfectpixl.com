@@ -18,11 +18,15 @@
 		<div style="flex: 1">
 			<div id="title">Samples<hr></div>
 			<div class="body" id="big-image">
-				<div v-for="(image, index) in imageList" :key="index">
-					<a v-if="image.home" :href="'https://ik.imagekit.io/theperfectpixl/' + image.src" class="image-link">
-						<img class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" 
-						:src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
-					</a>
+				<div v-for="(image, index) in imageList" :key="index" @click="selected != null ? selected = null : selected = index">
+					<Transition name="search">
+						<img v-if="image.home" class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" :src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
+					</Transition>
+					<Transition name="lightbox">
+						<div v-if="selected == index" :class="{background: selected == index}">
+							<img class="selected"  :src="'https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src" height="400" width="300" :alt="image.alt">
+						</div>
+					</Transition>
 				</div>
 			</div>
 		</div>
@@ -35,6 +39,11 @@ export default {
 	props: { 
 		imageList: Array,
 		content: Object 
+	},
+	data () {
+		return {
+			selected: null
+		}
 	}
 }
 </script>

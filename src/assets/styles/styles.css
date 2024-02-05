@@ -75,6 +75,27 @@ ol, ul {padding-left: 2em;}
 	justify-content: center;
 	margin-top: 4%;
 }
+.selected {
+	position: fixed;
+	top: 5vh;
+	left: 32.25vw;
+	height: 90vh;
+	width: auto;
+}
+.background {
+	background-color: rgba(0, 0, 0, 0.532);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+.search-enter-active,.search-leave-active {transition: max-width 0.5s ease-in-out;}
+.search-enter-from,.search-leave-to {max-width: 0%;}
+.search-enter-to,.search-leave-from {max-width: 100%;}
+.lightbox-enter-active,.lightbox-leave-active {transition: opacity .75s ease-in-out;}
+.lightbox-enter-from,.lightbox-leave-to {opacity: 0%;}
+.lightbox-enter-to,.lightbox-leave-from {opacity: 100%;}
 img {	
 	aspect-ratio: auto 300 / 400;
 	border-style: none;

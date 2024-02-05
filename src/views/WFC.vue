@@ -14,9 +14,14 @@
 		</div>
 		<div style="flex: 1">
 			<div class="body" id="gen-image">
-				<div v-for="(image, index) in imageList" :key="index">
-					<Transition>
+				<div v-for="(image, index) in imageList" :key="index" @click="selected != null ? selected = null : selected = index">
+					<Transition name="search">
 						<img v-if="image.wfc && image.alt.toLowerCase().includes(search.toLowerCase())" class="gen-image" sizes="(min-width: 1260px) 350px, 15.18vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size470/' + image.src + ' 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/' + image.src + ' 740w, https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src + ' 940w'" :src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
+					</Transition>
+					<Transition name="lightbox">
+						<div v-if="selected == index" :class="{background: selected == index}">
+							<img class="selected"  :src="'https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src" height="400" width="300" :alt="image.alt">
+						</div>
 					</Transition>
 				</div>
 			</div>
@@ -31,7 +36,12 @@ export default {
 		imageList: Array,
 		content: Object 
 	},
-	data () { return { search: "" } }
+	data () { 
+		return { 
+			search: "",
+			selected: null
+		} 
+	}
 }
 </script>
 
