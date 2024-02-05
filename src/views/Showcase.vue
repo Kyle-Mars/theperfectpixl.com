@@ -13,7 +13,7 @@
          <div class="body" id="big-image">
             <div v-for="(image, index) in imageList" :key="index" @click="selected != null ? selected = null : selected = index">
 					<Transition name="search">
-						<img v-if="image.show" class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" 
+						<img v-if="image.show" class="show-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" 
 						:src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
 					</Transition>
 					<Transition name="lightbox">
