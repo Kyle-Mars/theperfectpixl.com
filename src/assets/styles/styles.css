@@ -183,9 +183,14 @@ a:link,a:visited,a:hover,a:active {text-decoration: none;}
 }
 @media screen and (max-width: 1000px) {
 	.text {font-size: 1.354vw;}
+	.selected { height: 80vh;}
 }
 @media screen and (max-width: 768px) {
 	.text {font-size: 1.854vw;}
+	.selected { 
+		width: 85vw; 
+		height: auto;
+	}
 	#title {font-size: 3.083vw;}
 	#noresult {font-size: 3vw;}
 	#top {font-size: 1.4vw;}
