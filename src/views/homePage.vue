@@ -7,10 +7,10 @@
 			</video>
 		</div>
 		<div id="home-intro">
-			<img class="home-image" id="profile" sizes="(min-width: 1260px) 400px, (min-width: 500px) calc(20.63vw + 7px), (min-width: 480px) 4px, (min-width: 460px) 4px, (min-width: 440px) 3px, (min-width: 420px) 3px, (min-width: 400px) 3px, (min-width: 380px) 3px, (min-width: 360px) 3px, (min-width: 340px) 3px, (min-width: 320px) 3px, 2px" srcset="https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/Kyle.webp 256w,
-			https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/Kyle.webp 700w, https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/Kyle.webp 1000w,
-			https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/Kyle.webp 1220w, https://ik.imagekit.io/theperfectpixl/tr:h-1410n-size1410/Kyle.webp 1410w" 
-			src="https://ik.imagekit.io/theperfectpixl/Kyle.webp" width="300" height="300" alt="A nice photo of me.">
+			<img class="home-image" id="profile" sizes="(min-width: 1260px) 400px, (min-width: 500px) calc(20.63vw + 7px), (min-width: 480px) 4px, (min-width: 460px) 4px, (min-width: 440px) 3px, (min-width: 420px) 3px, (min-width: 400px) 3px, (min-width: 380px) 3px, (min-width: 360px) 3px, (min-width: 340px) 3px, (min-width: 320px) 3px, 2px" srcset="https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/Profile.jpg 256w,
+			https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/Profile.jpg 700w, https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/Profile.jpg 1000w,
+			https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/Profile.jpg 1220w, https://ik.imagekit.io/theperfectpixl/tr:h-1410n-size1410/Profile.jpg 1410w" 
+			src="https://ik.imagekit.io/theperfectpixl/Profile.jpg" width="300" height="300" alt="A nice photo of me.">
 			<div id="home-title">I’m Kyle, and I'm a huge Transformers fan and amateur toy photographer.
 				<div class="home-text">My hobby for the past several years has been collecting, playing with, and displaying Transformers toys. I started taking pictures of them soon into collecting, and I haven't stopped since. Here you can view a curated list of the photos I've taken, or learn more about me, my collection, and Transformers.</div>
 			</div>
@@ -18,7 +18,7 @@
 		<div style="flex: 1">
 			<div id="title">Samples<hr></div>
 			<div class="body" id="big-image">
-				<div v-for="(image, index) in imageList" :key="index" @click="selected != null ? selected = null : selected = index">
+				<div v-for="(image, index) in props.imageList" :key="index" @click="selected != null ? selected = null : selected = index">
 					<Transition name="search">
 						<img v-if="image.home" class="home-image" sizes="(min-width: 1260px) 350px, 20.91vw" :srcset="'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' + image.src + ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size700/' + image.src + ' 700w, https://ik.imagekit.io/theperfectpixl/tr:n-size1000/' + image.src + ' 1000w, https://ik.imagekit.io/theperfectpixl/tr:n-size1220/' + image.src + ' 1220w, https://ik.imagekit.io/theperfectpixl/tr:n-size1410/' + image.src + ' 1410w'" :src="'https://ik.imagekit.io/theperfectpixl/' + image.src" height="400" width="300" :alt="image.alt">
 					</Transition>
@@ -33,19 +33,11 @@
 	</body>
 </template>
 
-<script>
-export default {
-	name: "Home",
-	props: { 
-		imageList: Array,
-		content: Object 
-	},
-	data () {
-		return {
-			selected: null
-		}
-	}
-}
+<script setup>
+import { defineProps, ref } from 'vue'
+
+const props = defineProps({ imageList: Array})
+const selected = ref(null)
 </script>
 
 <style scoped>

@@ -9,7 +9,7 @@
 		</div>
 
 		<div class="intro">
-			<div class="text" v-html="content.aboutText"></div>
+			<div class="text" v-html="props.content.aboutText"></div>
 		</div>
 
 		<div style="flex: 1">
@@ -18,49 +18,46 @@
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'into'" v-html="content.intoText"></div>
+					<div class="about-text" v-if="selected == 'into'" v-html="props.content.intoText"></div>
 				</Transition>
 
 				<button class="about-button" @click="selected != 'journey' ? selected = 'journey' : selected = ''">The Journey of Collecting
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'journey'" v-html="content.journeyText"></div>
+					<div class="about-text" v-if="selected == 'journey'" v-html="props.content.journeyText"></div>
 				</Transition>
 
 				<button id="photo_button" class="about-button"  @click="selected != 'photo' ? selected = 'photo' : selected = ''">Photographs and Websites
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'photo'" v-html="content.photoText"></div>
+					<div class="about-text" v-if="selected == 'photo'" v-html="props.content.photoText"></div>
 				</Transition>
 
 				<button class="about-button"  @click="selected != 'favs' ? selected = 'favs' : selected = ''">Favorite Toys, Media, etc.
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'favs'" v-html="content.favsText"></div>
+					<div class="about-text" v-if="selected == 'favs'" v-html="props.content.favsText"></div>
 				</Transition>
 
 				<button class="about-button"  @click="selected != 'more' ? selected = 'more' : selected = ''">Interested in Learning More?
 					<span>&#8628;</span>
 				</button><hr>
 				<Transition>
-					<div class="about-text" v-if="selected == 'more'" v-html="content.moreText"></div>
+					<div class="about-text" v-if="selected == 'more'" v-html="props.content.moreText"></div>
 				</Transition>
 			</div>
 		</div>
 	</body>
 </template>
 
-<script>
-export default {
-	name: "About",
-	props: { 
-		content: Object 
-	},
-	data () { return { selected: "" } }
-}
+<script setup>
+import { defineProps, ref } from 'vue'
+
+const props = defineProps({content: Object})
+const selected = ref("")
 </script>
 
 <style scoped>
