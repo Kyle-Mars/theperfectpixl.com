@@ -1,4 +1,4 @@
-import{_ as v,r as b,c as l,a as t,b as u,d as r,w as c,T as d,o as a,e as p,p as h,f as x}from"./index-9jBJSK7D.js";const o=i=>(h("data-v-2921456c"),i=i(),x(),i),T=o(()=>t("div",{class:"banner"},[t("img",{id:"about-icon",sizes:"(min-width: 420px) 48.48vw, 68.22vw",srcset:`\r
+import{_ as v,r as b,c as l,a as t,b as u,d as r,w as c,T as d,o as a,e as p,p as h,f as x}from"./index-mq07DTa-.js";const o=i=>(h("data-v-2921456c"),i=i(),x(),i),T=o(()=>t("div",{class:"banner"},[t("img",{id:"about-icon",sizes:"(min-width: 420px) 48.48vw, 68.22vw",srcset:`\r
           https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo   256w,\r
           https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/page-assets/about-logo 1710w,\r
           https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/page-assets/about-logo 2400w\r
