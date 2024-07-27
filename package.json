@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "predeploy": "npm run build",
-    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist --cname theperfectpixl.com"
+    "deploy": "gh-pages -d dist --cname theperfectpixl.com"
   },
   "dependencies": {
     "npm": "^10.4.0",
