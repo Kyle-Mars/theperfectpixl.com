@@ -5,15 +5,18 @@
         id="gal-icon"
         sizes="(min-width: 420px) 42.98vw, 55.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/gallery-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/gallery-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/gallery-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/page-assets/gallery-logo   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/page-assets/gallery-logo 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/page-assets/gallery-logo 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/gallery-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
         alt="Gallery"
       />
       <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
-        <source src="https://ik.imagekit.io/theperfectpixl/hot-shot-banner" type="video/mp4" />
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-banner"
+          type="video/mp4"
+        />
       </video>
     </div>
     <div class="intro">
@@ -49,17 +52,17 @@
               class="gen-image"
               sizes="(min-width: 1260px) 350px, 15.18vw"
               :srcset="
-                'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size256/' +
+                'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size256/' +
                 image.src +
-                ' 256w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size470/' +
+                ' 256w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size470/' +
                 image.src +
-                ' 470w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size740/' +
+                ' 470w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size740/' +
                 image.src +
-                ' 740w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size940/' +
+                ' 740w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size940/' +
                 image.src +
                 ' 940w'
               "
-              :src="'https://ik.imagekit.io/theperfectpixl/gallery_photos/' + image.src"
+              :src="'https://ik.imagekit.io/theperfectpixl/gallery-photos/' + image.src"
               height="400"
               width="300"
               :alt="image.alt"
@@ -70,7 +73,7 @@
               <img
                 class="selected"
                 :src="
-                  'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size940/' + image.src
+                  'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size940/' + image.src
                 "
                 height="400"
                 width="300"

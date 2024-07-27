@@ -635,19 +635,19 @@ let data = {
 
     //Unicron Trilogy
     {
-      src: 'GalaxyStand.jpg',
+      src: 'galaxy-stand',
       alt: 'Galaxy Force Galaxy Convoy standing in regular robot mode',
       show: false,
       home: false
     },
     {
-      src: 'GalaxySuper.jpg',
+      src: 'galaxy-super',
       alt: 'Galaxy Force Galaxy Convoy in Super Mode',
       show: true,
       home: false
     },
     {
-      src: 'GalaxyAlt.jpg',
+      src: 'galaxy-alt',
       alt: 'Galaxy Force Galaxy Convoy in alt/vehicle mode',
       show: false,
       home: false
@@ -731,13 +731,13 @@ let data = {
       home: false
     },
     {
-      src: 'GrapAlt',
+      src: 'grap-alt',
       alt: 'Micron Legend Super Mode Grap and Spark Lift in alt/vehicle mode',
       show: false,
       home: false
     },
     {
-      src: 'Grap.jpg',
+      src: 'grap',
       alt: 'Micron Legend Super Mode Grap and Spark Lift',
       show: false,
       home: false

@@ -5,15 +5,18 @@
         id="about-icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/about-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/about-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/about-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/page-assets/about-logo 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/page-assets/about-logo 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/about-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo"
         alt="About Me"
       />
       <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
-        <source src="https://ik.imagekit.io/theperfectpixl/energon-banner" type="video/mp4" />
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/about-banner"
+          type="video/mp4"
+        />
       </video>
     </div>
 

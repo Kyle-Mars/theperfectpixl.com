@@ -5,15 +5,18 @@
         id="home-icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/welcome-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon1710/welcome-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon2400/welcome-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/page-assets/welcome-logo   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon1710/page-assets/welcome-logo 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon2400/page-assets/welcome-logo 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/welcome-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
         alt="Welcome!"
       />
       <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
-        <source src="https://ik.imagekit.io/theperfectpixl/bumblebee-banner" type="video/mp4" />
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-banner"
+          type="video/mp4"
+        />
       </video>
     </div>
     <div id="home-intro">
@@ -61,19 +64,19 @@
               class="home-image"
               sizes="(min-width: 1260px) 350px, 20.91vw"
               :srcset="
-                'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size256/' +
+                'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size256/' +
                 image.src +
-                ' 256w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size700/' +
+                ' 256w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size700/' +
                 image.src +
-                ' 700w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size1000/' +
+                ' 700w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size1000/' +
                 image.src +
-                ' 1000w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size1220/' +
+                ' 1000w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size1220/' +
                 image.src +
-                ' 1220w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size1410/' +
+                ' 1220w, https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size1410/' +
                 image.src +
                 ' 1410w'
               "
-              :src="'https://ik.imagekit.io/theperfectpixl/gallery_photos/' + image.src"
+              :src="'https://ik.imagekit.io/theperfectpixl/gallery-photos/' + image.src"
               height="400"
               width="300"
               :alt="image.alt"
@@ -84,7 +87,7 @@
               <img
                 class="selected"
                 :src="
-                  'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size940/' + image.src
+                  'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size940/' + image.src
                 "
                 height="400"
                 width="300"
