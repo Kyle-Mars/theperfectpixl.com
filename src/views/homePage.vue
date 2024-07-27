@@ -12,7 +12,7 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
         alt="Welcome!"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-banner"
           type="video/mp4"
@@ -37,7 +37,7 @@
         alt="A nice photo of me."
       />
       <div id="home-title">
-        Welcome! I’m Kyle, an early 2000s Transformers collector, Superlink enthusiast, and amateur
+        Welcome! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur
         toy photographer.
         <div class="home-text">
           My hobby for the past several years has been collecting, playing with, and displaying

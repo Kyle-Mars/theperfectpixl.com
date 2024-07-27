@@ -1,28 +1,33 @@
 <template>
   <div style="position: sticky">
     <div class="header">
-      <router-link to="/">
+      <div @click="emits('navigate', 'homePage')">
         <img
           class="logo"
           sizes="(min-width: 500px) 46.98vw, 84.77vw"
           srcset="
-            https://ik.imagekit.io/theperfectpixl/tr:n-logo256/LogoMainClosebig.png   256w,
-            https://ik.imagekit.io/theperfectpixl/tr:n-logo1710/LogoMainClosebig.png 1710w,
-            https://ik.imagekit.io/theperfectpixl/tr:n-logo2400/LogoMainClosebig.png 2400w
+            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo256/main-logo   256w,
+            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo1710/main-logo 1710w,
+            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo2400/main-logo 2400w
           "
-          src="https://ik.imagekit.io/theperfectpixl/LogoMainClosebig.png"
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/main-logo"
           alt="ThePerfectPixl"
         />
-      </router-link>
+      </div>
       <div style="display: flex; align-items: baseline">
-        <router-link class="link" to="/Showcase">SHOWCASE</router-link>
-        <router-link class="link" to="/Gallery">GALLERY</router-link>
-        <router-link class="link" to="/About">ABOUT ME</router-link>
+        <div class="link" @click="emits('navigate', 'showcasePage')">SHOWCASE</div>
+        <div class="link" @click="emits('navigate', 'galleryPage')">GALLERY</div>
+        <div class="link" @click="emits('navigate', 'aboutPage')">ABOUT ME</div>
       </div>
     </div>
   </div>
 </template>
 
+<script setup>
+import { defineEmits } from 'vue'
+
+const emits = defineEmits(['navigate'])
+</script>
 <style>
 .header {
   font-family: 'Lato', 'Sans Open', sans-serif;

@@ -12,7 +12,7 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo"
         alt="About Me"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/about-banner"
           type="video/mp4"
@@ -28,19 +28,31 @@
       <div class="body" id="title">
         <button
           class="about-button"
-          @click="selected != 'into' ? (selected = 'into') : (selected = '')"
+          @click="
+            !selected.includes('into')
+              ? selected.push('into')
+              : selected.splice(selected.indexOf('into'), 1)
+          "
         >
           Getting into Transformers
           <span>&#8628;</span>
         </button>
         <hr />
         <Transition>
-          <div class="about-text" v-if="selected == 'into'" v-html="props.content.intoText"></div>
+          <div
+            class="about-text"
+            v-if="selected.includes('into')"
+            v-html="props.content.intoText"
+          ></div>
         </Transition>
 
         <button
           class="about-button"
-          @click="selected != 'journey' ? (selected = 'journey') : (selected = '')"
+          @click="
+            !selected.includes('journey')
+              ? selected.push('journey')
+              : selected.splice(selected.indexOf('journey'), 1)
+          "
         >
           The Journey of Collecting
           <span>&#8628;</span>
@@ -49,7 +61,7 @@
         <Transition>
           <div
             class="about-text"
-            v-if="selected == 'journey'"
+            v-if="selected.includes('journey')"
             v-html="props.content.journeyText"
           ></div>
         </Transition>
@@ -57,38 +69,82 @@
         <button
           id="photo_button"
           class="about-button"
-          @click="selected != 'photo' ? (selected = 'photo') : (selected = '')"
+          @click="
+            !selected.includes('photo')
+              ? selected.push('photo')
+              : selected.splice(selected.indexOf('photo'), 1)
+          "
         >
           Photographs and Websites
           <span>&#8628;</span>
         </button>
         <hr />
         <Transition>
-          <div class="about-text" v-if="selected == 'photo'" v-html="props.content.photoText"></div>
+          <div
+            class="about-text"
+            v-if="selected.includes('photo')"
+            v-html="props.content.photoText"
+          ></div>
         </Transition>
 
         <button
           class="about-button"
-          @click="selected != 'favs' ? (selected = 'favs') : (selected = '')"
+          @click="
+            !selected.includes('superLink')
+              ? selected.push('superLink')
+              : selected.splice(selected.indexOf('superLink'), 1)
+          "
         >
-          Favorite Toys, Media, etc.
+          Super Link, My Favorite Toyline
           <span>&#8628;</span>
         </button>
         <hr />
         <Transition>
-          <div class="about-text" v-if="selected == 'favs'" v-html="props.content.favsText"></div>
+          <div
+            class="about-text"
+            v-if="selected.includes('superLink')"
+            v-html="props.content.superLinkText"
+          ></div>
         </Transition>
 
         <button
           class="about-button"
-          @click="selected != 'more' ? (selected = 'more') : (selected = '')"
+          @click="
+            !selected.includes('favs')
+              ? selected.push('favs')
+              : selected.splice(selected.indexOf('favs'), 1)
+          "
+        >
+          Other Favorite Toys, Media, etc.
+          <span>&#8628;</span>
+        </button>
+        <hr />
+        <Transition>
+          <div
+            class="about-text"
+            v-if="selected.includes('favs')"
+            v-html="props.content.favsText"
+          ></div>
+        </Transition>
+
+        <button
+          class="about-button"
+          @click="
+            !selected.includes('more')
+              ? selected.push('more')
+              : selected.splice(selected.indexOf('more'), 1)
+          "
         >
           Interested in Learning More?
           <span>&#8628;</span>
         </button>
         <hr />
         <Transition>
-          <div class="about-text" v-if="selected == 'more'" v-html="props.content.moreText"></div>
+          <div
+            class="about-text"
+            v-if="selected.includes('more')"
+            v-html="props.content.moreText"
+          ></div>
         </Transition>
       </div>
     </div>
@@ -99,7 +155,7 @@
 import { defineProps, ref } from 'vue'
 
 const props = defineProps({ content: Object })
-const selected = ref('')
+const selected = ref([])
 </script>
 
 <style scoped>
@@ -145,7 +201,7 @@ const selected = ref('')
 }
 .v-enter-to,
 .v-leave-from {
-  max-height: 200vh;
+  max-height: 400vh;
 }
 @media screen and (min-width: 1600px) {
   .about-button {

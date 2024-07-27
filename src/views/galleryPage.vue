@@ -12,7 +12,7 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
         alt="Gallery"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-banner"
           type="video/mp4"
