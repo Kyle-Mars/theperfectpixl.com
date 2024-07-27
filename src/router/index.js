@@ -15,29 +15,14 @@ const router = createRouter({
       component: () => import('../views/aboutPage.vue')
     },
     {
-      path: '/Animated',
-      name: 'Animated',
-      component: () => import('../views/animatedGallery.vue')
-    },
-    {
       path: '/Gallery',
       // name: 'Gallery',
-      component: () => import('../views/galleryGallery.vue')
-    },
-    {
-      path: '/RID',
-      // name: 'RID',
-      component: () => import('../views/ridGallery.vue')
+      component: () => import('../views/galleryPage.vue')
     },
     {
       path: '/Showcase',
       // name: 'Showcase',
-      component: () => import('../views/showcaseGallery.vue')
-    },
-    {
-      path: '/WFC',
-      // name: 'WFC',
-      component: () => import('../views/wfcGallery.vue')
+      component: () => import('../views/showcasePage.vue')
     }
   ]
 })

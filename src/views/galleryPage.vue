@@ -2,16 +2,31 @@
   <body>
     <div class="banner">
       <img
-        id="anim-icon"
-        src="https://ik.imagekit.io/theperfectpixl/LogoAnimated.png"
-        alt="The logo of Transformers Animated."
+        id="gal-icon"
+        sizes="(min-width: 420px) 42.98vw, 55.22vw"
+        srcset="
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/gallery-logo   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/gallery-logo 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/gallery-logo 2400w
+        "
+        src="https://ik.imagekit.io/theperfectpixl/gallery-logo"
+        alt="Gallery"
       />
       <video playsinline autoplay loop muted preload="metadata" id="bannervideo">
-        <source src="https://ik.imagekit.io/theperfectpixl/Animated.mp4" type="video/mp4" />
+        <source src="https://ik.imagekit.io/theperfectpixl/hot-shot-banner" type="video/mp4" />
       </video>
     </div>
     <div class="intro">
-      <div class="text" v-html="content.animText"></div>
+      <div
+        class="text"
+        v-html="
+          content.galIntroText +
+          content.animText +
+          content.ridText +
+          content.wfcText +
+          content.galEndText
+        "
+      ></div>
     </div>
     <br />
     <div class="filterdiv">
@@ -30,21 +45,21 @@
         >
           <Transition name="search">
             <img
-              v-if="image.anim && image.alt.toLowerCase().includes(search.toLowerCase())"
+              v-if="image.alt.toLowerCase().includes(search.toLowerCase())"
               class="gen-image"
               sizes="(min-width: 1260px) 350px, 15.18vw"
               :srcset="
-                'https://ik.imagekit.io/theperfectpixl/tr:n-size256/' +
+                'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size256/' +
                 image.src +
-                ' 256w, https://ik.imagekit.io/theperfectpixl/tr:n-size470/' +
+                ' 256w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size470/' +
                 image.src +
-                ' 470w, https://ik.imagekit.io/theperfectpixl/tr:n-size740/' +
+                ' 470w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size740/' +
                 image.src +
-                ' 740w, https://ik.imagekit.io/theperfectpixl/tr:n-size940/' +
+                ' 740w, https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size940/' +
                 image.src +
                 ' 940w'
               "
-              :src="'https://ik.imagekit.io/theperfectpixl/' + image.src"
+              :src="'https://ik.imagekit.io/theperfectpixl/gallery_photos/' + image.src"
               height="400"
               width="300"
               :alt="image.alt"
@@ -54,7 +69,9 @@
             <div v-if="selected == index" :class="{ background: selected == index }">
               <img
                 class="selected"
-                :src="'https://ik.imagekit.io/theperfectpixl/tr:n-size940/' + image.src"
+                :src="
+                  'https://ik.imagekit.io/theperfectpixl/gallery_photos/tr:n-size940/' + image.src
+                "
                 height="400"
                 width="300"
                 :alt="image.alt"
@@ -76,8 +93,11 @@ const selected = ref(null)
 </script>
 
 <style scoped>
-#anim-icon {
-  width: 40%;
+.gal-image {
+  width: 13vw;
+}
+#gal-icon {
+  width: 43%;
   position: absolute;
   box-shadow: 0 0 0;
 }
@@ -94,8 +114,18 @@ const selected = ref(null)
   max-width: 100%;
 }
 @media screen and (min-width: 1600px) {
-  #anim-icon {
-    width: 30%;
+  #gal-icon {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 486px) {
+  .gal-image {
+    width: 22vw;
+  }
+}
+@media screen and (max-width: 414px) {
+  #gal-icon {
+    width: 55%;
   }
 }
 </style>
