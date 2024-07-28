@@ -85,7 +85,7 @@ const selected = ref(null)
 
 <style scoped>
 .banner-bg {
-  background-image: linear-gradient(40deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
+  background-image: linear-gradient(-40deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
 }
 .show-image {
   width: 22vw;

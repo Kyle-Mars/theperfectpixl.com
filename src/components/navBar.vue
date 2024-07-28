@@ -1,7 +1,7 @@
 <template>
   <div style="position: sticky">
     <div class="header">
-      <div @click="emits('navigate', 'homePage')">
+      <div class="home-link" @click="emits('navigate', 'homePage')">
         <img
           class="logo"
           sizes="(min-width: 500px) 46.98vw, 84.77vw"
@@ -14,8 +14,8 @@
           alt="ThePerfectPixl"
         />
       </div>
-      <div style="display: flex; align-items: baseline">
-        <div class="link" @click="emits('navigate', 'showcasePage')">SHOWCASE</div>
+      <div class="link-toolbar">
+        <!-- <div class="link" @click="emits('navigate', 'showcasePage')">SHOWCASE</div> -->
         <div class="link" @click="emits('navigate', 'galleryPage')">GALLERY</div>
         <div class="link" @click="emits('navigate', 'aboutPage')">ABOUT ME</div>
       </div>
@@ -28,7 +28,14 @@ import { defineEmits } from 'vue'
 
 const emits = defineEmits(['navigate'])
 </script>
-<style>
+
+<style scoped>
+.link-toolbar {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: space-evenly;
+}
 .header {
   font-family: 'Lato', 'Sans Open', sans-serif;
   position: -webkit-sticky;
@@ -49,24 +56,30 @@ const emits = defineEmits(['navigate'])
     0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
   z-index: 2;
 }
+.home-link {
+  cursor: pointer;
+}
 .link {
   font-family: 'Lato', sans-serif;
   color: #515151;
   font-size: 1.246vw;
   font-weight: normal;
   list-style-type: none;
-  padding-left: 1.172vw;
-  padding-right: 1.172vw;
-  padding-bottom: 1.172vw;
-  padding-top: 0.781vw;
-  background-color: white;
-  border: none;
-  outline: none;
+  padding: 1.172vw;
+  margin: 1.172vw;
   cursor: pointer;
-  display: inline;
-  float: right;
+  width: 7vw;
+  height: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .link:hover {
+  box-shadow:
+    3px 3px 3px rgba(0, 0, 0, 0.1),
+    -2px -2px 2px white;
+  border-radius: 10px;
   background-color: #f6f6f6;
 }
 .v-enter-active,
@@ -92,6 +105,8 @@ const emits = defineEmits(['navigate'])
   }
   .link {
     font-size: 1.746vw;
+    min-width: 10vw;
+    height: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -106,23 +121,27 @@ const emits = defineEmits(['navigate'])
     padding: 2%;
     justify-content: center;
   }
+  .link-toolbar {
+    width: 80%;
+    justify-content: space-around;
+  }
   .link {
     font-size: 2.946vw;
+    padding: 2vw;
+    min-width: 20vw;
+    height: 3vw;
   }
 }
 @media screen and (max-width: 414px) {
   .link {
     font-size: 3.5vw;
-    padding-bottom: 2vw;
+    min-width: 23vw;
+    height: 4vw;
   }
 }
 @media screen and (max-width: 390px) {
   .header {
     font-size: 3.9vw;
-  }
-  .link {
-    padding-top: 1vw;
-    padding-bottom: 2vw;
   }
 }
 </style>

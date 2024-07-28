@@ -51,10 +51,6 @@
       </div>
     </div>
     <div class="content-body">
-      <div id="title">
-        Samples
-        <hr />
-      </div>
       <div class="body" id="big-image">
         <div
           v-for="(image, index) in props.imageList"
@@ -63,7 +59,7 @@
         >
           <Transition name="search">
             <img
-              v-if="image.home"
+              v-if="image.show"
               class="home-image"
               sizes="(min-width: 1260px) 350px, 20.91vw"
               :srcset="
@@ -113,7 +109,7 @@ const selected = ref(null)
 
 <style scoped>
 .banner-bg {
-  background-image: linear-gradient(-40deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
+  background-image: linear-gradient(70deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
 }
 .home-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;

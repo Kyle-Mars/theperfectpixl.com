@@ -148,7 +148,6 @@ ul {
   }
 }
 .content-body {
-  z-index: -1;
   background-color: white;
   height: auto;
   flex: 1;
@@ -165,6 +164,7 @@ ul {
     0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
     0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2),
     0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
 .body {
   padding: 2vw;

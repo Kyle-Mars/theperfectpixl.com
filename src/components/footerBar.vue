@@ -3,16 +3,16 @@
     <span class="text" id="foot_text"
       >Contact me at <a href="mailto:kylelmars@gmail.com">kylelmars@gmail.com</a>.</span
     >
-    <button @click="topFunction" class="link" id="top">To Top</button>
+    <!-- <button @click="topFunction" class="link" id="top">To Top</button> -->
   </div>
 </template>
 
-<script setup>
+<!-- <script setup>
 function topFunction() {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
 }
-</script>
+</script> -->
 
 <style scoped>
 .footer {

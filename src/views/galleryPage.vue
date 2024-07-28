@@ -44,11 +44,7 @@
         />
       </div>
       <div class="body" id="gen-image">
-        <div
-          v-for="(image, index) in props.imageList"
-          :key="index"
-          @click="selected != null ? (selected = null) : (selected = index)"
-        >
+        <div v-for="(image, index) in props.imageList" :key="index" @click="select(index)">
           <Transition name="search">
             <img
               v-if="image.alt.toLowerCase().includes(search.toLowerCase())"
@@ -96,6 +92,10 @@ import { defineProps, ref } from 'vue'
 const props = defineProps({ imageList: Array, content: Object })
 const search = ref('')
 const selected = ref(null)
+
+function select(index) {
+  selected.value === null ? (selected.value = index) : (selected.value = null)
+}
 </script>
 
 <style scoped>

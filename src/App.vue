@@ -1,10 +1,9 @@
 <template>
   <pageNav @navigate="setCurrentPage"></pageNav>
-  <!-- <RouterView :imageList="imageList" :content="content" /> -->
   <homePage v-show="currentPage === 'homePage'" :imageList="imageList" :content="content" />
   <aboutPage v-show="currentPage === 'aboutPage'" :imageList="imageList" :content="content" />
   <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" :content="content" />
-  <showcasePage v-show="currentPage === 'showcasePage'" :imageList="imageList" :content="content" />
+  <!-- <showcasePage v-show="currentPage === 'showcasePage'" :imageList="imageList" :content="content" /> -->
   <pageFooter></pageFooter>
 </template>
 
@@ -18,7 +17,7 @@ import pageFooter from './components/footerBar.vue'
 import homePage from './views/homePage.vue'
 import aboutPage from './views/aboutPage.vue'
 import galleryPage from './views/galleryPage.vue'
-import showcasePage from './views/showcasePage.vue'
+// import showcasePage from './views/showcasePage.vue'
 
 const imageList = ref(shuffle(data.images))
 const content = ref(data.content)

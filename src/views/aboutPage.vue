@@ -34,7 +34,6 @@
           Getting into Transformers
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -42,7 +41,6 @@
             v-html="props.content.intoText"
           ></div>
         </Transition>
-
         <button
           class="about-button"
           @click="
@@ -54,7 +52,6 @@
           The Journey of Collecting
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -62,7 +59,6 @@
             v-html="props.content.journeyText"
           ></div>
         </Transition>
-
         <button
           id="photo_button"
           class="about-button"
@@ -75,7 +71,6 @@
           Photographs and Websites
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -83,7 +78,6 @@
             v-html="props.content.photoText"
           ></div>
         </Transition>
-
         <button
           class="about-button"
           @click="
@@ -95,7 +89,6 @@
           Super Link, My Favorite Toyline
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -103,7 +96,6 @@
             v-html="props.content.superLinkText"
           ></div>
         </Transition>
-
         <button
           class="about-button"
           @click="
@@ -115,7 +107,6 @@
           Other Favorite Toys, Media, etc.
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -123,7 +114,6 @@
             v-html="props.content.favsText"
           ></div>
         </Transition>
-
         <button
           class="about-button"
           @click="
@@ -135,7 +125,6 @@
           Interested in Learning More?
           <span>&#8628;</span>
         </button>
-        <hr />
         <Transition>
           <div
             class="about-text"
@@ -170,10 +159,29 @@ const selected = ref([])
   cursor: pointer;
   padding-top: 1vw;
   padding-bottom: 1vw;
+  margin-bottom: 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.about-button:hover {
+  box-shadow:
+    3px 3px 3px rgba(0, 0, 0, 0.1),
+    -2px -2px 2px white;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+.about-button::after {
+  content: '';
+  position: absolute;
+  display: inline;
+  width: 70vw;
+  height: 5px;
+  margin-top: 7vw;
+  background-image: linear-gradient(90deg, rgb(174, 0, 255), rgb(255, 0, 0));
+  border-radius: 10px;
+}
+
 .about-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
   color: #313131;
@@ -181,7 +189,6 @@ const selected = ref([])
   line-height: 175%;
   font-size: 1.2vw;
   text-align: left;
-  padding: 2vw;
   height: auto;
   text-indent: 1em;
   overflow: hidden;
@@ -228,6 +235,11 @@ const selected = ref([])
   .about-text {
     font-size: 1.7vw;
   }
+  .about-button::after {
+    width: 68vw;
+    margin-top: 10.5vw;
+    height: 4px;
+  }
 }
 @media screen and (max-width: 486px) {
   .about-button {
@@ -235,6 +247,11 @@ const selected = ref([])
   }
   .about-text {
     font-size: 2.554vw;
+  }
+  .about-button::after {
+    width: 68vw;
+    margin-top: 10.5vw;
+    height: 3px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -254,6 +271,9 @@ const selected = ref([])
   }
   .about-text {
     font-size: 3.343vw;
+  }
+  .about-button::after {
+    margin-top: 11vw;
   }
 }
 </style>
