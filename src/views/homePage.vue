@@ -12,12 +12,15 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
         alt="Welcome!"
       />
-      <video playsinline autoplay loop muted preload="auto" id="banner-video">
+      <!-- <video playsinline autoplay loop muted preload="auto" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-banner"
           type="video/mp4"
         />
-      </video>
+      </video> -->
+      <div class="banner-bg"></div>
+      <div class="banner-bg banner-bg-2"></div>
+      <div class="banner-bg banner-bg-3"></div>
     </div>
     <div id="home-intro">
       <img
@@ -37,8 +40,8 @@
         alt="A nice photo of me."
       />
       <div id="home-title">
-        Welcome! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur
-        toy photographer.
+        Hi! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur toy
+        photographer.
         <div class="home-text">
           My hobby for the past several years has been collecting, playing with, and displaying
           Transformers toys. I started taking pictures of them soon into collecting, and I haven't
@@ -109,6 +112,9 @@ const selected = ref(null)
 </script>
 
 <style scoped>
+.banner-bg {
+  background-image: linear-gradient(-40deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
+}
 .home-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
   color: #515151;

@@ -12,12 +12,15 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
         alt="Gallery"
       />
-      <video playsinline autoplay loop muted preload="auto" id="banner-video">
+      <!-- <video playsinline autoplay loop muted preload="auto" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-banner"
           type="video/mp4"
         />
-      </video>
+      </video> -->
+      <div class="banner-bg"></div>
+      <div class="banner-bg banner-bg-2"></div>
+      <div class="banner-bg banner-bg-3"></div>
     </div>
     <div class="intro">
       <div
@@ -96,6 +99,9 @@ const selected = ref(null)
 </script>
 
 <style scoped>
+.banner-bg {
+  background-image: linear-gradient(-70deg, rgb(174, 0, 255) 20%, rgb(255, 0, 0) 80%);
+}
 .gal-image {
   width: 13vw;
 }

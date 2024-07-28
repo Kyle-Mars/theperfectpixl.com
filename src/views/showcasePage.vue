@@ -12,12 +12,15 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-logo"
         alt="Showcase"
       />
-      <video playsinline autoplay loop muted preload="auto" id="banner-video">
+      <!-- <video playsinline autoplay loop muted preload="auto" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-banner"
           type="video/mp4"
         />
-      </video>
+      </video> -->
+      <div class="banner-bg"></div>
+      <div class="banner-bg banner-bg-2"></div>
+      <div class="banner-bg banner-bg-3"></div>
     </div>
     <div class="intro">
       <div class="text" v-html="content.showText"></div>
@@ -81,6 +84,9 @@ const selected = ref(null)
 </script>
 
 <style scoped>
+.banner-bg {
+  background-image: linear-gradient(40deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
+}
 .show-image {
   width: 22vw;
 }
