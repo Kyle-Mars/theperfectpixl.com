@@ -12,7 +12,7 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-logo"
         alt="Showcase"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
+      <video playsinline autoplay loop muted preload="auto" id="banner-video">
         <source
           src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-banner"
           type="video/mp4"

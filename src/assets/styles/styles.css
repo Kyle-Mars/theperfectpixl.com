@@ -121,8 +121,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  z-index: -1;
 }
 .content-body {
   z-index: -1;
