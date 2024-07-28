@@ -30,12 +30,6 @@ const emits = defineEmits(['navigate'])
 </script>
 
 <style scoped>
-.link-toolbar {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  justify-content: space-evenly;
-}
 .header {
   font-family: 'Lato', 'Sans Open', sans-serif;
   position: -webkit-sticky;
@@ -48,7 +42,6 @@ const emits = defineEmits(['navigate'])
   justify-content: space-around;
   align-items: center;
   font-weight: bold;
-  font-size: 2.125vw;
   box-shadow:
     0 0.156vw 0.313vw #00000033,
     0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
@@ -59,16 +52,22 @@ const emits = defineEmits(['navigate'])
 .home-link {
   cursor: pointer;
 }
+.link-toolbar {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: space-evenly;
+}
 .link {
   font-family: 'Lato', sans-serif;
   color: #515151;
-  font-size: 1.246vw;
+  font-size: 1.1em;
   font-weight: normal;
   list-style-type: none;
-  padding: 1.172vw;
-  margin: 1.172vw;
+  padding: 1vw;
+  margin: 1vw;
   cursor: pointer;
-  width: 7vw;
+  min-width: 7vw;
   height: 1.5vw;
   display: flex;
   flex-direction: column;
@@ -94,29 +93,20 @@ const emits = defineEmits(['navigate'])
 .v-leave-from {
   top: 8.6vw;
 }
-@media screen and (min-width: 1600px) {
-  .link {
-    font-size: 0.9vw;
-  }
-}
 @media screen and (max-width: 1000px) {
-  .header {
-    font-size: 2.425vw;
-  }
   .link {
-    font-size: 1.746vw;
+    font-size: 1em;
     min-width: 10vw;
     height: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .header {
-    font-size: 2.825vw;
+  .link {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 486px) {
   .header {
-    font-size: 3.225vw;
     flex-wrap: wrap;
     padding: 2%;
     justify-content: center;
@@ -126,7 +116,6 @@ const emits = defineEmits(['navigate'])
     justify-content: space-around;
   }
   .link {
-    font-size: 2.946vw;
     padding: 2vw;
     min-width: 20vw;
     height: 3vw;
@@ -134,14 +123,8 @@ const emits = defineEmits(['navigate'])
 }
 @media screen and (max-width: 414px) {
   .link {
-    font-size: 3.5vw;
     min-width: 23vw;
     height: 4vw;
-  }
-}
-@media screen and (max-width: 390px) {
-  .header {
-    font-size: 3.9vw;
   }
 }
 </style>

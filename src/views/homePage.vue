@@ -2,7 +2,7 @@
   <body>
     <div class="banner">
       <img
-        id="home-icon"
+        class="home-icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/page-assets/welcome-logo   256w,
@@ -12,20 +12,13 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
         alt="Welcome!"
       />
-      <!-- <video playsinline autoplay loop muted preload="auto" id="banner-video">
-        <source
-          src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-banner"
-          type="video/mp4"
-        />
-      </video> -->
       <div class="banner-bg"></div>
       <div class="banner-bg banner-bg-2"></div>
       <div class="banner-bg banner-bg-3"></div>
     </div>
-    <div id="home-intro">
+    <div class="home-intro">
       <img
-        class="home-image"
-        id="profile"
+        class="profile"
         sizes="(min-width: 1260px) 400px, (min-width: 500px) calc(20.63vw + 7px), (min-width: 480px) 4px, (min-width: 460px) 4px, (min-width: 440px) 3px, (min-width: 420px) 3px, (min-width: 400px) 3px, (min-width: 380px) 3px, (min-width: 360px) 3px, (min-width: 340px) 3px, (min-width: 320px) 3px, 2px"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/profile    256w,
@@ -39,19 +32,18 @@
         height="300"
         alt="A nice photo of me."
       />
-      <div id="home-title">
+      <div class="home-title">
         Hi! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur toy
-        photographer.
+        photographer and reviewer.
         <div class="home-text">
           My hobby for the past several years has been collecting, playing with, and displaying
-          Transformers toys. I started taking pictures of them soon into collecting, and I haven't
-          stopped since. Here you can view a curated list of the photos I've taken, or learn more
-          about me, my collection, and Transformers.
+          Transformers toys. Here you can view a gallery of the photos I've taken, read my toy
+          reviews, or learn more about me, my collection, and Transformers.
         </div>
       </div>
     </div>
     <div class="content-body">
-      <div class="body" id="big-image">
+      <div class="images-wrapper">
         <div
           v-for="(image, index) in props.imageList"
           :key="index"
@@ -111,19 +103,12 @@ const selected = ref(null)
 .banner-bg {
   background-image: linear-gradient(70deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
 }
-.home-text {
-  font-family: 'Droid Sans', 'Open Sans', sans-serif;
-  color: #515151;
-  line-height: 175%;
-  font-size: 1.3vw;
-  max-width: 36vw;
-  text-align: left;
-  padding-top: 7%;
+.home-icon {
+  width: 50%;
+  position: absolute;
+  box-shadow: 0 0 0;
 }
-.home-image {
-  width: 22vw;
-}
-#home-intro {
+.home-intro {
   background-color: #f6f6f6;
   height: auto;
   padding: 4%;
@@ -135,78 +120,100 @@ const selected = ref(null)
     0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
     0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2),
     0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
-#home-icon {
-  width: 50%;
-  position: absolute;
+.profile {
+  border-color: #f6f6f6;
+  width: 22vw;
+  border-radius: 1000px;
   box-shadow: 0 0 0;
 }
-#home-title {
+.home-title {
   font-family: 'Droid Sans', sans-serif;
-  font-size: 2.083vw;
+  font-size: 2em;
   text-align: left;
   padding-top: 0vw;
   max-width: 36.0625vw;
 }
+.home-text {
+  font-family: 'Droid Sans', 'Open Sans', sans-serif;
+  color: #515151;
+  line-height: 175%;
+  font-size: 0.6em;
+  max-width: 36vw;
+  text-align: left;
+  padding-top: 7%;
+}
+.home-image {
+  width: 22vw;
+  border-radius: 3px;
+  box-shadow:
+    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
+    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+}
+.home-image:hover {
+  -webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.6) 50%, #000 75%);
+  mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.6) 50%, #000 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transition:
+    mask-position 1.5s ease 0.1s,
+    -webkit-mask-position 1.5s ease 0.1s;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
+}
+
 @media screen and (min-width: 1600px) {
   .home-text {
-    font-size: 1vw;
+    font-size: 0.5em;
   }
-  #home-icon {
+  .home-icon {
     width: 40%;
   }
-  #home-title {
-    font-size: 1.7vw;
+  .home-title {
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 1000px) {
   .home-text {
-    font-size: 1.3vw;
+    font-size: 0.6em;
+    max-width: 50vw;
   }
-}
-@media screen and (max-width: 768px) {
-  .home-text {
-    font-size: 1.7vw;
-    max-width: 50.125vw;
-  }
-  #home-title {
-    font-size: 2.5vw;
-    max-width: 50.125vw;
+  .home-title {
+    font-size: 1.3em;
+    max-width: 50vw;
   }
 }
 @media screen and (max-width: 486px) {
-  .home-text {
-    font-size: 2.854vw;
-    max-width: 75.125vw;
+  .profile {
+    display: none;
   }
   .home-image {
     width: 33vw;
   }
-  #home-intro {
+  .home-intro {
     justify-content: center;
+    flex-direction: column;
   }
-  #home-title {
-    font-size: 3.083vw;
-    max-width: 75.125vw;
+  .home-text,
+  .home-title {
+    max-width: 90vw;
   }
 }
 @media screen and (max-width: 414px) {
-  .home-text {
-    font-size: 2.899vw;
-  }
-  #home-icon {
+  .home-icon {
     width: 70%;
-  }
-  #home-title {
-    font-size: 3.583vw;
   }
 }
 @media screen and (max-width: 390px) {
-  .home-text {
-    font-size: 3.343vw;
+  .home-title {
+    font-size: 1em;
   }
-  #home-title {
-    font-size: 3.983vw;
+  .home-text {
+    font-size: 1em;
   }
 }
 </style>

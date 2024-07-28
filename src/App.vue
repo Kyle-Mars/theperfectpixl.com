@@ -1,15 +1,14 @@
 <template>
   <pageNav @navigate="setCurrentPage"></pageNav>
-  <homePage v-show="currentPage === 'homePage'" :imageList="imageList" :content="content" />
-  <aboutPage v-show="currentPage === 'aboutPage'" :imageList="imageList" :content="content" />
-  <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" :content="content" />
-  <!-- <showcasePage v-show="currentPage === 'showcasePage'" :imageList="imageList" :content="content" /> -->
+  <homePage v-show="currentPage === 'homePage'" :imageList="imageList" />
+  <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" />
+  <aboutPage v-show="currentPage === 'aboutPage'" />
   <pageFooter></pageFooter>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import data from './assets/data.js'
+import imageData from './assets/imageData.js'
 
 import pageNav from './components/navBar.vue'
 import pageFooter from './components/footerBar.vue'
@@ -17,10 +16,8 @@ import pageFooter from './components/footerBar.vue'
 import homePage from './views/homePage.vue'
 import aboutPage from './views/aboutPage.vue'
 import galleryPage from './views/galleryPage.vue'
-// import showcasePage from './views/showcasePage.vue'
 
-const imageList = ref(shuffle(data.images))
-const content = ref(data.content)
+const imageList = ref(shuffle(imageData))
 
 function shuffle(array) {
   let currentIndex = array.length,
