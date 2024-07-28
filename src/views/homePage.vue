@@ -12,7 +12,12 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
         alt="Welcome!"
       />
-      <div id="banner-image" loading="lazy"></div>
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-banner"
+          type="video/mp4"
+        />
+      </video>
     </div>
     <div id="home-intro">
       <img
@@ -104,10 +109,6 @@ const selected = ref(null)
 </script>
 
 <style scoped>
-#banner-image {
-  background-image: url('https://ik.imagekit.io/theperfectpixl/page-assets/megazarak-card');
-  background-position: 50% 30%;
-}
 .home-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
   color: #515151;

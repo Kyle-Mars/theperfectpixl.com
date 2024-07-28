@@ -12,7 +12,12 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
         alt="Gallery"
       />
-      <div id="banner-image" loading="lazy"></div>
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-banner"
+          type="video/mp4"
+        />
+      </video>
     </div>
     <div class="intro">
       <div
@@ -91,10 +96,6 @@ const selected = ref(null)
 </script>
 
 <style scoped>
-#banner-image {
-  background-image: url('https://ik.imagekit.io/theperfectpixl/page-assets/wheeljack-card');
-  background-position: 50% 20%;
-}
 .gal-image {
   width: 13vw;
 }

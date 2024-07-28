@@ -12,7 +12,12 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo"
         alt="About Me"
       />
-      <div id="banner-image" loading="lazy"></div>
+      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
+        <source
+          src="https://ik.imagekit.io/theperfectpixl/page-assets/about-banner"
+          type="video/mp4"
+        />
+      </video>
     </div>
 
     <div class="intro">
@@ -154,10 +159,6 @@ const selected = ref([])
 </script>
 
 <style scoped>
-#banner-image {
-  background-image: url('https://ik.imagekit.io/theperfectpixl/page-assets/grand-convoy-card');
-  background-position: 50% 8%;
-}
 .about-button {
   font-family: 'Droid Sans', sans-serif;
   font-size: 2.083vw;
