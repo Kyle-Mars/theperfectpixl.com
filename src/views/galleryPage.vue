@@ -12,12 +12,7 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
         alt="Gallery"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
-        <source
-          src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-banner"
-          type="video/mp4"
-        />
-      </video>
+      <div id="banner-image" loading="lazy"></div>
     </div>
     <div class="intro">
       <div
@@ -32,14 +27,14 @@
       ></div>
     </div>
     <br />
-    <div class="filterdiv">
-      <input
-        id="filter"
-        v-model="search"
-        placeholder="Search images by character name, toyline..."
-      />
-    </div>
-    <div style="flex: 1">
+    <div class="content-body">
+      <div class="filterdiv">
+        <input
+          id="filter"
+          v-model="search"
+          placeholder="Search images by character name, toyline..."
+        />
+      </div>
       <div class="body" id="gen-image">
         <div
           v-for="(image, index) in props.imageList"
@@ -96,6 +91,10 @@ const selected = ref(null)
 </script>
 
 <style scoped>
+#banner-image {
+  background-image: url('https://ik.imagekit.io/theperfectpixl/page-assets/wheeljack-card');
+  background-position: 50% 20%;
+}
 .gal-image {
   width: 13vw;
 }

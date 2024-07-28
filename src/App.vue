@@ -1,10 +1,10 @@
 <template>
   <pageNav @navigate="setCurrentPage"></pageNav>
   <!-- <RouterView :imageList="imageList" :content="content" /> -->
-  <homePage v-if="currentPage === 'homePage'" :imageList="imageList" :content="content" />
-  <aboutPage v-if="currentPage === 'aboutPage'" :imageList="imageList" :content="content" />
-  <galleryPage v-if="currentPage === 'galleryPage'" :imageList="imageList" :content="content" />
-  <showcasePage v-if="currentPage === 'showcasePage'" :imageList="imageList" :content="content" />
+  <homePage v-show="currentPage === 'homePage'" :imageList="imageList" :content="content" />
+  <aboutPage v-show="currentPage === 'aboutPage'" :imageList="imageList" :content="content" />
+  <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" :content="content" />
+  <showcasePage v-show="currentPage === 'showcasePage'" :imageList="imageList" :content="content" />
   <pageFooter></pageFooter>
 </template>
 

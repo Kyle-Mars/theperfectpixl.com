@@ -12,18 +12,13 @@
         src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-logo"
         alt="Showcase"
       />
-      <video playsinline autoplay loop muted preload="metadata" id="banner-video">
-        <source
-          src="https://ik.imagekit.io/theperfectpixl/page-assets/showcase-banner"
-          type="video/mp4"
-        />
-      </video>
+      <div id="banner-image" loading="lazy"></div>
     </div>
     <div class="intro">
       <div class="text" v-html="content.showText"></div>
     </div>
     <br />
-    <div style="flex: 1">
+    <div class="content-body">
       <div class="body" id="big-image">
         <div
           v-for="(image, index) in props.imageList"
@@ -81,6 +76,10 @@ const selected = ref(null)
 </script>
 
 <style scoped>
+#banner-image {
+  background-image: url('https://ik.imagekit.io/theperfectpixl/page-assets/nightscream-card');
+  background-position: 50% 10%;
+}
 .show-image {
   width: 22vw;
 }
