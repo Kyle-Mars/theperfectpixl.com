@@ -503,6 +503,7 @@ const selected = ref([])
   font-size: 1em;
   color: #515151;
   width: 70vw;
+  height: 5vw;
   background-color: white;
   border: none;
   outline: none;
@@ -554,9 +555,10 @@ const selected = ref([])
   }
   .about-button {
     font-size: 0.7em;
+    height: 7vw;
   }
   .about-button::after {
-    margin-top: 7vw;
+    margin-top: 9vw;
     height: 4px;
   }
 }
@@ -564,6 +566,7 @@ const selected = ref([])
   .about-button {
     padding: 2vw;
     width: 100%;
+    margin-bottom: 3vw;
     font-size: 0.6em;
   }
   .title {
@@ -571,7 +574,7 @@ const selected = ref([])
   }
   .about-button::after {
     width: 66vw;
-    margin-top: 10vw;
+    margin-top: 12vw;
     height: 4px;
   }
 }
@@ -589,7 +592,11 @@ const selected = ref([])
     width: 55%;
   }
   .about-button {
+    height: 17vw;
     text-align: left;
+  }
+  .about-button::after {
+    margin-top: 21vw;
   }
 }
 @media screen and (max-width: 390px) {
@@ -601,7 +608,7 @@ const selected = ref([])
     margin-bottom: 6vw;
   }
   .about-button::after {
-    margin-top: 20vw;
+    margin-top: 23vw;
   }
 }
 </style>

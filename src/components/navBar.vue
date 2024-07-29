@@ -46,10 +46,10 @@ const selected = ref(null)
   align-items: center;
   font-weight: bold;
   box-shadow:
-    0 0.156vw 0.313vw #00000033,
-    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
-    0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+    0 0.15vw 0.3vw #00000033,
+    0 0.25vw 0.8vw rgba(0, 0, 0, 0.19),
+    0 -0.15vw 0.3vw rgba(0, 0, 0, 0.2),
+    0 -0.25vw 0.8vw rgba(0, 0, 0, 0.19);
   z-index: 2;
 }
 .home-link {
