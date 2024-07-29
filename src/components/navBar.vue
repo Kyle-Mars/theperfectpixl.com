@@ -1,27 +1,25 @@
 <template>
-  <div style="position: sticky">
-    <div class="header">
-      <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
-        <img
-          class="logo"
-          sizes="(min-width: 500px) 46.98vw, 84.77vw"
-          srcset="
-            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo256/main-logo   256w,
-            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo1710/main-logo 1710w,
-            https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo2400/main-logo 2400w
-          "
-          src="https://ik.imagekit.io/theperfectpixl/page-assets/main-logo"
-          alt="ThePerfectPixl"
-        />
+  <div class="header">
+    <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
+      <img
+        class="logo"
+        sizes="(min-width: 500px) 46.98vw, 84.77vw"
+        srcset="
+          https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo256/main-logo   256w,
+          https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo1710/main-logo 1710w,
+          https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo2400/main-logo 2400w
+        "
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/main-logo"
+        alt="ThePerfectPixl"
+      />
+    </div>
+    <div class="link-toolbar">
+      <!-- <div class="link">REVIEWS</div> -->
+      <div class="link" @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')">
+        GALLERY
       </div>
-      <div class="link-toolbar">
-        <!-- <div class="link">REVIEWS</div> -->
-        <div class="link" @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')">
-          GALLERY
-        </div>
-        <div class="link" @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')">
-          ABOUT ME
-        </div>
+      <div class="link" @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')">
+        ABOUT ME
       </div>
     </div>
   </div>
@@ -40,9 +38,9 @@ const selected = ref(null)
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  height: 10vw;
   background-color: white;
   background-size: cover;
-  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -124,6 +122,9 @@ const selected = ref(null)
   }
 }
 @media screen and (max-width: 486px) {
+  .header {
+    height: 25vw;
+  }
   .header {
     flex-wrap: wrap;
     padding: 2%;
