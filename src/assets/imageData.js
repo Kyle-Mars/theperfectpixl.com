@@ -382,7 +382,7 @@ let images = [
   {
     src: 'MegTankUnder.webp',
     alt: 'War for Cybertron Trilogy Netflix Megatron crushing Cog in alt/vehicle mode',
-    show: true
+    show: false
   },
   {
     src: 'ThundersThink.webp',
@@ -529,7 +529,7 @@ let images = [
   {
     src: 'vector-power',
     alt: 'Galaxy Force Vector Prime channeling the power of his Cyber Key',
-    show: true
+    show: false
   },
   {
     src: 'vector-roots',

@@ -16,7 +16,6 @@
       <div class="banner-bg banner-bg-2"></div>
       <div class="banner-bg banner-bg-3"></div>
     </div>
-
     <div class="intro">
       <div class="text">
         Who am I? How did I get into Transformers? What is it like collecting toys? What are my
@@ -25,9 +24,8 @@
         Transformers, I've got links to resources to help you do just that.
       </div>
     </div>
-
     <div class="content-body">
-      <div class="body title">
+      <div class="about-content-wrapper">
         <button
           class="about-button"
           @click="
@@ -36,7 +34,7 @@
               : selected.splice(selected.indexOf('into'), 1)
           "
         >
-          Getting into Transformers
+          MY INTRO TO TRANSFORMERS
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -81,7 +79,7 @@
               : selected.splice(selected.indexOf('journey'), 1)
           "
         >
-          The Journey of Collecting
+          TOY COLLECTING
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -183,7 +181,7 @@
               : selected.splice(selected.indexOf('photo'), 1)
           "
         >
-          Photographs and Websites
+          PHOTOGRAPHY
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -233,7 +231,7 @@
               : selected.splice(selected.indexOf('superLink'), 1)
           "
         >
-          Super Link, My Favorite Toyline
+          SUPER LINK
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -245,7 +243,7 @@
               <a
                 href="https://tfwiki.net/wiki/Transformers:_Energon_(toyline)#Takara_Super_Link_toyline"
                 >Super Link</a
-              >.Debuting in late 2003 in Japan, Super Link was the follow-up to the massively
+              >. Debuting in late 2003 in Japan, Super Link was the follow-up to the massively
               successful Micron Legend/Armada toyline from the previous year, and celebrated the
               Transformers franchise's 20th anniversary by harkening back to many classic characters
               and designs. Unlike the very unified gimmickry of the Microns in Micron Legend, Super
@@ -302,7 +300,7 @@
               : selected.splice(selected.indexOf('favs'), 1)
           "
         >
-          Other Favorite Toys, Media, etc.
+          FAVORITE TOYS AND MEDIA
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -402,7 +400,7 @@
               : selected.splice(selected.indexOf('more'), 1)
           "
         >
-          Interested in Learning More?
+          LEARN MORE
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -470,7 +468,12 @@ const selected = ref([])
 .banner-bg {
   background-image: linear-gradient(70deg, rgb(174, 0, 255) 20%, rgb(255, 0, 0) 80%);
 }
-.title {
+.about-content-wrapper {
+  padding: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  background-color: white;
+  height: auto;
   font-size: 2em;
   text-align: left;
   display: block;
@@ -514,6 +517,7 @@ const selected = ref([])
   box-shadow:
     3px 3px 3px rgba(0, 0, 0, 0.1),
     -2px -2px 2px white;
+  transition: box-shadow 0.2s ease;
   border-radius: 10px;
   background-color: #f6f6f6;
 }
@@ -529,7 +533,7 @@ const selected = ref([])
 }
 .v-enter-active,
 .v-leave-active {
-  transition: max-height 1s ease-in-out;
+  transition: max-height 1s ease;
 }
 .v-enter-from,
 .v-leave-to {
@@ -566,7 +570,7 @@ const selected = ref([])
     width: 80%;
   }
   .about-button::after {
-    width: 76vw;
+    width: 66vw;
     margin-top: 10vw;
     height: 4px;
   }
@@ -583,6 +587,9 @@ const selected = ref([])
 @media screen and (max-width: 414px) {
   .about-icon {
     width: 55%;
+  }
+  .about-button {
+    text-align: left;
   }
 }
 @media screen and (max-width: 390px) {

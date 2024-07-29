@@ -1,7 +1,7 @@
 <template>
   <div style="position: sticky">
     <div class="header">
-      <div class="home-link" @click="emits('navigate', 'homePage')">
+      <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
         <img
           class="logo"
           sizes="(min-width: 500px) 46.98vw, 84.77vw"
@@ -15,18 +15,23 @@
         />
       </div>
       <div class="link-toolbar">
-        <!-- <div class="link" @click="emits('navigate', 'showcasePage')">SHOWCASE</div> -->
-        <div class="link" @click="emits('navigate', 'galleryPage')">GALLERY</div>
-        <div class="link" @click="emits('navigate', 'aboutPage')">ABOUT ME</div>
+        <!-- <div class="link">REVIEWS</div> -->
+        <div class="link" @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')">
+          GALLERY
+        </div>
+        <div class="link" @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')">
+          ABOUT ME
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { defineEmits } from 'vue'
+import { ref, defineEmits } from 'vue'
 
 const emits = defineEmits(['navigate'])
+const selected = ref(null)
 </script>
 
 <style scoped>
@@ -51,6 +56,20 @@ const emits = defineEmits(['navigate'])
 }
 .home-link {
   cursor: pointer;
+}
+.home-link:hover {
+  -webkit-mask-image: linear-gradient(-45deg, #000 25%, rgba(0, 0, 0, 0.2) 50%, #000 75%);
+  mask-image: linear-gradient(-45deg, #000 25%, rgba(0, 0, 0, 0.2) 50%, #000 75%);
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+  transition:
+    mask-position 1.5s ease 0.1s,
+    -webkit-mask-position 1.5s ease 0.1s;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 1;
 }
 .link-toolbar {
   display: flex;
@@ -78,20 +97,19 @@ const emits = defineEmits(['navigate'])
   box-shadow:
     3px 3px 3px rgba(0, 0, 0, 0.1),
     -2px -2px 2px white;
+  transition: box-shadow 0.2s ease;
   border-radius: 10px;
   background-color: #f6f6f6;
 }
-.v-enter-active,
-.v-leave-active {
-  transition: top 0.5s ease-in-out;
-}
-.v-enter-from,
-.v-leave-to {
-  top: 0;
-}
-.v-enter-to,
-.v-leave-from {
-  top: 8.6vw;
+@keyframes popout {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  100% {
+    box-shadow:
+      3px 3px 3px rgba(0, 0, 0, 0.1),
+      -2px -2px 2px white;
+  }
 }
 @media screen and (max-width: 1000px) {
   .link {
@@ -102,7 +120,7 @@ const emits = defineEmits(['navigate'])
 }
 @media screen and (max-width: 768px) {
   .link {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 486px) {

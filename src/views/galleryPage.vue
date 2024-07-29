@@ -50,8 +50,6 @@
           featured its own unique aesthetic; Siege had Cybertronian alternate modes and battle
           damage paint, Earthrise delivered clean Earth mode updates, and Kingdom pulled in
           characters from Beast Wars for the series’ 25th anniversary.
-        </p>
-        <p>
           <a href="https://tfwiki.net/wiki/Transformers:_Legacy_(toyline)">Legacy</a> and
           <a href="https://tfwiki.net/wiki/Transformers:_Legacy_(toyline)#Legacy:_Evolution"
             >Legacy Evolution</a
@@ -66,7 +64,6 @@
         </p>
       </div>
     </div>
-    <br />
     <div class="content-body">
       <div class="filter-div">
         <input
@@ -147,15 +144,15 @@ function select(index) {
     0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
 }
 .gal-image:hover {
-  -webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.6) 50%, #000 75%);
-  mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.6) 50%, #000 75%);
+  -webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.2) 50%, #000 75%);
+  mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.2) 50%, #000 75%);
   -webkit-mask-size: 800%;
   mask-size: 800%;
   -webkit-mask-position: 0;
   mask-position: 0;
   transition:
-    mask-position 1.5s ease 0.1s,
-    -webkit-mask-position 1.5s ease 0.1s;
+    mask-position 1s ease 0.1s,
+    -webkit-mask-position 1s ease 0.1s;
   -webkit-mask-position: 120%;
   mask-position: 120%;
   opacity: 1;
@@ -169,44 +166,19 @@ function select(index) {
   width: 90%;
   padding: 1%;
 }
-.v-enter-active,
-.v-leave-active {
-  transition: max-width 0.5s ease-in-out;
-}
-.v-enter-from,
-.v-leave-to {
-  max-width: 0%;
-}
-.v-enter-to,
-.v-leave-from {
-  max-width: 100%;
-}
-.selected {
-  z-index: 3;
-  height: 90vh;
-  border-radius: 2px;
-  width: auto;
-}
 @media screen and (min-width: 1600px) {
   .gal-icon {
     width: 33%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .gal-image {
     width: 18vw;
-  }
-  .selected {
-    height: 80vh;
   }
 }
-@media screen and (min-width: 786px) {
+@media screen and (max-width: 786px) {
   .gal-image {
     width: 18vw;
-  }
-  .selected {
-    width: 85vw;
-    height: auto;
   }
 }
 @media screen and (max-width: 486px) {

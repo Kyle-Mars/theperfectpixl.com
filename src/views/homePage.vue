@@ -21,24 +21,24 @@
         class="profile"
         sizes="(min-width: 1260px) 400px, (min-width: 500px) calc(20.63vw + 7px), (min-width: 480px) 4px, (min-width: 460px) 4px, (min-width: 440px) 3px, (min-width: 420px) 3px, (min-width: 400px) 3px, (min-width: 380px) 3px, (min-width: 360px) 3px, (min-width: 340px) 3px, (min-width: 320px) 3px, 2px"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/profile    256w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/profile    700w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/profile 1000w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/profile 1220w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1410n-size1410/profile 1410w
+          https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/page-assets/profile.jpg    256w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/page-assets/profile.jpg    700w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/page-assets/profile.jpg 1000w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/page-assets/profile.jpg 1220w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-1410n-size1410/page-assets/profile.jpg 1410w
         "
-        src="https://ik.imagekit.io/theperfectpixl/profile"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/profile.jpg"
         width="300"
         height="300"
         alt="A nice photo of me."
       />
       <div class="home-title">
         Hi! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur toy
-        photographer and reviewer.
+        photographer.
         <div class="home-text">
           My hobby for the past several years has been collecting, playing with, and displaying
-          Transformers toys. Here you can view a gallery of the photos I've taken, read my toy
-          reviews, or learn more about me, my collection, and Transformers.
+          Transformers toys. Here you can view a gallery of the photos I've taken or learn more
+          about me, my collection, and Transformers.
         </div>
       </div>
     </div>
@@ -201,6 +201,7 @@ const selected = ref(null)
   .home-text,
   .home-title {
     max-width: 90vw;
+    line-height: 175%;
   }
 }
 @media screen and (max-width: 414px) {
@@ -213,7 +214,7 @@ const selected = ref(null)
     font-size: 1em;
   }
   .home-text {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 </style>

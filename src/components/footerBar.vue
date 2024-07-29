@@ -16,6 +16,8 @@ function topFunction() {
 
 <style scoped>
 .footer {
+  position: relative;
+  z-index: 1;
   background-color: #f6f6f6;
   height: auto;
   padding: 1.5%;

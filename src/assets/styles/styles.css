@@ -116,13 +116,34 @@ ol,
 ul {
   padding-left: 2em;
 }
+img {
+  aspect-ratio: auto 300 / 400;
+  border-style: none;
+  height: auto;
+  margin: 0.391vw;
+  object-fit: cover;
+  box-shadow:
+    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
+    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+}
+a {
+  outline: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
 .banner {
   height: 15vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .banner-bg {
+  background-image: linear-gradient(70deg, rgb(174, 0, 255) 50%, rgb(255, 0, 0) 50%);
   animation: slide 2s ease-in-out infinite alternate;
   bottom: 0;
   left: -50%;
@@ -131,7 +152,7 @@ ul {
   right: -50%;
   top: 0;
   z-index: -1;
-  height: 100vh;
+  height: 60vh;
 }
 .banner-bg-2 {
   animation-direction: alternate-reverse;
@@ -148,11 +169,8 @@ ul {
     transform: translateX(25%);
   }
 }
-.content-body {
-  background-color: white;
-  width: 100%;
-  height: auto;
-  flex: 1;
+.logo {
+  box-shadow: 0 0 0;
 }
 .intro {
   background-color: #f6f6f6;
@@ -168,16 +186,12 @@ ul {
     0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
   z-index: 1;
 }
-.body {
-  font-size: 1em;
-  padding: 2vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+
+.content-body {
   background-color: white;
+  width: 100%;
   height: auto;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 1;
 }
 .text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
@@ -187,9 +201,6 @@ ul {
   font-size: 1em;
   text-align: left;
   text-indent: 1em;
-}
-.logo {
-  box-shadow: 0 0 0;
 }
 .images-wrapper {
   background-color: white;
@@ -211,6 +222,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.selected {
+  z-index: 3;
+  height: 90vh;
+  border-radius: 5px;
+  width: auto;
 }
 .search-enter-active,
 .search-leave-active {
@@ -236,32 +253,29 @@ ul {
 .lightbox-leave-from {
   opacity: 100%;
 }
-img {
-  aspect-ratio: auto 300 / 400;
-  border-style: none;
-  height: auto;
-  margin: 0.391vw;
-  object-fit: cover;
-  box-shadow:
-    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
-}
-a {
-  outline: none;
-}
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
 @media screen and (min-width: 1600px) {
   .logo {
     width: 90%;
   }
 }
+@media screen and (max-width: 1000px) {
+  .selected {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 786px) {
+  .selected {
+    width: 85vw;
+    height: auto;
+  }
+}
 @media screen and (max-width: 414px) {
   .banner {
     height: 25vw;
+  }
+}
+@media screen and (max-width: 390px) {
+  .text {
+    font-size: 0.8em;
   }
 }
