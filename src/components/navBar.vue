@@ -15,10 +15,18 @@
     </div>
     <div class="link-toolbar">
       <!-- <div class="link">REVIEWS</div> -->
-      <div class="link" @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')">
+      <div
+        class="link"
+        :class="{ 'current-link': selected === 'galleryPage' }"
+        @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')"
+      >
         GALLERY
       </div>
-      <div class="link" @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')">
+      <div
+        class="link"
+        :class="{ 'current-link': selected === 'aboutPage' }"
+        @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')"
+      >
         ABOUT ME
       </div>
     </div>
@@ -99,14 +107,23 @@ const selected = ref(null)
   border-radius: 10px;
   background-color: #f6f6f6;
 }
-@keyframes popout {
+.current-link::after {
+  animation: underline 0.2s ease-out forwards;
+  content: '';
+  position: absolute;
+  display: inline;
+  width: 7vw;
+  height: 3px;
+  margin-top: 2vw;
+  background-image: linear-gradient(90deg, rgb(174, 0, 255), rgb(255, 0, 0));
+  border-radius: 10px;
+}
+@keyframes underline {
   0% {
-    box-shadow: 0 0 0;
+    width: 0;
   }
   100% {
-    box-shadow:
-      3px 3px 3px rgba(0, 0, 0, 0.1),
-      -2px -2px 2px white;
+    width: 7vw;
   }
 }
 @media screen and (max-width: 1000px) {
