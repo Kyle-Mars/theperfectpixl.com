@@ -2,7 +2,7 @@
   <body>
     <div class="banner">
       <img
-        class="about-icon"
+        class="icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo   256w,
@@ -482,7 +482,7 @@ const selected = ref([])
   margin-right: auto;
 }
 .about-icon {
-  width: 40%;
+  height: 8vw;
   position: absolute;
   box-shadow: 0 0 0;
 }

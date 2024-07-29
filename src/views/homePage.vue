@@ -2,7 +2,7 @@
   <body>
     <div class="banner">
       <img
-        class="home-icon"
+        class="icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/page-assets/welcome-logo   256w,
@@ -103,11 +103,6 @@ const selected = ref(null)
 .banner-bg {
   background-image: linear-gradient(70deg, rgb(255, 0, 0) 20%, rgb(174, 0, 255) 80%);
 }
-.home-icon {
-  width: 50%;
-  position: absolute;
-  box-shadow: 0 0 0;
-}
 .home-intro {
   background-color: #f6f6f6;
   height: auto;
@@ -116,10 +111,10 @@ const selected = ref(null)
   justify-content: space-evenly;
   align-items: center;
   box-shadow:
-    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19),
-    0 -0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 -0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+    0 0.15vw 0.3vw rgba(0, 0, 0, 0.2),
+    0 0.25vw 0.8vw rgba(0, 0, 0, 0.2),
+    0 -0.15vw 0.3vw rgba(0, 0, 0, 0.2),
+    0 -0.25vw 0.8vw rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 .profile {
@@ -133,7 +128,7 @@ const selected = ref(null)
   font-size: 2em;
   text-align: left;
   padding-top: 0vw;
-  max-width: 36.0625vw;
+  max-width: 36vw;
 }
 .home-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
@@ -148,8 +143,8 @@ const selected = ref(null)
   width: 22vw;
   border-radius: 3px;
   box-shadow:
-    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+    0 0.15vw 0.3vw rgba(0, 0, 0, 0.2),
+    0 0.25vw 0.8vw rgba(0, 0, 0, 0.19);
 }
 .home-image:hover {
   -webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.6) 50%, #000 75%);

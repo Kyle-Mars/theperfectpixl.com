@@ -3,7 +3,6 @@
   <homePage v-show="currentPage === 'homePage'" :imageList="imageList" />
   <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" />
   <aboutPage v-show="currentPage === 'aboutPage'" />
-  <pageFooter></pageFooter>
 </template>
 
 <script setup>
@@ -11,7 +10,6 @@ import { ref } from 'vue'
 import imageData from './assets/imageData.js'
 
 import pageNav from './components/navBar.vue'
-import pageFooter from './components/footerBar.vue'
 
 import homePage from './views/homePage.vue'
 import aboutPage from './views/aboutPage.vue'

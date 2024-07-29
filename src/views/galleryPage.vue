@@ -2,7 +2,7 @@
   <body>
     <div class="banner">
       <img
-        class="gal-icon"
+        class="icon"
         sizes="(min-width: 420px) 42.98vw, 55.22vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/page-assets/gallery-logo   256w,
@@ -130,11 +130,6 @@ function select(index) {
 <style scoped>
 .banner-bg {
   background-image: linear-gradient(-70deg, rgb(174, 0, 255) 20%, rgb(255, 0, 0) 80%);
-}
-.gal-icon {
-  width: 43%;
-  position: absolute;
-  box-shadow: 0 0 0;
 }
 .gal-image {
   width: 15vw;
