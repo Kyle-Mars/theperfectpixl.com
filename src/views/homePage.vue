@@ -3,7 +3,7 @@
     <div class="banner">
       <img
         class="icon"
-        sizes="(min-width: 420px) 48vw, 68vw"
+        sizes="(min-width: 800px) 49.95vw, (min-width: 500px) 62.5vw, (min-width: 400px) 75vw, 81.25vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-logo256/page-assets/home-logo-new   256w,
           https://ik.imagekit.io/theperfectpixl/tr:n-logo1710/page-assets/home-logo-new 1710w,
@@ -20,13 +20,12 @@
     <div class="home-intro">
       <img
         class="profile"
-        sizes="(min-width: 1260px) 400px, (min-width: 500px) calc(20.63vw + 7px), (min-width: 480px) 4px, (min-width: 460px) 4px, (min-width: 440px) 3px, (min-width: 420px) 3px, (min-width: 400px) 3px, (min-width: 380px) 3px, (min-width: 360px) 3px, (min-width: 340px) 3px, (min-width: 320px) 3px, 2px"
+        sizes="22vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:h-256n-size256/page-assets/profile.jpg    256w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/page-assets/profile.jpg    700w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/page-assets/profile.jpg 1000w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/page-assets/profile.jpg 1220w,
-          https://ik.imagekit.io/theperfectpixl/tr:h-1410n-size1410/page-assets/profile.jpg 1410w
+          https://ik.imagekit.io/theperfectpixl/tr:h-700n-size700/page-assets/profile.jpg    660w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-1000n-size1000/page-assets/profile.jpg 1040w,
+          https://ik.imagekit.io/theperfectpixl/tr:h-1220n-size1220/page-assets/profile.jpg 1320w
         "
         src="https://ik.imagekit.io/theperfectpixl/page-assets/profile.jpg"
         width="300"
@@ -37,8 +36,8 @@
         Hi! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur toy
         photographer.
         <div class="home-text">
-          My hobby for the past several years has been collecting, playing with, and displaying
-          Transformers toys. Here you can view a gallery of the photos I've taken or learn more
+          Since 2019 I've been buying, selling, playing with, displaying, and photographing
+          Transformers toys. From here you can view a gallery of the photos I've taken or learn more
           about me, my collection, and Transformers.
         </div>
       </div>
@@ -54,7 +53,7 @@
             <img
               v-if="image.show"
               class="home-image"
-              sizes="(min-width: 1260px) 350px, 20.91vw"
+              sizes="(min-width: 500px) 22vw, 32.78vw"
               :srcset="
                 'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size256/' +
                 image.src +

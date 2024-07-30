@@ -3,7 +3,7 @@
     <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
       <img
         class="logo"
-        sizes="(min-width: 500px) 48vw, 68vw"
+        sizes="(min-width: 1600px) 39.86vw, (min-width: 500px) calc(47.04vw + 15px), 99.44vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo256/main-logo-new   256w,
           https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo1710/main-logo-new 1710w,

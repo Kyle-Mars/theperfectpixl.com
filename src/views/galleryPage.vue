@@ -3,7 +3,7 @@
     <div class="banner">
       <img
         class="icon"
-        sizes="(min-width: 420px) 48vw, 68vw"
+        sizes="(min-width: 800px) 49.95vw, (min-width: 500px) 62.5vw, (min-width: 400px) 75vw, 81.25vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/tr:n-logo256/page-assets/gallery-logo-new   256w,
           https://ik.imagekit.io/theperfectpixl/tr:n-logo1710/page-assets/gallery-logo-new 1710w,
@@ -20,8 +20,8 @@
     <div class="intro">
       <div class="text">
         <p>
-          While my collection covers about 6 main toylines, at the moment my photo library is
-          focused mainly on 3 main lines.
+          While my collection consists of 6 main toylines, historically my photo library has focused
+          mainly on 3 toylines.
         </p>
         <p>
           <a href="https://tfwiki.net/wiki/Transformers_Animated_(toyline)"
@@ -59,9 +59,10 @@
           aesthetic while bringing in a more diverse cast of characters from across the franchise.
         </p>
         <p>
-          I don't own toys from all of these lines anymore, but I do still have their photos. You
-          can search for a specific character or toys from one of the toylines mentioned using the
-          search bar below.
+          I have since sold off my War for Cybertron Trilogy toys, but I retain have their photos.
+          Some of them are pretty decent! You can search for a specific character, toys from one of
+          the toylines mentioned, or even photos with specific poses (if you can guess my phrasing)
+          using the search bar below.
         </p>
       </div>
     </div>

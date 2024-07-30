@@ -542,6 +542,16 @@ let images = [
     show: false
   },
   {
+    src: 'VectorSwing.jpg',
+    alt: 'Galaxy Force Vector Prime swinging his sword.',
+    show: false
+  },
+  {
+    src: 'VectorGesture.jpg',
+    alt: 'Galaxy Force Vector Prime gesturing.',
+    show: false
+  },
+  {
     src: 'PrimusShoot.webp',
     alt: 'Cybertron Primus shooting',
     show: false
