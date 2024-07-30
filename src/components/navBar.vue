@@ -3,7 +3,7 @@
     <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
       <img
         class="logo"
-        sizes="(min-width: 500px) 46.98vw, 84.77vw"
+        sizes="(min-width: 500px) 48vw, 68vw"
         srcset="
           https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo256/main-logo-new   256w,
           https://ik.imagekit.io/theperfectpixl/page-assets/tr:n-logo1710/main-logo-new 1710w,
@@ -120,10 +120,10 @@ const selected = ref(null)
 }
 @media screen and (max-width: 486px) {
   .logo {
-    height: 12vw;
+    height: 16vw;
   }
   .header {
-    height: 25vw;
+    height: 30vw;
   }
   .header {
     flex-wrap: wrap;
@@ -135,7 +135,7 @@ const selected = ref(null)
     justify-content: space-around;
   }
   .link {
-    padding: 2vw;
+    padding: 3vw;
     min-width: 20vw;
     height: 3vw;
   }

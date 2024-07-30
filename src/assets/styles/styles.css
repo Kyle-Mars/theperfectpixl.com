@@ -149,6 +149,7 @@ a:active {
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
+  background-color: black;
   z-index: -1;
 }
 .grid {
@@ -159,7 +160,7 @@ a:active {
   height: 100vh;
   transform-origin: top;
   transform: rotateX(50deg);
-  background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-background-min');
+  background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner');
   background-size: 800px 800px;
   animation: moveBG 5s linear infinite;
 }

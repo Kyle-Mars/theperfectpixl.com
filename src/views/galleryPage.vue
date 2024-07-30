@@ -3,11 +3,11 @@
     <div class="banner">
       <img
         class="icon"
-        sizes="(min-width: 420px) 48.48vw, 68.22vw"
+        sizes="(min-width: 420px) 48vw, 68vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/page-assets/gallery-logo-new   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/page-assets/gallery-logo-new 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/page-assets/gallery-logo-new 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo256/page-assets/gallery-logo-new   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo1710/page-assets/gallery-logo-new 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo2400/page-assets/gallery-logo-new 2400w
         "
         src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo-new"
         alt="Gallery"
@@ -79,7 +79,7 @@
             <img
               v-if="image.alt.toLowerCase().includes(search.toLowerCase())"
               class="gal-image"
-              sizes="(min-width: 1260px) 350px, 15.18vw"
+              sizes="(min-width: 1260px) 350px, 15vw"
               :srcset="
                 'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size256/' +
                 image.src +

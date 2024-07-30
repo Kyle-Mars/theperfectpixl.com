@@ -3,11 +3,11 @@
     <div class="banner">
       <img
         class="icon"
-        sizes="(min-width: 420px) 48.48vw, 68.22vw"
+        sizes="(min-width: 420px) 48vw, 68vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo-new   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/page-assets/about-logo-new 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/page-assets/about-logo-new 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo256/page-assets/about-logo-new   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo1710/page-assets/about-logo-new 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-logo2400/page-assets/about-logo-new 2400w
         "
         src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo-new"
         alt="About Me"
