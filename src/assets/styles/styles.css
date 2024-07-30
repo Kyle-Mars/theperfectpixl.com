@@ -176,8 +176,6 @@ a:active {
   height: 8vw;
   position: absolute;
   box-shadow: 0 0 0;
-  -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
 }
 .logo {
   box-shadow: 0 0 0;

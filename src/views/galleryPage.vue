@@ -133,8 +133,8 @@ function select(index) {
   width: 15vw;
   border-radius: 3px;
   box-shadow:
-    0 0.156vw 0.313vw rgba(0, 0, 0, 0.2),
-    0 0.234vw 0.781vw rgba(0, 0, 0, 0.19);
+    0 0.15vw 0.3vw rgba(0, 0, 0, 0.2),
+    0 0.25vw 0.8vw rgba(0, 0, 0, 0.19);
 }
 .gal-image:hover {
   -webkit-mask-image: linear-gradient(45deg, #000 25%, rgba(0, 0, 0, 0.2) 50%, #000 75%);
