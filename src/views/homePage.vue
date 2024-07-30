@@ -5,16 +5,17 @@
         class="icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/page-assets/welcome-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon1710/page-assets/welcome-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-20icon2400/page-assets/welcome-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon256/page-assets/home-logo-new   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon1710/page-assets/home-logo-new 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-20icon2400/page-assets/home-logo-new 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/page-assets/welcome-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/home-logo-new"
         alt="Welcome!"
       />
-      <div class="banner-bg"></div>
-      <div class="banner-bg banner-bg-2"></div>
-      <div class="banner-bg banner-bg-3"></div>
+      <!-- <a href="https://www.textstudio.com/">Font generator</a> -->
+      <div class="banner-background">
+        <div class="grid"></div>
+      </div>
     </div>
     <div class="home-intro">
       <img
@@ -165,9 +166,6 @@ const selected = ref(null)
   .home-text {
     font-size: 0.5em;
   }
-  .home-icon {
-    width: 40%;
-  }
   .home-title {
     font-size: 2em;
   }
@@ -197,11 +195,6 @@ const selected = ref(null)
   .home-title {
     max-width: 90vw;
     line-height: 175%;
-  }
-}
-@media screen and (max-width: 414px) {
-  .home-icon {
-    width: 70%;
   }
 }
 @media screen and (max-width: 390px) {

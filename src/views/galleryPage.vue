@@ -3,18 +3,19 @@
     <div class="banner">
       <img
         class="icon"
-        sizes="(min-width: 420px) 42.98vw, 55.22vw"
+        sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/page-assets/gallery-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/page-assets/gallery-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/page-assets/gallery-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon256/page-assets/gallery-logo-new   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon1710/page-assets/gallery-logo-new 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-22icon2400/page-assets/gallery-logo-new 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/gallery-logo-new"
         alt="Gallery"
       />
-      <div class="banner-bg"></div>
-      <div class="banner-bg banner-bg-2"></div>
-      <div class="banner-bg banner-bg-3"></div>
+      <!-- <a href="https://www.textstudio.com/">Font generator</a> -->
+      <div class="banner-background">
+        <div class="grid"></div>
+      </div>
     </div>
     <div class="intro">
       <div class="text">
@@ -128,9 +129,6 @@ function select(index) {
 </script>
 
 <style scoped>
-.banner-bg {
-  background-image: linear-gradient(-70deg, rgb(174, 0, 255) 20%, rgb(255, 0, 0) 80%);
-}
 .gal-image {
   width: 15vw;
   border-radius: 3px;
@@ -161,11 +159,6 @@ function select(index) {
   width: 90%;
   padding: 1%;
 }
-@media screen and (min-width: 1600px) {
-  .gal-icon {
-    width: 33%;
-  }
-}
 @media screen and (max-width: 1000px) {
   .gal-image {
     width: 18vw;
@@ -183,11 +176,6 @@ function select(index) {
   .filter {
     padding: 2%;
     width: 75vw;
-  }
-}
-@media screen and (max-width: 414px) {
-  .gal-icon {
-    width: 55%;
   }
 }
 </style>

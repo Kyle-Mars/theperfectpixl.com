@@ -5,16 +5,17 @@
         class="icon"
         sizes="(min-width: 420px) 48.48vw, 68.22vw"
         srcset="
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo   256w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/page-assets/about-logo 1710w,
-          https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/page-assets/about-logo 2400w
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon256/page-assets/about-logo-new   256w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon1710/page-assets/about-logo-new 1710w,
+          https://ik.imagekit.io/theperfectpixl/tr:n-23icon2400/page-assets/about-logo-new 2400w
         "
-        src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo"
+        src="https://ik.imagekit.io/theperfectpixl/page-assets/about-logo-new"
         alt="About Me"
       />
-      <div class="banner-bg"></div>
-      <div class="banner-bg banner-bg-2"></div>
-      <div class="banner-bg banner-bg-3"></div>
+      <!-- <a href="https://www.textstudio.com/">Font generator</a> -->
+      <div class="banner-background">
+        <div class="grid"></div>
+      </div>
     </div>
     <div class="intro">
       <div class="text">
@@ -465,9 +466,6 @@ const selected = ref([])
 </script>
 
 <style scoped>
-.banner-bg {
-  background-image: linear-gradient(70deg, rgb(174, 0, 255) 20%, rgb(255, 0, 0) 80%);
-}
 .about-content-wrapper {
   padding: 2vw;
   margin-top: 2vw;
@@ -480,11 +478,6 @@ const selected = ref([])
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-}
-.about-icon {
-  height: 8vw;
-  position: absolute;
-  box-shadow: 0 0 0;
 }
 .about-text {
   font-family: 'Droid Sans', 'Open Sans', sans-serif;
@@ -529,7 +522,7 @@ const selected = ref([])
   width: 68vw;
   height: 5px;
   margin-top: 7vw;
-  background-image: linear-gradient(90deg, rgb(174, 0, 255), rgb(255, 0, 0));
+  background-image: linear-gradient(90deg, rgb(140, 0, 255), rgb(255, 0, 0));
   border-radius: 10px;
 }
 .v-enter-active,
@@ -543,11 +536,6 @@ const selected = ref([])
 .v-enter-to,
 .v-leave-from {
   max-height: 400vh;
-}
-@media screen and (min-width: 1600px) {
-  .about-icon {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 1000px) {
   .about-text {
@@ -580,21 +568,17 @@ const selected = ref([])
 }
 @media screen and (max-width: 486px) {
   .about-button::after {
-    margin-top: 13vw;
+    margin-top: 21vw;
     height: 3px;
   }
   .about-button {
+    padding: 3vw;
+    height: 17vw;
     margin-bottom: 4vw;
+    text-align: left;
   }
 }
 @media screen and (max-width: 414px) {
-  .about-icon {
-    width: 55%;
-  }
-  .about-button {
-    height: 17vw;
-    text-align: left;
-  }
   .about-button::after {
     margin-top: 21vw;
   }

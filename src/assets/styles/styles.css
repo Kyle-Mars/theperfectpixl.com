@@ -108,6 +108,7 @@ body {
 }
 body {
   line-height: 1;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -136,43 +137,46 @@ a:active {
   text-decoration: none;
 }
 .banner {
-  height: 15vw;
+  height: 20vw;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.banner-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  z-index: -1;
+}
+.grid {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-origin: top;
+  transform: rotateX(70deg);
+  background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-background');
+  background-size: 800px 800px;
+  animation: moveBG 5s linear infinite;
+}
+@keyframes moveBG {
+  0% {
+    background-position: 0 800px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .icon {
   height: 8vw;
   position: absolute;
   box-shadow: 0 0 0;
-}
-.banner-bg {
-  background-image: linear-gradient(70deg, rgb(174, 0, 255) 50%, rgb(255, 0, 0) 50%);
-  animation: slide 2s ease-in-out infinite alternate;
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 10vw;
-  z-index: -1;
-  height: 50vh;
-}
-.banner-bg-2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 3s;
-}
-.banner-bg-3 {
-  animation-duration: 4s;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(-25%);
-  }
-  100% {
-    transform: translateX(25%);
-  }
+  -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
+  filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
 }
 .logo {
   box-shadow: 0 0 0;
@@ -263,30 +267,48 @@ a:active {
   }
 }
 @media screen and (max-width: 1000px) {
+  .icon {
+    position: absolute;
+  }
   .selected {
     height: 80vh;
   }
 }
 @media screen and (max-width: 786px) {
+  .icon {
+    height: 10vw;
+  }
+  .banner {
+    height: 25vw;
+  }
   .selected {
     width: 85vw;
     height: auto;
   }
 }
 @media screen and (max-width: 486px) {
+  .banner {
+    height: 35vw;
+  }
+  .icon {
+    height: 12vw;
+  }
   .banner-bg {
     top: 25vw;
   }
 }
 @media screen and (max-width: 414px) {
   .banner {
-    height: 25vw;
+    height: 35vw;
   }
   .icon {
     height: 12vw;
   }
 }
 @media screen and (max-width: 390px) {
+  .icon {
+    height: 13vw;
+  }
   .text {
     font-size: 0.8em;
   }
