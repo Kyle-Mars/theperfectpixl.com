@@ -159,7 +159,7 @@ a:active {
   height: 100vh;
   transform-origin: top;
   transform: rotateX(70deg);
-  background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-background');
+  background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-background-min');
   background-size: 800px 800px;
   animation: moveBG 5s linear infinite;
 }
