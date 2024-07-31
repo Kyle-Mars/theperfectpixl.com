@@ -3,6 +3,7 @@
   <homePage v-show="currentPage === 'homePage'" :imageList="imageList" />
   <galleryPage v-show="currentPage === 'galleryPage'" :imageList="imageList" />
   <aboutPage v-show="currentPage === 'aboutPage'" />
+  <reviewsPage v-show="currentPage === 'reviewsPage'" />
 </template>
 
 <script setup>
@@ -14,6 +15,7 @@ import pageNav from './components/navBar.vue'
 import homePage from './views/homePage.vue'
 import aboutPage from './views/aboutPage.vue'
 import galleryPage from './views/galleryPage.vue'
+import reviewsPage from './views/reviewsPage.vue'
 
 const imageList = ref(shuffle(imageData))
 

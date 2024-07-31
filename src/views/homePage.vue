@@ -160,7 +160,6 @@ const selected = ref(null)
   mask-position: 120%;
   opacity: 1;
 }
-
 @media screen and (min-width: 1600px) {
   .home-text {
     font-size: 0.5em;

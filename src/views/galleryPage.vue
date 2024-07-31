@@ -21,7 +21,7 @@
       <div class="text">
         <p>
           While my collection consists of 6 main toylines, historically my photo library has focused
-          mainly on 3 toylines.
+          only on 3 toylines.
         </p>
         <p>
           <a href="https://tfwiki.net/wiki/Transformers_Animated_(toyline)"

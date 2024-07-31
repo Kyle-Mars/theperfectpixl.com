@@ -164,20 +164,6 @@
             </p>
           </div>
         </Transition>
-        <!-- <button
-          class="about-button"
-          @click="
-            !selected.includes('collection')
-              ? selected.push('collection')
-              : selected.splice(selected.indexOf('collection'), 1)
-          "
-        >
-          COLLECTION
-          <span>&#8628;</span>
-        </button>
-        <Transition>
-          <div class="about-text" v-if="selected.includes('collection')"></div>
-        </Transition> -->
         <button
           class="about-button"
           @click="

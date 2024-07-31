@@ -248,9 +248,11 @@ a:active {
 .search-leave-from {
   max-width: 100%;
 }
-.lightbox-enter-active,
+.lightbox-enter-active {
+  transition: opacity 1.2s ease-in-out;
+}
 .lightbox-leave-active {
-  transition: opacity 0.75s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 .lightbox-enter-from,
 .lightbox-leave-to {

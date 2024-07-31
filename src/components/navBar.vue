@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="home-link" @click="emits('navigate', 'homePage'), (selected = 'homePage')">
+    <div class="home-link" @click="emits('navigate', 'homePage')">
       <img
         class="logo"
         sizes="(min-width: 1600px) 39.86vw, (min-width: 500px) calc(47.04vw + 15px), 99.44vw"
@@ -14,22 +14,17 @@
       />
     </div>
     <div class="link-toolbar">
-      <!-- <div class="link">REVIEWS</div> -->
-      <div class="link" @click="emits('navigate', 'galleryPage'), (selected = 'galleryPage')">
-        GALLERY
-      </div>
-      <div class="link" @click="emits('navigate', 'aboutPage'), (selected = 'aboutPage')">
-        ABOUT ME
-      </div>
+      <!-- <div class="link" @click="emits('navigate', 'reviewsPage')">REVIEWS</div> -->
+      <div class="link" @click="emits('navigate', 'galleryPage')">GALLERY</div>
+      <div class="link" @click="emits('navigate', 'aboutPage')">ABOUT ME</div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, defineEmits } from 'vue'
+import { defineEmits } from 'vue'
 
 const emits = defineEmits(['navigate'])
-const selected = ref(null)
 </script>
 
 <style scoped>
