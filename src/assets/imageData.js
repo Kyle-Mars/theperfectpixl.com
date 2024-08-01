@@ -103,7 +103,7 @@ let images = [
   {
     src: 'LockEye.webp',
     alt: 'Animated Lockdown looking through his hook',
-    show: true
+    show: false
   },
   {
     src: 'LockCarClose.webp',
@@ -289,6 +289,21 @@ let images = [
   },
 
   //Generations
+  {
+    src: 'magna-shooting',
+    alt: 'Legends Magna Convoy shooting at the camera',
+    show: false
+  },
+  {
+    src: 'magna-back',
+    alt: 'Legends Magna Convoy looking over this shoulder',
+    show: true
+  },
+  {
+    src: 'magna-alt',
+    alt: 'Legends Magna Convoy in alt/vehicle mode',
+    show: false
+  },
   {
     src: 'OpMatrix.webp',
     alt: 'War for Cybertron Trilogy Earthrise Optimus Prime looking at the Matrix of Leadership',
@@ -504,6 +519,11 @@ let images = [
     alt: 'Legacy Evolution Leo Prime kneeling',
     show: false
   },
+  {
+    src: 'overrun',
+    alt: 'Timelines TFCC Over-Run/Runamuck posing',
+    show: true
+  },
 
   //Unicron Trilogy
   {
@@ -607,6 +627,57 @@ let images = [
     show: false
   },
   {
+    src: 'tread-beat',
+    alt: 'Super Link Irontread beating his chest',
+    show: false
+  },
+  {
+    src: 'tread-hyper',
+    alt: 'Super Link Irontread in his Hyper Mode.',
+    show: false
+  },
+  {
+    src: 'tread-alt',
+    alt: 'Super Link Irontread in his alt/vehicle mode.',
+    show: false
+  },
+  {
+    src: 'laserwave-shoot',
+    alt: 'Super Link Laserwave shooting the camera',
+    show: false
+  },
+  {
+    src: 'laserwave-sat',
+    alt: 'Super Link Laserwave in his satellite alt/vehicle mode',
+    show: false
+  },
+  {
+    src: 'laserwave-tank',
+    alt: 'Super Link Laserwave in his tank alt/vehicle mode',
+    show: false
+  },
+  //Misc
+  {
+    src: 'big-shoot',
+    alt: 'Beast Wars Neo Big Convoy shooting at the camera',
+    show: true
+  },
+  {
+    src: 'big-pose',
+    alt: 'Beast Wars Neo Big Convoy posing heroically',
+    show: false
+  },
+  {
+    src: 'big-angry',
+    alt: 'Beast Wars Neo Big Convoy about to punch the camera',
+    show: false
+  },
+  {
+    src: 'big-alt',
+    alt: 'Beast Wars Neo Big Convoy in his alt/mammoth mode',
+    show: false
+  },
+  {
     src: 'MonkeAlt.jpg',
     alt: 'Universe Optimus Primal in alt/ape mode',
     show: false
@@ -657,6 +728,16 @@ let images = [
     src: 'judd-alt',
     alt: 'The Transformers: The Movie Hot Rod in alt/vehicle mode',
     show: false
+  },
+  {
+    src: 'convoy-walk',
+    alt: 'Missing Link Convoy walking',
+    show: true
+  },
+  {
+    src: 'convoy-alt',
+    alt: 'Missing Link Convoy in his alt/vehicle mode',
+    show: true
   }
 ]
 export default images

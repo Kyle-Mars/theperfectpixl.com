@@ -157,7 +157,7 @@ a:active {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   transform-origin: top;
   transform: rotateX(50deg);
   background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner');
