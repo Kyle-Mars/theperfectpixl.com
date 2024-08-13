@@ -53,7 +53,7 @@
             <img
               v-if="image.show"
               class="home-image"
-              sizes="(min-width: 500px) 22vw, 32.78vw"
+              sizes="(min-width: 1260px) 350px, 20vw"
               :srcset="
                 'https://ik.imagekit.io/theperfectpixl/gallery-photos/tr:n-size256/' +
                 image.src +

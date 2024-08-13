@@ -138,7 +138,7 @@
               reorganized to create space for toys from the
               <a
                 href="https://tfwiki.net/wiki/Transformers:_Energon_(toyline)#Takara_Super_Link_toyline"
-                >Super Link</a
+                >Superlink</a
               >
               toyline (f o r e s h a d o w i n g), and was lucky enough to find several of my
               grails, which are a collector's most sought after toys, usually being rare and /or
@@ -148,19 +148,19 @@
             </p>
             <p>
               This break did not last before, several months late for some reason, I became obsessed
-              with Super Link. You can read more about it specifically below, but tl;dr the
+              with Superlink. You can read more about it specifically below, but tl;dr the
               combination of great feeling plastic, excellent designs, and fun gimmicks made me want
               to collect almost the entire line. Over the course of the next 3 months, I did just
               that (along with successfully graduating college, wohoo!). Moving into a bigger
-              apartment was the push I needed to buy a second toy bookshelf, since I had kinda been
-              storing a lot of toys, mostly Super Link, in a side table drawer. I immediately filled
-              the shelf up with Super Link toys, and filled up space elsewhere in the apartment with
-              Super Link packaging (in addition to being good toys, they come in my favorite
-              packaging ever). The stars aligned in these goals: I acquired almost every non-recolor
-              toy in the entire toyline (plus a few extras), perfectly filling the bookshelf I had
-              bought for that purpose. Satisfied with my collection (for real this time, I swear)
-              and having no desire to buy more shelving, I'm finally taking that break I planned to
-              several months ago.
+              apartment was the push I needed to buy a second toy bookshelf; I had kinda been
+              storing a lot of toys, mostly Superlink, in a side table drawer. I immediately filled
+              the shelf up with Superlink toys, and filled up space elsewhere in the apartment with
+              Superlink packaging (in addition to being good toys, they come in my favorite
+              packaging ever). The stars aligned in these goals: I acquired every toy in the entire
+              retail toyline (plus a few extras) and perfectly filled the bookshelf and (a half) I
+              had bought for that purpose. Satisfied with my collection (for real this time, I
+              swear) and having no desire to buy more shelving, I'm finally taking that break I
+              planned to several months ago.
             </p>
           </div>
         </Transition>
@@ -222,7 +222,7 @@
               : selected.splice(selected.indexOf('superLink'), 1)
           "
         >
-          SUPER LINK
+          Superlink
           <span>&#8628;</span>
         </button>
         <Transition>
@@ -233,12 +233,12 @@
               preferences, and those preferences tossed me straight into my favorite toyline:
               <a
                 href="https://tfwiki.net/wiki/Transformers:_Energon_(toyline)#Takara_Super_Link_toyline"
-                >Super Link</a
-              >. Debuting in late 2003 in Japan, Super Link (known as Energon in Hasbro markets) was
+                >Superlink</a
+              >. Debuting in late 2003 in Japan, Superlink (known as Energon in Hasbro markets) was
               the follow-up to the massively successful Micron Legend/Armada toyline from the
               previous year, and celebrated the Transformers franchise's 20th anniversary by
               harkening back to many classic characters and designs. Unlike the very unified
-              gimmickry of the Microns in Micron Legend, Super Link's gimmicks are split between
+              gimmickry of the Microns in Micron Legend, Superlink's gimmicks are split between
               groups.
             </p>
             <p>
@@ -274,17 +274,14 @@
               gorgeously clean, colorful, and shows off the toy designs wonderfully.
             </p>
             <p>
-              The final tally for my Super Link collection includes 1 of every new toy created for
-              the toyline save the Micron combiners and a Microman toy of human character Kicker
-              Jones (which was created to tie into Microman's 30th anniversary as a double
-              celebration). Additionally, I have a few toys that weren't released in Japan normally,
-              coming instead in exclusive 'USA Edition' packaging imported from ...well, you know.
-              Among these is one of my 2 rarest figures: Unicron Black Version, limited to 3000
-              pieces (my other rarest is also 1 of 3000 from Super Link, funnily enough). While
-              there are several repaints of both Micron Legend and Super Link toys still in the line
-              that I don't own, I am extremely happy with my collection. Maybe someday I'll get to a
-              point where I actually own every toy in the line, but I'm content to enjoy the decos I
-              already have (and save money, because those repaints can get super pricey).
+              The final tally for my Superlink collection includes every toy in the main retail run
+              of the toyline. Additionally, I have a few toys that weren't released in Japan
+              normally, coming instead in exclusive 'USA Edition' packaging imported from ...well,
+              you know. Among these is one of my 2 rarest figures: Unicron Black Version, limited to
+              3000 pieces (my other rarest is also 1 of 3000 from Superlink, funnily enough). There
+              are still several Mini-Cons and rare, store exclusive repaints I don't have, but I
+              don't feel the need to go hunting for them at the moment; I'm very happy to have the
+              whole retail line.
             </p>
           </div>
         </Transition>
@@ -302,10 +299,10 @@
         <Transition>
           <div class="about-text" v-if="selected.includes('favs')">
             <p>
-              There's a lot of Transformers stuff I love outside of Super Link as well! My
-              collection is only about 40% Super Link, with the rest split pretty evenly between 5
-              other toylines, including Transformers Animated and Robots in Disguise, both of which
-              are featured heavily in my gallery. Some of my favorites from this other half include:
+              There's a lot of Transformers stuff I love outside of Superlink as well! My collection
+              may be 50% Superlink, but the rest is split pretty evenly between 5 other toylines,
+              including Transformers Animated and Robots in Disguise, both of which are featured
+              heavily in my gallery. Some of my favorites from this other half include:
             </p>
             <ul>
               <li>
@@ -345,10 +342,10 @@
               </li>
             </ul>
             <p>
-              The tie-in cartoon for Super Link and its Hasbro counterpart are notoriously bad, so I
-              can't claim them to be my favorite, as much as I want to. That doesn't been there
-              isn't amazing Transformers media out there, though! The ones that I enjoy the most
-              are:
+              The tie-in cartoon for Superlink and its Hasbro counterpart are notoriously bad, so I
+              can't claim them to be as good as the toyline, as much as I want to. That doesn't been
+              there isn't amazing Transformers media out there, though! The ones that I enjoy the
+              most are:
             </p>
             <ul>
               <li>
