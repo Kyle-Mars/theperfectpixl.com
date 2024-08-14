@@ -33,7 +33,7 @@
         alt="A nice photo of me."
       />
       <div class="home-title">
-        Hi! I’m Kyle, an early 2000s Transformers collector, Super Link enthusiast, and amateur toy
+        Hi! I’m Kyle, an early 2000s Transformers collector, Superlink enthusiast, and amateur toy
         photographer.
         <div class="home-text">
           Since 2019 I've been buying, selling, playing with, displaying, and photographing

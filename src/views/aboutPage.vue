@@ -222,7 +222,7 @@
               : selected.splice(selected.indexOf('superLink'), 1)
           "
         >
-          Superlink
+          SUPERLINK
           <span>&#8628;</span>
         </button>
         <Transition>
