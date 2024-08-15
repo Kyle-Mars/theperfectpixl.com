@@ -277,7 +277,7 @@ a:active {
 }
 @media screen and (max-width: 786px) {
   .grid {
-    background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-background-mobile');
+    background: url('https://ik.imagekit.io/theperfectpixl/page-assets/banner-mobile');
     animation: moveBG 4s linear infinite;
   }
   @keyframes moveBG {
