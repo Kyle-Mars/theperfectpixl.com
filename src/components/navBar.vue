@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="home-link" @click="emits('navigate', 'homePage')">
+    <div class="home-link" @click="navigate('homePage')">
       <img
         class="logo"
         sizes="(min-width: 1600px) 39.86vw, (min-width: 500px) calc(47.04vw + 15px), 99.44vw"
@@ -14,9 +14,9 @@
       />
     </div>
     <div class="link-toolbar">
-      <!-- <div class="link" @click="emits('navigate', 'reviewsPage')">REVIEWS</div> -->
-      <div class="link" @click="emits('navigate', 'galleryPage')">GALLERY</div>
-      <div class="link" @click="emits('navigate', 'aboutPage')">ABOUT ME</div>
+      <div class="link" @click="navigate('reviewsPage')">REVIEWS</div>
+      <div class="link" @click="navigate('galleryPage')">GALLERY</div>
+      <div class="link" @click="navigate('aboutPage')">ABOUT ME</div>
     </div>
   </div>
 </template>
@@ -25,6 +25,11 @@
 import { defineEmits } from 'vue'
 
 const emits = defineEmits(['navigate'])
+
+function navigate(page) {
+  emits('navigate', page)
+  setTimeout(() => window.scrollTo(0, 0), 10)
+}
 </script>
 
 <style scoped>

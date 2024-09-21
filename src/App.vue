@@ -12,10 +12,10 @@ import imageData from './assets/imageData.js'
 
 import pageNav from './components/navBar.vue'
 
-import homePage from './views/homePage.vue'
-import aboutPage from './views/aboutPage.vue'
-import galleryPage from './views/galleryPage.vue'
-import reviewsPage from './views/reviewsPage.vue'
+import homePage from './pages/homePage.vue'
+import aboutPage from './pages/aboutPage.vue'
+import galleryPage from './pages/galleryPage.vue'
+import reviewsPage from './pages/reviewsPage.vue'
 
 const imageList = ref(shuffle(imageData))
 

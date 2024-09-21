@@ -262,6 +262,30 @@ a:active {
 .lightbox-leave-from {
   opacity: 100%;
 }
+.review-enter-active,
+.review-leave-active {
+  transition: left 0.5s ease-in-out !important;
+}
+.review-enter-from,
+.review-leave-to {
+  left: -100vw;
+}
+.review-enter-to,
+.review-leave-from {
+  left: 0;
+}
+.review-card-enter-active,
+.review-card-leave-active {
+  transition: opacity 0.5s ease-in-out !important;
+}
+.review-card-enter-from,
+.review-card-leave-to {
+  opacity: 0%;
+}
+.review-card-enter-to,
+.review-card-leave-from {
+  opacity: 100%;
+}
 @media screen and (min-width: 1600px) {
   .logo {
     width: 90%;

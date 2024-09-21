@@ -123,7 +123,7 @@ let images = [
   {
     src: 'wave-dance',
     alt: 'Takara Animated Soundwave dancing',
-    show: true
+    show: false
   },
   {
     src: 'wave-alt',
@@ -628,34 +628,50 @@ let images = [
   },
   {
     src: 'tread-beat',
-    alt: 'Super Link Irontread beating his chest',
+    alt: 'Superlink Irontread beating his chest',
     show: false
   },
   {
     src: 'tread-hyper',
-    alt: 'Super Link Irontread in his Hyper Mode.',
+    alt: 'Superlink Irontread in his Hyper Mode.',
     show: false
   },
   {
     src: 'tread-alt',
-    alt: 'Super Link Irontread in his alt/vehicle mode.',
+    alt: 'Superlink Irontread in his alt/vehicle mode.',
     show: false
   },
   {
     src: 'laserwave-shoot',
-    alt: 'Super Link Laserwave shooting the camera',
+    alt: 'Superlink Laserwave shooting the camera',
     show: false
   },
   {
     src: 'laserwave-sat',
-    alt: 'Super Link Laserwave in his satellite alt/vehicle mode',
+    alt: 'Superlink Laserwave in his satellite alt/vehicle mode',
     show: false
   },
   {
     src: 'laserwave-tank',
-    alt: 'Super Link Laserwave in his tank alt/vehicle mode',
+    alt: 'Superlink Laserwave in his tank alt/vehicle mode',
     show: false
   },
+  {
+    src: 'micron-street-action.jpg',
+    alt: 'The Micron Legend Street Action Microns in alt/vehicle mode',
+    show: false
+  },
+  {
+    src: 'micron-bumble.jpg',
+    alt: 'Micron Legend Bumble waving hello',
+    show: false
+  },
+  {
+    src: 'superlink-galvatron-pose.jpg',
+    alt: 'Superlink Galvatron posing',
+    show: true
+  },
+
   //Misc
   {
     src: 'big-shoot',
