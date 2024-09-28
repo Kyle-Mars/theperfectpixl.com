@@ -66,7 +66,7 @@ function close() {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2vw;
   margin-top: 2vw;

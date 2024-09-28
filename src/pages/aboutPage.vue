@@ -536,7 +536,7 @@ const selected = ref([])
 }
 @media screen and (max-width: 1000px) {
   .about-text {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
   .about-button {
     font-size: 0.7em;
