@@ -44,10 +44,11 @@
         <p>
           Decades later, on the franchise's 20th anniversary, store shelves would be graced with
           another rhinoceros beetle Transformer (possibly homaging Barrage directly), who in
-          Hasbro's Transformers Energon toyline was named 'Insecticon', obviously after the iconic
-          group. A few months later across the ocean, Insecticon was made available as a part of the
-          ninth wave of Takara's version of the line, 'Superlink'. Largely identical to Insecticon,
-          Chromhorn is an amazing little toy, and I want to tell you why I adore him.
+          Hasbro's Transformers Energon toyline was named 'Insecticon' after the iconic group. A few
+          months later across the ocean, Insecticon was made available with little alteration as a
+          part of the ninth wave of Takara's version of the line, 'Superlink'. Named Chromhorn in
+          this version of the line, he's an amazing little toy, and I want to tell you why I adore
+          him.
         </p>
         <img
           class="large-review-image"
@@ -81,7 +82,7 @@
         </Transition>
         <p>
           The first thing I love about Chromhorn is immediately apparent upon looking at him: he has
-          immense brawler energy, being almost as wide as he is tall, and having fists larger than
+          immense brawler energy, being almost as wide as he is tall and having fists larger than
           his head. In fact, he's a quite cute brawler because of how small he actually is. As the
           smallest size class in the range (the 'Energon' Class in Hasbro markets), he clocks in at
           approximately 4 inches from his feet to the top of his head. I have a particular soft spot
@@ -89,15 +90,14 @@
           Chromhorn fits that archetype to a tee, while also being pocket-sized.
         </p>
         <p>
-          Color wise, Chromhorn is a nice mix of dark green, yellow, and brown, which is an alright
-          color scheme overall if I'm being honest. It's not bad though, and it fits an insect robot
-          very well. What is standout, though, is his vibrant purple face, which provides excellent
-          contrast to the yellow head crest. He has a good amount of paint applications in addition
-          to his face, with silver and purple highlights on the dark green and some green and
-          bronze-y highlights on his yellow legs, which do a good job of breaking up the plastic and
-          providing additional visual interest. Not to say he's otherwise lacking in interest
-          though, the whole toy is covered in the mechanical detail typical of this era of
-          Transformers, and the sharp angles throughout give him a menacing appearance.
+          Color wise, Chromhorn is a solid mix of dark green, yellow, and brown, which fits an
+          insect robot very well. The standout element is his vibrant purple face, which provides
+          excellent contrast to the yellow head crest. He has a good amount of paint applications in
+          addition to his face, with silver and purple highlights on his arms and some green and
+          bronze-y highlights on his yellow legs. Both of these do a good job of breaking up the
+          plastic and providing additional visual interest. Not to say he's otherwise lacking in
+          that area though, as the whole toy is covered in the mechanical detail typical of this era
+          of Transformers, with sharp angles throughout to give him a menacing appearance.
         </p>
         <img
           class="small-review-image"
@@ -167,10 +167,10 @@
           Owing to his simple and clever transformation, Chromhorn has very little extraneous
           kibble, especially for an insect Transformer. It's not uncommon for characters with insect
           alternate modes to have insect limbs splayed out in various locations in robot mode;
-          Chromhorn has 2 insect legs mounted on his back, which are seemingly designed to look like
-          shoulder mounted guns. Aside from that, he's got the beetle horn poking above his head.
-          The other insect legs fold neatly away into his legs, and you might not even know he has a
-          beetle shell at first glance.
+          Chromhorn has his beetle horn poking above his head and 2 insect legs mounted on his back,
+          which are seemingly designed to look like shoulder mounted guns. The other insect legs
+          fold neatly away into his robot legs, and you might not even know he has a beetle shell at
+          first glance.
         </p>
         <p>
           In terms of articulation, he is limited in several ways. His leg movement is restricted to
@@ -187,9 +187,9 @@
           decorative Energon Star, both of which can be mixed and matched between Superlink toys. In
           contrast to the Hasbro release's yellowish-green, Chromhorn's accessories are a lovely
           shade of light green. The first is the 'Horn Shot', a gatling cannon with a rotating
-          barrel, and the second is the 'Horn Spear', multi-edged drill sword, not unlike the sword
-          Beast Wars Dinobot uses. Both of these complement his bruiser design very well, and
-          despite his limited articulation, he can look dynamic holding either of them.
+          barrel, and the second is the 'Horn Spear', a multi-edged drill sword. Both of these
+          complement his bruiser design very well, and despite his limited articulation, he can look
+          cool holding either of them.
         </p>
         <img
           class="small-review-image"
@@ -332,7 +332,7 @@
           streamlined, slightly rounder look, while still maintaining the toy's general boxiness.
           The painted details on his arms come together very nicely for the shell, breaking up the
           back and helping expose details that might otherwise be harder to see amidst the dark
-          green. It's a great little thin, and my only real complaint is that his head is a bit
+          green. It's a great little thing, and my only real complaint is that his head is a bit
           indistinct; I will admit it took me a bit to even notice his insect eyes were painted
           blue. Otherwise though, amazing.
         </p>
@@ -418,13 +418,14 @@
           </div>
         </Transition>
         <p>
-          Overall, Chromhorn is an amazing little dude. He's a part of an archetype I'm a massive
+          Overall, Chromhorn is an stellar little dude. He's a part of an archetype I'm a massive
           fan of, executed with clever engineering in a solid color scheme. His limited articulation
           doesn't detract from the fun I have playing with him thanks to his striking design and
           very versatile combining weapons, and I give credit to him and his fellow Terror-Cons (and
           their opposite Omni-Cons) for really opening me up more to enjoying figures that don't
-          stack up to modern (or even 2010s) articulation. I would absolutely recommend Chromhorn to
-          anyone, and he's one of my favorite small Transformers toys ever.
+          stack up to modern (or even 2010s) articulation. I would absolutely recommend picking up a
+          Chromhorn/Insecticon yourself; He's one of my favorite Energon Class toys in Superlink,
+          and one of my favorite small (non-Mini-Con) Transformers toys ever.
         </p>
         <img
           class="large-review-image"
@@ -610,10 +611,10 @@ const selected = ref(null)
   .review-card {
     flex-direction: column;
     justify-content: space-between;
-    height: 15vh;
+    height: 17vh;
   }
   .review-card::after {
-    margin-top: calc(15vh + 40px);
+    margin-top: calc(17vh + 40px);
   }
   .review-card-image {
     width: 100%;
