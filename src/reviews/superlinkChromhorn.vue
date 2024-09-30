@@ -611,10 +611,10 @@ const selected = ref(null)
   .review-card {
     flex-direction: column;
     justify-content: space-between;
-    height: 17vh;
+    height: 19vh;
   }
   .review-card::after {
-    margin-top: calc(17vh + 40px);
+    margin-top: calc(19vh + 40px);
   }
   .review-card-image {
     width: 100%;
