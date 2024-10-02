@@ -59,7 +59,7 @@
               still only barely familiar with Transformers at this time, but I recognized those
               designs enough to think "Oh, that's cool. They're going back to the old designs
               ...Hey, didn't I used to like this stuff?" I told my dad I was interested, and he
-              ended up taking my brothers and I on a surprise theater visit to go watch it when it
+              ended up taking my brothers and me on a surprise theater visit to go watch it when it
               was released. I loved the movie, and it completely reignited my interest in the
               franchise. Toy collecting was the avenue that stuck out to me the most because while I
               wasn't up to date on how I could read the comics or where I could stream the TV shows,
