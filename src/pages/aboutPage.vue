@@ -274,14 +274,11 @@
               gorgeously clean, colorful, and shows off the toy designs wonderfully.
             </p>
             <p>
-              The final tally for my Superlink collection includes every toy in the main retail run
-              of the toyline. Additionally, I have a few toys that weren't released in Japan
-              normally, coming instead in exclusive 'USA Edition' packaging imported from ...well,
-              you know. Among these is one of my 2 rarest figures: Unicron Black Version, limited to
-              3000 pieces (my other rarest is also 1 of 3000 from Superlink, funnily enough). There
-              are still several Mini-Cons and rare, store exclusive repaints I don't have, but I
-              don't feel the need to go hunting for them at the moment; I'm very happy to have the
-              whole retail line.
+              The final tally for my Superlink collection includes every toy in the line, both the
+              main retail run as well as the store exclusives. The latter had limited runs, clocking
+              in at 3000 copies a piece, making them much rarer than the average toy in my
+              collection. I'm extremely happy to have completed the line, and it is the undisputed
+              highlight of my collection.
             </p>
           </div>
         </Transition>

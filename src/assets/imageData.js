@@ -73,7 +73,7 @@ let images = [
   {
     src: 'TronWalk.webp',
     alt: 'Animated Megatron walking',
-    show: true
+    show: false
   },
   {
     src: 'BlitzCalculate.webp',
@@ -402,11 +402,6 @@ let images = [
   {
     src: 'ThundersThink.webp',
     alt: 'War for Cybertron Trilogy Siege Thundercracker contemplating his allegiance',
-    show: false
-  },
-  {
-    src: 'ThundersClose.webp',
-    alt: 'A closeup on War for Cybertron Trilogy Siege Thundercracker in an action pose',
     show: false
   },
   {
@@ -753,6 +748,26 @@ let images = [
   {
     src: 'convoy-alt',
     alt: 'Missing Link Convoy in his alt/vehicle mode',
+    show: true
+  },
+  {
+    src: 'roadbuster_robot.jpg',
+    alt: 'Superlink Roadbuster in his robot mode',
+    show: false
+  },
+  {
+    src: 'roadbuster_vehicle.jpg',
+    alt: 'Superlink Roadbuster in his alt/vehicle mode',
+    show: false
+  },
+  {
+    src: 'wing_saber_robot.jpg',
+    alt: 'Superlink Wing Saber in his alt/vehicle mode',
+    show: false
+  },
+  {
+    src: 'archadis_robot.jpg',
+    alt: 'Beast Wars Neo Archadis in his robot mode',
     show: true
   }
 ]
